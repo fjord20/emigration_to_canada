@@ -8,6 +8,8 @@
     --clr-primary-500: #E55241;
     --clr-primary-600: #1E222E;
     --clr-text-header: #3A3E48;
+    --clr-content-slider: #FFFFFF;
+    --clr-span: #F7F7F7;
     --clr-btn-normal: red;
     --clr-btn-hover: #DD1718;
     --clr-btn-active: blue;
@@ -22,7 +24,6 @@
 html, body {
     font-family: var(--ff-primary);
     font-size: var(--fz-primary);
-    height: 100vh;
 }
 
 /* header section */
@@ -227,14 +228,17 @@ html, body {
     color: var(--clr-primary-500);
 }
 
- /* section popular offers */
+ /* section popular offers slider 1 */
 .popular_offers {
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 4.375rem 0;
 }
 
 .popular_offers_header {
     display: flex;
+    margin-bottom: 2.4375rem;
     align-items: center;
     justify-content: space-between;
  }
@@ -269,34 +273,43 @@ html, body {
     max-width: 23%;
     flex-direction: column;
     gap: 1.25rem;
+    background-color: var(--clr-content-slider);
 }
 
 .popular_offers_article h3 {
     margin-bottom: 0.5rem;
     font-size: 1.125rem;
+    line-height: 1.5rem;
     font-weight: var(--fw-700);
     color: var(--clr-primary-600);
 }
 
 .popular_offers_article img {
     display: block;
-    width: 100%;
-    height: 100%;
-    background-image: url(/images/logo_popular_offers_article.png) ;
-
+    background-image: url(/images/logo_popular_offers_article.png);
 }
 
-.popular_offers_article_contain > p {
+.popular_offers_article_contain {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0 0.9375rem 1.875rem 0.9375rem;
+}
+
+.popular_offers_article_contain_text > p {
     font-size: 0.875rem;
     font-weight: var(--fw-400);
     color: var(--clr-text-header);
     line-height: 20px;
-    margin-bottom: 1.125rem;
 }
 
-.popular_offers_article_contain {
-    gap: 0.3125rem;
-    padding: 0 0.9375rem 1.875rem 0.9375rem;
+.popular_offers_article_contain_text {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.5rem;
+    gap: 1.5rem;
+    height: 100%;
+    justify-content: space-between;
 }
 
 .popular_offers_article_cost {
@@ -326,5 +339,93 @@ html, body {
     border-radius: 0.25rem;
     background: none;
     font-size: 1.125rem;
+    font-weight: var(--fw-700);
     color: var(--clr-primary-500);
+}
+
+figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 2rem;
+}
+
+/* section slider 2 */
+.immigration {
+    width: 100%;
+    background-color: var(--clr-background);
+}
+
+.immigration_limit_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4.375rem 0;
+}
+
+.immigration_article_contain {
+    display: flex;
+    flex-direction: column;
+    padding: 0.9375rem;
+}
+
+.immigration_article_contain h3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.immigration_article {
+    display: flex;
+    border: 1px solid var(--clr-background);
+    border-radius: 0.625rem;
+    max-width: 23%;
+    flex-direction: column;
+    background-color: var(--clr-content-slider);
+}
+
+.immigration_article img {
+    display: block;
+    background-image: url(/images/logo_popular_offers_article.png);
+}
+
+.where_to_begin_items {
+    display: flex;
+    max-width: 32%;
+    flex-direction: column; 
+    
+}
+
+.where_to_begin_items_a {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+    height: auto;
+    padding: 0.75rem 0.875rem;
+    font-size: 1rem;
+    font-weight: var(--fw-400);
+    line-height: 1.5rem;
+    color: var(--clr-text-header);
+}
+
+.where_to_begin_items_main {
+    display: block;
+    position: relative;
+    text-decoration: none;
+}
+
+.where_to_begin_items_main img {
+    width: 100%;
+    height: 100%;
+}
+
+.where_to_begin_items_main span {
+    position: absolute;
+    width: 100%;
+    bottom: 0%;
+    padding: 0.75rem 0.875rem;
+    font-size: 1.125rem;
+    font-weight: var(--fw-700);
+    color: var(--clr-span);
+    background: rgba(30, 34, 46, 0.4);
 }
