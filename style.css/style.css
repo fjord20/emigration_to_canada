@@ -388,12 +388,62 @@ figure {
     background-image: url(/images/logo_popular_offers_article.png);
 }
 
+/* section 3 where_to_begin */
+
+.where_to_begin {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.where_to_begin_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.where_to_begin_items_header {
+    margin-bottom: 1.875rem;
+}
+
+.where_to_begin_items_header a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: var(--fw-700);
+    color: var(--clr-primary-600);
+}
+
+.where_to_begin_items_header a::after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    background: url(/images/Arrow_right.png) no-repeat center;
+    margin-left: 1.25rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-size: 100%;
+}
+
 .where_to_begin_items {
     display: flex;
     max-width: 32%;
     flex-direction: column; 
-    
+    padding: 4.375rem 0;  
 }
+
+.where_to_begin_items a {
+    border: 1px solid var(--clr-background);
+    border-top: none;
+}
+
+.where_to_begin_items a:last-child {
+    border-radius: 0 0 0.625rem 0.625rem;
+}
+
+.where_to_begin_items a:first-child {
+    border: none;
+}
+
+
 
 .where_to_begin_items_a {
     display: block;
@@ -412,11 +462,18 @@ figure {
     display: block;
     position: relative;
     text-decoration: none;
+    border-radius: 0.625rem 0.625rem 0 0;
+    overflow: hidden;
 }
 
 .where_to_begin_items_main img {
     width: 100%;
     height: 100%;
+    transition: 1s;
+}
+
+.where_to_begin_items_main img:hover {
+   transform: scale(1.3);
 }
 
 .where_to_begin_items_main span {
@@ -429,3 +486,43 @@ figure {
     color: var(--clr-span);
     background: rgba(30, 34, 46, 0.4);
 }
+
+.where_to_begin_items_questions {
+    display: flex;
+    flex-direction: column; 
+    gap: 1.5rem;
+    
+}
+
+.where_to_begin_items_questions p {
+    line-height: 1.8rem;
+    font-weight: var(--fw-400);
+}
+
+.where_to_begin_items_questions button {
+    height: 4rem;
+    border: none;
+    border-radius: 0.25rem;
+    background: var(--clr-primary-500);
+    font-size: 1.125rem;
+    font-weight: var(--fw-700);
+    color: var(--clr-content-slider);
+}
+
+.where_to_begin_items_questions button:hover {
+    background: var(--clr-btn-hover);
+}
+
+.where_to_begin_items_questions button span::after {
+    display: inline-block;
+    content: "";
+    vertical-align: middle;
+    background: url(/images/arrow-right_ffffff.png);
+    background-size: 100%;
+    margin-left: 0.625rem;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+
+.where_to_begin_items
