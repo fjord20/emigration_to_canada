@@ -15,6 +15,8 @@
     --clr-btn-active: blue;
     --clr-background: #F4F4F4;
     --clr-link-active: #FFF6F6;
+    --clr-input-border: #DBDFEC;
+    --clr-input-placeholder: #a6a6a6;
     --ff-primary: 'proxima-nova', sans-serif;
     --fz-primary: 16px;
     --fw-400: 400;
@@ -635,7 +637,7 @@ figure {
 .add_to_community_container {
     display: flex;
     padding: 4.375rem 0;
-    gap: 0.9375rem;
+    gap: 1.875rem;
 }
 
 
@@ -654,7 +656,6 @@ figure {
     display: flex;
     flex-direction: row;
     gap: 0.9375rem;
-    
 }
 
 .add_to_community_information_header h2 {
@@ -674,6 +675,113 @@ figure {
 }
 
 form {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
     max-width: 49.5%;
+    justify-content: space-between;
+
+}
+
+.input_fields {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0.9375rem;
+}
+
+.input_fields input:not(:last-child) {
+    height: 4rem;
+    border-radius: 0.3125rem;
+    border: 1px solid var(--clr-input-border);
+}
+
+.input_fields input  {
+    color: var(--clr-input-placeholder);
+    padding-left: 0.9375rem;
+}
+
+.enter_answer {
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    border-radius: 0.3125rem;
+    border: 1px solid var(--clr-input-border);
+}
+
+.enter_answer input:first-child {
+    width: 37%;
+    height: 100%;
+    padding: 1.25rem 0.8rem;
+    border: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: var(--clr-input-border);
+    outline: none;
+    color: var(--clr-primary-600);
+}
+
+.enter_answer input {
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.form_submit_field {
+    display: flex;
+    align-items: center;
+    margin-top: 1.25rem;
+    margin-bottom: 1.875rem;
+    gap: 0.9375rem;
+}
+
+.form_submit_field label {
+    font-size: 0.875rem;
+}
+
+.form_submit_field input {
+    height: 1.5rem;
+    width: 1.5rem;
+    color: var(--clr-primary-500);
+}
+
+.form_button_field {
+    display: flex;
+    gap: 0.9375rem;
+}
+
+
+.form_registration_btn {
+    width: 39%;
+    height: 4rem;
+    border: none;
+    border-radius: 0.25rem;
+    background: var(--clr-primary-500);
+    font-size: 1.125rem;
+    font-weight: var(--fw-700);
+    color: var(--clr-content-slider);
+    cursor: pointer;
+}
+
+.form_login_btn {
+    width: 39%;
+    height: 4rem;
+    border: 1px solid var(--clr-primary-500);
+    border-radius: 0.25rem;
+    background: var(--clr-content-slider);
+    font-size: 1.125rem;
+    font-weight: var(--fw-700);
+    color: var(--clr-primary-500);
+    cursor: pointer;
+}
+
+.form_registration_btn:hover {
+    background: var(--clr-btn-hover);
+}
+
+.form_login_btn:hover {
+    background: var(--clr-btn-hover);
+    color: var(--clr-content-slider);
 }
 
