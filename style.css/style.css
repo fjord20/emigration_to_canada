@@ -75,6 +75,7 @@ html, body {
 /* drop city */
 
 .navigation__header_city {
+    display: block;
     position: relative;
 }
 
@@ -137,14 +138,13 @@ html, body {
     content: url(/images/eva_arrow_red.svg);
 } */
 
-
 .navigation__header_city a:hover {
     color: var(--clr-primary-500);
 }
 
-.navigation__header_city:hover .navigation__header_drop_city {
+/* .navigation__header_city:hover .navigation__header_drop_city {
     display: block;
-}
+} */
 
 /* drop languages*/
 
@@ -387,24 +387,6 @@ input[type="search"] {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  /* section help in immigration */
 .container__help_in_immigration {
     background: url(/images/Group_red_dotted.png) no-repeat 10% 100%,
@@ -553,27 +535,84 @@ input[type="search"] {
     gap: 1.5rem;
 }
 
-.popular_offers_list_article {
+/* slider */
+.slider {
     display: flex;
-    justify-content: space-between;
-    
+    gap: 1.8rem;
 }
 
-.popular_offers_article {
+.slider > * {
+    width: 25%;
+    flex: 0 0 auto;
+}
+
+.slider li {
     display: flex;
     border: 1px solid var(--clr-background);
     border-radius: 0.625rem;
-    max-width: 23%;
+    max-width: 24%;
     flex-direction: column;
     gap: 1.25rem;
-    background-color: var(--clr-content-slider);    
+    background-color: var(--clr-content-slider); 
 }
 
-.popular_offers_article_images  {
+.slider img {
+    display: block;
+    transition: 0.7s;
+}
+
+.slider li img:last-child {
+    position: absolute;
+    top: 10%;
+    left: 5%
+}
+
+.slider li img:hover {
+    transform: scale(1.3);
+}
+
+.slider_contain a {
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    font-weight: var(--fw-700);
+    color: var(--clr-primary-600);
+}
+
+.slider_contain a:hover {
+    color: var(--clr-primary-500);
+}
+
+
+.slider_images  {
     position: relative;
     height: 67%;
     border-radius: 0.625rem 0.625rem 0 0;
-    overflow: hidden; 
+    overflow: hidden;   
+}
+
+.a11y-slider-dots {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    margin-top: 1.875rem;
+    padding-left: 0;
+}
+
+.a11y-slider-dots li {
+    display: block;
+    padding: 0;
+    border-radius: 50%;
+}
+
+.a11y-slider-dots li button {
+    display: block;
+    font-size: 0;
+    width: 0.5rem;
+    height: 0.5rem;
+    border: none;
+    border-radius: 100%;
     
 }
 
@@ -585,37 +624,31 @@ input[type="search"] {
     color: var(--clr-primary-600);
 }
 
-.popular_offers_article img {
-    display: block;
-    transition: 0.7s;
-}
-
 .popular_offers_article img:last-child {
     position: absolute;
     top: 10%;
     left: 5%
 }
 
-
 .popular_offers_article img:hover {
     transform: scale(1.3);
 }
 
-.popular_offers_article_contain {
+.slider_contain {
     display: flex;
     flex-direction: column;
     height: 100%;
     padding: 0 0.9375rem 1.875rem 0.9375rem;
 }
 
-.popular_offers_article_contain_text > p {
+.slider_contain_text > p {
     font-size: 0.875rem;
     font-weight: var(--fw-400);
     color: var(--clr-text-header);
     line-height: 20px;
 }
 
-.popular_offers_article_contain_text {
+.slider_contain_text {
     display: flex;
     flex-direction: column;
     font-size: 0.5rem;
@@ -656,14 +689,6 @@ input[type="search"] {
     color: var(--clr-content-slider);
 }
 
-figure {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.75rem;
-    margin-top: 2rem;
-}
-
 /* section slider 2 */
 .immigration {
     width: 100%;
@@ -699,7 +724,8 @@ figure {
     
 }
 
-.immigration_article_images {
+.immigration_slider_images {
+    position: relative;
     overflow: hidden;
     border-radius: 0.625rem 0.625rem 0 0;
 }
@@ -1218,3 +1244,9 @@ form {
 .footer_copyright_licence_block_links a:last-child {
     padding-left: 0.3125rem;
 }
+
+
+
+
+
+

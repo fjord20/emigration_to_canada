@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css/style.css">
-    <link rel="shortcut icon" href="/images/maple-leaf.png" type="image/x-icon">
     <link rel="stylesheet" href="/style.css/immigration_article.css">
+    <link rel="shortcut icon" href="/images/maple-leaf.png" type="image/x-icon">
     <link rel="stylesheet" href="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.css" />
     <title>Иммиграция в Канаду</title>
 </head>
@@ -64,7 +63,7 @@
             <nav class="navigation__header_bottom">
             <a href="/index.html"> <img class="navigation__header_bottom_logo" src="/images/logo.png" alt="logo"></a>
             <ul class="navigation__header_bottom_menu_row">
-                <li><a href="#" target="_blank">Иммиграция</a></li>
+                <li class="active_menu"><a href="/pages/immigration_article.html" target="_blank">Иммиграция</a></li>
                 <li><a href="#" target="_blank">Учеба</a></li>
                 <li><a href="#" target="_blank">Работа</a></li>
                 <li><a href="#" target="_blank">Визы</a></li>
@@ -89,18 +88,21 @@
                 <p>Показано с 1 по 9 из 535</p>
             </div>
 
-            <div class="arcicle_section_question">
+            <div id="btn" class="arcicle_section_question">
                 <div class="question_block">
                     <p>Хотите переехать в Канаду?</p>
                     <a href="#">Бесплатно оцените свои шансы!</a>
                 </div>
-                <button class="question_block_close_btn"></button>
+                <button class="question_block_close_btn" onclick="closeQuestion()"></button>
             </div>
 
             <div class="arcicle_section_items">
                 <div class="arcicle_section_item">
                     <div class="item_images">
                         <img src="/images/arcicle_section_item_1.png" alt="pinic">
+                        <div class="link_transparent">
+                            <a href="#"> учеба и образование </a>
+                        </div>
                     </div>
                     <div class="item_contain">
                         <a href="#">Вузы Канады, после которых вы найдете работу!</a>
@@ -113,6 +115,9 @@
                 <div class="arcicle_section_item">
                     <div class="item_images">
                         <img src="/images/arcicle_section_item_2.png" alt="meeting">
+                        <div class="link_transparent">
+                            <a href="#"> иммиграционные новости </a>
+                        </div>
                     </div>
                     <div class="item_contain">
                         <a href="#">Онтарио восполняет нехватку квалифицированных специалистов</a>
@@ -125,6 +130,9 @@
                 <div class="arcicle_section_item">
                     <div class="item_images">
                         <img src="/images/arcicle_section_item_3.png" alt="graduate">
+                        <div class="link_transparent">
+                            <a href="#"> иммиграционные новости </a>
+                        </div>
                     </div>
                     <div class="item_contain">
                         <a href="#">Акции от канадский колледжей: стипендия &dollar;10 000 и бесплатный...</a>
@@ -137,6 +145,9 @@
                 <div class="arcicle_section_item">
                     <div class="item_images">
                         <img src="/images/arcicle_section_item_4.png" alt="castle">
+                        <div class="link_transparent">
+                            <a href="#"> учеба и образование </a>
+                        </div>
                     </div>
                     <div class="item_contain">
                         <a href="#">Новая Шотландия пригласла иммигрировать предпринимателей</a>
@@ -149,6 +160,9 @@
                 <div class="arcicle_section_item">
                     <div class="item_images">
                         <img src="/images/arcicle_section_item_5.png" alt="meeting">
+                        <div class="link_transparent">
+                            <a href="#"> иммиграционные новости </a>
+                        </div>
                     </div>
                     <div class="item_contain">
                         <a href="#">Одна из провинций Канады будет трудоустраивать иммигрантов</a>
@@ -161,6 +175,9 @@
                 <div class="arcicle_section_item">
                     <div class="item_images">
                         <img src="/images/arcicle_section_item_6.png" alt="city">
+                        <div class="link_transparent">
+                            <a href="#"> иммиграционные новости </a>
+                        </div>
                     </div>
                     <div class="item_contain">
                         <a href="#">Одна из провинций Канады будет трудоустраивать иммигрантов</a>
@@ -173,6 +190,9 @@
                 <div class="arcicle_section_item">
                     <div class="item_images">
                         <img src="/images/arcicle_section_item_7.png" alt="school">
+                        <div class="link_transparent">
+                            <a href="#"> учеба и образование </a>
+                        </div>
                     </div>
                     <div class="item_contain">
                         <a href="#">Вузы Канады, после которых вы найдете работу!</a>
@@ -185,6 +205,9 @@
                 <div class="arcicle_section_item">
                     <div class="item_images">
                         <img src="/images/arcicle_section_item_8.png" alt="girls">
+                        <div class="link_transparent">
+                            <a href="#"> иммиграционные новости </a>
+                        </div>
                     </div>
                     <div class="item_contain">
                         <a href="#">Онтарио восполняет нехватку квалифицированных специалистов</a>
@@ -197,6 +220,9 @@
                 <div class="arcicle_section_item">
                     <div class="item_images">
                         <img src="/images/arcicle_section_item_9.png" alt="online-conference">
+                        <div class="link_transparent">
+                            <a href="#"> иммиграционные новости </a>
+                        </div>
                     </div>
                     <div class="item_contain">
                         <a href="#">Акции от канадский колледжей: стипендия &dollar;10 000 и бесплатный...</a>
@@ -210,7 +236,7 @@
                 <ul class="pages_numbers">
                     <li> <a href=""><img src="/images/eva_arrow-nav-pages-left.svg" alt="arrow-legt"></a> </li>
                     <li> <a href="/pages/immigration_article.html">1</a> </li>
-                    <li class="active"> <a href="">2</a> </li>
+                    <li class="active"> <a href="/pages/immigration_article2.html">2</a> </li>
                     <li> <a href=""> <img src="/images/nav-pages_dots.svg" alt="dots"> </a> </li>
                     <li> <a href="">5</a> </li>
                     <li> <a href="">6</a> </li>
@@ -222,7 +248,171 @@
             </nav>
         </section>
         <!-- slider here -->
-
+        <section class="popular_offers_background">
+            <div class="popular_offers">
+            <div class="popular_offers_header">
+                <h2>Популярные предложения</h2>
+                <div class="popular_offers_header_arrow">
+                <p> <a href="#">Смотреть все</a></p>
+                <img src="/images/Arrow_right.svg" alt="Arrow_right">
+                </div>
+            </div>
+                <ul class="slider">
+                    <li>  
+                        <div class="slider_images">
+                            <img src="/images/popular_offers_article_1.png" alt="flag">
+                            <img src="/images/logo_popular_offers_article.png" alt="logo">
+                        </div>
+                        <div class="slider_contain">
+                            <a href="">Консультация по иммиграции или учебе</a>
+                            <div class="slider_contain_text">
+                                <p>Нужно больше информации о переезде в Канаду? Оцените свои шансы у лицензированного иммиграционного консультанта!</p>
+                                <div class="popular_offers_article_cost"> 
+                                    <div class="popular_offers_article_money">
+                                        <p class="popular_offers_article_money_ruble">5950 &#x20bd;</p>
+                                        <p class="popular_offers_article_money_ruble"> &dollar;100 CAD</p>
+                                    </div>
+                                    <button class="popular_offers_article_button">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slider_images">
+                            <img src="/images/popular_offers_article_2.png" alt="flag">
+                            <img src="/images/logo_popular_offers_article.png" alt="logo">
+                        </div>
+                         <div class="slider_contain">
+                            <a href="">Онлайн-изучение английского языка</a>
+                            <div class="slider_contain_text">
+                                <p>Прокачайте английский в крупнейшей канадской языковой школе,не выходя из дома.Занятия в удобное для вас время!</p>
+                                <div class="popular_offers_article_cost"> 
+                                    <div class="popular_offers_article_money">
+                                        <p class="popular_offers_article_money_ruble">7440 &#x20bd;</p>
+                                        <p class="popular_offers_article_money_ruble"> &dollar;130 CAD</p>
+                                    </div>
+                                    <button class="popular_offers_article_button">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slider_images">
+                            <img src="/images/popular_offers_article_3.png" alt="flag">
+                            <img src="/images/logo_popular_offers_article.png" alt="logo">
+                        </div>
+                         <div class="slider_contain">
+                            <a href="">Написание резюме для различных профессий</a>
+                            <div class="slider_contain_text">
+                                <p>Хотите найти работу в Канаде? Вам нужно профессиональное резюме.</p>
+                                <div class="popular_offers_article_cost"> 
+                                    <div class="popular_offers_article_money">
+                                        <p class="popular_offers_article_money_ruble">5950 &#x20bd;</p>
+                                        <p class="popular_offers_article_money_ruble"> &dollar;100 CAD</p>
+                                    </div>
+                                    <button class="popular_offers_article_button">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slider_images">
+                            <img src="/images/popular_offers_article_4.png" alt="flag">
+                            <img src="/images/logo_popular_offers_article.png" alt="logo">
+                        </div>
+                         <div class="slider_contain">
+                            <a href="">Как найти работу в Канаде</a>
+                            <div class="slider_contain_text">
+                                <p>Обучающий курс создан при участии канадского специалиста по найму персонала с 9-летним опытом работы в Канаде.</p>
+                                <div class="popular_offers_article_cost"> 
+                                    <div class="popular_offers_article_money">
+                                        <p class="popular_offers_article_money_ruble">29950 &#x20bd;</p>
+                                        <p class="popular_offers_article_money_ruble"> &dollar;515 CAD</p>
+                                    </div>
+                                    <button class="popular_offers_article_button">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slider_images">
+                            <img src="/images/popular_offers_article_2.png" alt="flag">
+                            <img src="/images/logo_popular_offers_article.png" alt="logo">
+                        </div>
+                         <div class="slider_contain">
+                            <a href="">Консультация по иммиграции или учебе</a>
+                            <div class="slider_contain_text">
+                                <p>Нужно больше информации о переезде в Канаду? Оцените свои шансы у лицензированного иммиграционного консультанта!</p>
+                                <div class="popular_offers_article_cost"> 
+                                    <div class="popular_offers_article_money">
+                                        <p class="popular_offers_article_money_ruble">5950 &#x20bd;</p>
+                                        <p class="popular_offers_article_money_ruble"> &dollar;100 CAD</p>
+                                    </div>
+                                    <button class="popular_offers_article_button">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slider_images">
+                            <img src="/images/popular_offers_article_3.png" alt="flag">
+                            <img src="/images/logo_popular_offers_article.png" alt="logo">
+                        </div>
+                         <div class="slider_contain">
+                            <a href="">Консультация по иммиграции или учебе</a>
+                            <div class="slider_contain_text">
+                                <p>Нужно больше информации о переезде в Канаду? Оцените свои шансы у лицензированного иммиграционного консультанта!</p>
+                                <div class="popular_offers_article_cost"> 
+                                    <div class="popular_offers_article_money">
+                                        <p class="popular_offers_article_money_ruble">5950 &#x20bd;</p>
+                                        <p class="popular_offers_article_money_ruble"> &dollar;100 CAD</p>
+                                    </div>
+                                    <button class="popular_offers_article_button">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slider_images">
+                            <img src="/images/popular_offers_article_4.png" alt="flag">
+                            <img src="/images/logo_popular_offers_article.png" alt="logo">
+                        </div>
+                         <div class="slider_contain">
+                            <a href="">Консультация по иммиграции или учебе</a>
+                            <div class="slider_contain_text">
+                                <p>Нужно больше информации о переезде в Канаду? Оцените свои шансы у лицензированного иммиграционного консультанта!</p>
+                                <div class="popular_offers_article_cost"> 
+                                    <div class="popular_offers_article_money">
+                                        <p class="popular_offers_article_money_ruble">5950 &#x20bd;</p>
+                                        <p class="popular_offers_article_money_ruble"> &dollar;100 CAD</p>
+                                    </div>
+                                    <button class="popular_offers_article_button">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slider_images">
+                            <img src="/images/popular_offers_article_2.png" alt="flag">
+                            <img src="/images/logo_popular_offers_article.png" alt="logo">
+                        </div>
+                         <div class="slider_contain">
+                            <a href="">Консультация по иммиграции или учебе</a>
+                            <div class="slider_contain_text">
+                                <p>Нужно больше информации о переезде в Канаду? Оцените свои шансы у лицензированного иммиграционного консультанта!</p>
+                                <div class="popular_offers_article_cost"> 
+                                    <div class="popular_offers_article_money">
+                                        <p class="popular_offers_article_money_ruble">5950 &#x20bd;</p>
+                                        <p class="popular_offers_article_money_ruble"> &dollar;100 CAD</p>
+                                    </div>
+                                    <button class="popular_offers_article_button">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
 
 
@@ -267,7 +457,7 @@
     <footer>
         <div class="footer_limit_container">
             <div class="footer_content">
-                <img src="/images/footer-logo_immigrant.png" alt="logo">
+                <a href="/index.html"><img src="/images/footer-logo_immigrant.png" alt="logo"></a>
                 <nav class="navigation_footer">
                     
                     <ul class="navigation_footer_links">
@@ -297,7 +487,7 @@
                         </ul>
                         <a href=""><img src="/images/youtube-footer.png" alt="youtube"></a>
                     </div>
-                    <p>mail@immigrant.today</p>
+                    <a href="mail@immigrant.today">mail@immigrant.today</a> 
                 </div>
             </div>
             <div class="footer_copyright_licence">
