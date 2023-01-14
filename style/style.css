@@ -190,7 +190,6 @@ html, body {
     content: url(/images/eva_arrow_red.svg);
 } */
 
-
 .navigation__header_drop_languages a::before {
     content: none;
 }
@@ -556,6 +555,15 @@ input[type="search"] {
     background-color: var(--clr-content-slider); 
 }
 
+
+.slider li:hover {
+    filter: drop-shadow(-5px 0px 10px rgba(190, 190, 190, 0.25)) drop-shadow(5px 5px 10px rgba(190, 190, 190, 0.25));
+}
+
+.slider li:hover .slider_contain a {
+    color: var(--clr-primary-500);
+}
+
 .slider img {
     display: block;
     transition: 0.7s;
@@ -579,11 +587,6 @@ input[type="search"] {
     font-weight: var(--fw-700);
     color: var(--clr-primary-600);
 }
-
-.slider_contain a:hover {
-    color: var(--clr-primary-500);
-}
-
 
 .slider_images  {
     position: relative;
@@ -795,8 +798,7 @@ main .no_background {
     display: flex;
     max-width: 32%;
     flex-direction: column; 
-    padding: 4.375rem 0; 
-    
+    padding: 4.375rem 0;
 }
 
 .where_to_begin_items a {
@@ -868,8 +870,7 @@ main .no_background {
 .where_to_begin_items_questions {
     display: flex;
     flex-direction: column; 
-    gap: 1.5rem;
-    
+    gap: 1.5rem;  
 }
 
 .where_to_begin_items_questions p {
@@ -990,8 +991,7 @@ main .no_background {
     padding: 3.4375rem 3.75rem 3.4375rem 2.5rem;
     background-color: var(--clr-background);
     border-radius: 0.625rem;
-    gap: 1.25rem;
-    
+    gap: 1.25rem;  
 }
 
 .add_to_community_information_header {
