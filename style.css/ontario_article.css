@@ -2,7 +2,451 @@
     display: grid;
     max-width: 1200px;
     margin: 0 auto;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
+    gap: 3.75rem;
+}
 
+.where_to_begin_items {
+    max-width: 100%;
+}
+
+.ontario_article {
+    padding: 2.5rem 0 3.125rem 0;
+}
+
+.ontario_article h2 {
+    font-size: 2rem;
+    line-height: 3rem;
+    color: var(--clr-primary-600);
+}
+
+.ontario_article_date_rating {
+    display: flex;
+    margin: 1.25rem 0 1.5625rem 0;
+    font-size: 0.875rem;
+    color: var(--clr-primary-600);
+}
+
+.datetime {
+    margin-right: 3.75rem;
+}
+
+.ontario_article_bookmarks a {
+    display: inline-block;
+    margin-right: 1.875rem;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: top;
+    font-size: 0.875rem;
+    color: var(--clr-primary-600);
+}
+
+.ontario_article_bookmarks::before {
+    content: url(/images/bookmark.svg);
+}
+
+.ontario_article_image {
+    position: relative;
+}
+
+.ontario_article_image img:last-child {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+
+.ontario_article_main_p {
+    margin: 1.875rem 0 1.25rem 0;
+    font-size: 1.125rem;
+    color: var(--clr-primary-600);
+    font-weight: var(--fw-700);
+}
+
+.ontario_article p:not(:first-of-type) {
+    margin-bottom: 1.25rem;
+}
+
+.books_offers {
+    display: flex;
+    width: 100%;
+    padding: 3.125rem 1.875rem;
+    margin-bottom: 2.5rem;
+    gap: 1.875rem;
+    border-radius: 0.625rem;
+    background-color: var(--clr-background);
+}
+
+.books_offers_info {
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+}
+
+.books_offers_info h3 {
+    margin-bottom: 0.9375rem;
+}
+
+.books_offers_info p {
+    margin-bottom: 1.875rem;
+}
+
+.books_offers_buy {
+    display: flex;
+}
+
+.books_offers_cost {
+    margin-right: 2.5rem;
+}
+
+.books_offers_cost span:first-child {
+    font-size: 1.875rem;
+    font-weight: var(--fw-700);
+}
+
+.books_offers_cost span:last-child {
+    color: var(--clr-primary-200);
+    margin-bottom: 0;
+}
+
+.books_offers_btn_block {
+    display: flex;
+    width: 100%;
+    gap: 0.9375rem;
+}
+
+.books_offers_btn_buy {
+    width: 48%;
+    height: 4rem;
+    border: none;
+    border-radius: 0.25rem;
+    background: var(--clr-primary-500);
+    font-size: 1.125rem;
+    font-weight: var(--fw-700);
+    color: var(--clr-content-slider);
+    cursor: pointer;
+}
+
+.books_offers_btn_details {
+    width: 48%;
+    height: 4rem;
+    border: 1px solid #E55241;
+    border-radius: 0.25rem;
+    background: none;
+    font-size: 1.125rem;
+    font-weight: var(--fw-700);
+    color: var(--clr-primary-500);
+}
+
+.books_offers_btn_buy:hover {
+    background: var(--clr-btn-hover);
+}
+
+.books_offers_btn_details:hover {
+    background: var(--clr-btn-hover);
+    color: var(--clr-content-slider);
+}
+
+.read_here {
+    text-decoration: none;
+    color: var(--clr-primary-500);
+}
+
+.ontario_article_source {
+    margin-top: 2.5rem;
+}
+
+.ontario_article_source a {
+    text-decoration: none;
+    color: var(--clr-primary-500);
+}
+
+.ontario_article_tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.625rem;
+    list-style-type: none;
+    padding: 0;
+}
+
+.ontario_article_tags li {
+    padding: 0.3125rem 1.25rem;
+    border-radius: 6.25rem;
+    border: 2px dotted var(--clr-primary-500);
+    background-color: var(--clr-link-active);
+}
+
+.ontario_article_tags li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    font-size: 0.875rem;
+    color: var(--clr-primary-600);
+}
+
+.ontario_article_tags li:hover {
+    background-color: var(--clr-primary-500);
+    color: var(--clr-content-slider);
+}
+
+.ontario_article_tags li:hover a {
+    color: var(--clr-content-slider);
+}
+
+
+.article_footer {
+    margin-top: 4.625rem;
+}
+
+.article_footer p {
+    font-size: 1.5rem;
+    font-weight: var(--fw-700);
+}
+
+.article_footer_links {
+    /* /* list-style-image: url(/images/list-type-red.svg); */
+    padding: 0;
+    list-style-type: none;
+}
+
+.article_footer_links li {
+    display: flex;
+    align-items: center;
+}
+
+.article_footer_links li::before{
+    display: inline-block;
+    content: url(/images/list-type-red.svg);
+    margin-right: 0.625rem;
+}
+
+.article_footer_links li a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: var(--clr-primary-600);
+}
+
+.article_footer_quiz {
+    width: 100%;
+    margin: 2.5rem 0;
+}
+
+.article_footer_suggestion {
+    display: flex;
+    width: 100%;
+    padding: 1.875rem 1rem;
+    gap: 1.875rem;
+    background-color: var(--clr-background);
+}
+
+.suggestion {
+    display: flex;
+    gap: 0.9375rem;
+    max-width: 50%;
+}
+
+.suggestion p {
+    font-size: 0.875rem;
+    color: var(--clr-primary-600);
+    overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+}
+
+.ontario_article_comments {
+    border-top: 1px solid var(--clr-input-border);
+}
+
+.comments_add {
+    display: flex;
+    padding: 2.375rem 0 1.75rem 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comments_add p {
+    font-size: 1.5rem;
+    color: var(--clr-primary-600);
+    font-weight: var(--fw-700);
+}
+
+.comments_add_btn {
+    width: 25%;
+    height: 4rem;
+    border: none;
+    border-radius: 0.25rem;
+    background: var(--clr-primary-500);
+    font-size: 1.125rem;
+    font-weight: var(--fw-700);
+    color: var(--clr-content-slider);
+    cursor: pointer;
+}
+
+.comments_add_btn:hover {
+    background-color: var(--clr-btn-hover);
+}
+
+.comments_list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.comments_list li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9375rem;
+    padding: 1.25rem 0;
+    border-bottom: 1px solid var(--clr-input-border);
+    border-top: 1px solid var(--clr-input-border);;
+}
+
+.comments_list li:nth-child(2) {
+    border-bottom: none;
+}
+
+.comments_list li:nth-child(1) {
+    border-bottom: none;
+    border-top: none;
+}
+
+.comments_list li:nth-child(3),
+.comments_list li:nth-child(4) {
+    border: none;
+    margin-left: 1.875rem;
+    margin-bottom: 1.25rem;
+    border-left: 1px solid var(--clr-input-border);
+    padding-left: 1.1875rem;
+}
+
+.comments_list_header {
+    display: flex;
+    gap: 0.9375rem;
+    
+}
+
+.comments_author_name {
+    font-size: 1.125rem;
+    font-weight: var(--fw-700);
+    color: var(--clr-primary-600);
+}
+
+.comments_author_activity {
+    font-size: 0.875rem;
+    color: var(--clr-text-header);
+}
+
+.comments_list_text {
+    display: flex;
+    align-items: flex-start;
+}
+
+.comments_list_text p {
+    color: var(--clr-text-header);
+    line-height: 1.5rem;
+}
+
+.comments_list_likes {
+    display: flex;
+    gap: 0.4375rem;
+}
+
+.comments_list_text img {
+    margin-inline: 1.875rem 0.4375rem;
+}
+
+.comments_list_text span {
+    font-size: 0.875rem;
+    font-weight: var(--fw-700);
+    color: var(--clr-primary-500);
+}
+
+.comments_list_answer {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--clr-primary-500);
+    font-size: 0.625rem;
+    font-weight: var(--fw-600);
+}
+
+.comments_author_redirect {
+    display: flex;
+    width: 40%;
+    gap: 0.625rem;
+    align-items: center;
+}
+
+.comments_author_redirect img {
+    width: 0.75rem;
+    height: 0.75rem;
+}
+
+.comments_author_redirect p {
+    font-size: 0.875rem;
+    color: var(--clr-input-placeholder);
+}
+
+.show_more_btn {
+    text-align: center;
+}
+
+.show_more_btn button {
+    width: 30%;
+    height: 4rem;
+    margin: 1.875rem 0 4.375rem 0;
+    border: 1px solid #E55241;
+    border-radius: 0.25rem;
+    background: none;
+    font-size: 1.125rem;
+    font-weight: var(--fw-700);
+    color: var(--clr-primary-500);
+}
+
+.show_more_btn button:hover {
+    background: var(--clr-btn-hover);
+    color: var(--clr-content-slider);
+}
+
+
+.aside_items {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding-top: 2.5rem;
+}
+
+.where_to_begin_items {
+    padding: 1.25rem 0.9375rem;
+    border-radius: 0.625rem;
+    box-shadow: -5px 0px 10px rgba(190, 190, 190, 0.25), 5px 5px 10px rgba(190, 190, 190, 0.25);
+}
+
+.where_to_begin_items_header a::after {
+    content: none;
+}
+
+.aside_block {
+    padding: 0;
+}
+
+.aside_block .where_to_begin_items_header {
+    padding: 1.25rem 0.9375rem 0 0.9375rem;
+    margin-bottom: 0.9375rem;
+}
+
+.aside_block .where_to_begin_items_main {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.aside_block .where_to_begin_items_main img {
+    max-width: 100%;
+
+}
+
+.aside_block_news {
+    display: flex;
+    flex-direction: row;
 }
