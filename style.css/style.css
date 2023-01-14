@@ -592,6 +592,13 @@ input[type="search"] {
     overflow: hidden;   
 }
 
+.slider_two  .slider_contain,
+.slider_three  .slider_contain,
+.slider_four  .slider_contain,
+.slider_five  .slider_contain {
+    height: auto;
+}
+
 .a11y-slider-dots {
     display: flex;
     gap: 0.75rem;
@@ -612,7 +619,7 @@ input[type="search"] {
     width: 0.5rem;
     height: 0.5rem;
     border: none;
-    border-radius: 100%;
+    border-radius: 50%;
     
 }
 
@@ -695,6 +702,10 @@ input[type="search"] {
     background-color: var(--clr-background);
 }
 
+main .no_background {
+    background-color: #FFFFFF;
+}
+
 .immigration_limit_container {
     max-width: 1200px;
     margin: 0 auto;
@@ -721,7 +732,6 @@ input[type="search"] {
     max-width: 23%;
     flex-direction: column;
     background-color: var(--clr-content-slider);
-    
 }
 
 .immigration_slider_images {
