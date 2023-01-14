@@ -1,5 +1,5 @@
-@import url(/style.css/reset.css);
-@import url(/style.css/immigration_article.css);
+@import url(/style/reset.css);
+@import url(/style/immigration_article.css);
 
 :root {
     --clr-primary-100: #FDFDFD;
@@ -548,7 +548,7 @@ input[type="search"] {
 
 .slider li {
     display: flex;
-    border: 1px solid var(--clr-background);
+    border: 1px solid var(--clr-input-border);
     border-radius: 0.625rem;
     max-width: 24%;
     flex-direction: column;
@@ -587,10 +587,14 @@ input[type="search"] {
 
 .slider_images  {
     position: relative;
-    height: 67%;
     border-radius: 0.625rem 0.625rem 0 0;
     overflow: hidden;   
 }
+
+.slider .slider_images_limit {
+    height: 67%;
+}
+
 
 .slider_two  .slider_contain,
 .slider_three  .slider_contain,
@@ -727,7 +731,7 @@ main .no_background {
 .immigration_article {
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid var(--clr-background);
+    border: 1px solid var(--clr-input-border);
     border-radius: 0.625rem;
     max-width: 23%;
     flex-direction: column;
