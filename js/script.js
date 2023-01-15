@@ -1,75 +1,28 @@
 const sliders = document.querySelectorAll('.slider');
 
-// const slider = new A11YSlider(document.querySelector('.slider'), {
-//   adaptiveHeight: true,
-//   dots: true,
-//   arrows: false,
-//   slidesToShow: 4,
-//   responsive: {
-//       768: {
-//         slidesToShow: 2,
-//         arrows: false
-//       },
-//       960: {
-//         disable: true // slider disabled 960px to 1199px
-//       },
-//       1280: {
-//         disable: false,
-//         slidesToShow: 4,
-//         dots: true // dots enabled 1200px and up
-//       }
-//     }
-// });
-
 sliders.forEach(sliderEl => {
   const slider = new A11YSlider(sliderEl, {
     adaptiveHeight: true,
     dots: true,
     arrows: false,
-    slidesToShow: 4,
+    slidesToShow: 2,
     responsive: {
         768: {
           slidesToShow: 2,
           arrows: false
         },
         960: {
-          disable: true // slider disabled 960px to 1199px
+          disable: false, // slider disabled 960px to 1199px
+          dots: true
         },
-        1280: {
+        1200: {
           disable: false,
           slidesToShow: 4,
           dots: true // dots enabled 1200px and up
         }
       }
   });
-  //  const slider = new A11YSlider(sliderEl);
 });
-
-
-
-// const slider = new A11YSlider(document.querySelector('.slider'), {
-//     adaptiveHeight: true,
-//     dots: true,
-//     arrows: false,
-//     slidesToShow: 4,
-//     responsive: {
-//         768: {
-//           slidesToShow: 2,
-//           arrows: false
-//         },
-//         960: {
-//           disable: true // slider disabled 960px to 1199px
-//         },
-//         1280: {
-//           disable: false,
-//           slidesToShow: 4,
-//           dots: true // dots enabled 1200px and up
-//         }
-//       }
-//   });
-
-
-
 
 function dropCity() {
     document.getElementById("city").style.display = "block";
