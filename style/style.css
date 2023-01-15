@@ -623,11 +623,11 @@ input[type="search"] {
 .a11y-slider-dots li button {
     display: block;
     font-size: 0;
+    padding: 0;
     width: 0.5rem;
     height: 0.5rem;
     border: none;
     border-radius: 50%;
-    
 }
 
 .popular_offers_article h3 {
