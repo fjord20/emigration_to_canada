@@ -1052,14 +1052,15 @@ form {
     align-items: center;
     height: 4rem;
     border-radius: 0.3125rem;
-    border: 1px solid var(--clr-input-border);
+    /* border: 1px solid var(--clr-input-border); */
 }
 
 .enter_answer input:first-child {
     width: 37%;
-    height: 100%;
+    height: 4rem;
     padding: 1.25rem 0.8rem;
-    border: none;
+    border: 1px solid var(--clr-input-border);
+    border-right: none;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     background-color: var(--clr-input-border);
@@ -1068,8 +1069,11 @@ form {
 
 .enter_answer input {
     width: 100%;
-    border: none;
-    outline: none;
+    height: 4rem;
+    border: 1px solid var(--clr-input-border);
+    border-left: none;
+    border-top-right-radius: 0.3125rem;
+    border-bottom-right-radius: 0.3125rem;
 }
 
 .form_submit_field {
