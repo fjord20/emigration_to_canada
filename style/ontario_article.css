@@ -1,3 +1,11 @@
+:root {
+    --fa-border-color: blue;
+    
+    
+
+}
+
+
 .limit_container {
     display: grid;
     max-width: 1200px;
@@ -23,6 +31,7 @@
 
 .ontario_article_date_rating {
     display: flex;
+    align-items: center;
     margin: 1.25rem 0 1.5625rem 0;
     font-size: 0.875rem;
     color: var(--clr-primary-600);
@@ -44,6 +53,20 @@
 
 .ontario_article_bookmarks::before {
     content: url(/images/bookmark.svg);
+}
+
+.stars {
+    display: inline-block;
+}
+
+.stars:hover .fa-regular{
+    cursor: pointer;
+    color: orange;
+}
+
+.stars .fa-regular:hover ~ .fa-regular:before {
+    color: black;
+    
 }
 
 .ontario_article_image {
@@ -246,7 +269,8 @@
     max-width: 50%;
 }
 
-.suggestion p {
+.suggestion p a {
+    text-decoration: none;
     font-size: 0.875rem;
     color: var(--clr-primary-600);
     overflow: hidden;
