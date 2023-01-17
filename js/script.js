@@ -49,6 +49,7 @@ const re = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].
       if (uid_len == 0)  {
         checkEmpty.style.borderColor = 'red';
         checkEmpty.style.borderWidth = '2px';
+        checkEmpty.placeholder = 'Введите имя';
       }
       
       else {
@@ -58,8 +59,10 @@ const re = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].
       if (uid_len_last == 0) {
         checkEmptyname.style.borderColor = 'red';
         checkEmptyname.style.borderWidth = '2px';
+        checkEmptyname.placeholder = 'Введите пароль';
         document.getElementById('numbers').style.borderColor = 'red';
         document.getElementById('numbers').style.borderWidth = '2px';
+
       }
       
       else {
@@ -70,6 +73,7 @@ const re = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].
       if (uid_len_pass == 0) {
         passEmpty.style.borderColor = 'red';
         passEmpty.style.borderWidth = '2px'
+        passEmpty.placeholder = 'Введите правильный ответ';
       }
       
       else {
@@ -77,8 +81,9 @@ const re = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].
       }
 
       if (uid_len_email == 0) {
-        emailValid.style.borderColor = '#E55241';
+        emailValid.style.borderColor = 'red';
         emailValid.style.borderWidth = '2px';
+        emailValid.placeholder = 'Введите электронной почты';
       }
       
       else {
@@ -91,7 +96,7 @@ const re = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].
       } else {
         emailValid.style.borderColor = 'red';
         emailValid.style.borderWidth = '2px';
-        alert('некорректный адрес электронной почты');
+        alert('введите правильный адрес электронной почты');
       }
   
       function isEmailValid(value) {
