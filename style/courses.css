@@ -1,0 +1,241 @@
+@import url(/style/reset.css);
+@import url(/style/style.css);
+@import url(/style/ontario_article.css);
+
+.courses_header {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 2.5rem;
+    margin-bottom: 3.125rem;
+}
+.pad {
+    margin: 2.5rem 0 4.375rem 0;
+}
+
+.courses_header h2 {
+    font-size: 2rem;
+    margin-bottom: 1.875rem;
+    color: var(--clr-primary-600);
+} 
+
+.courses_header p {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    color: var(--clr-text-header);
+}
+
+.services {
+    margin-bottom: 4.375rem;
+}
+
+.services_items {
+    display: flex;
+    gap: 1.875rem;
+}
+
+.services_limit {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services_limit h3 {
+    font-size: 1.75rem;
+    margin-bottom: 1.875rem;
+}
+
+.services_card {
+    display: flex;
+    max-width: 31.6%;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    border: 1px solid var(--clr-input-border);
+    border-radius: 0.625rem;
+}
+
+.services_card:hover {
+    box-shadow: -5px 0px 10px rgba(190, 190, 190, 0.25), 5px 5px 10px rgba(190, 190, 190, 0.25);
+}
+
+.services_card:hover .services_card_contain a {
+    color: var(--clr-primary-500);
+}
+
+.services_card:hover .services_card_btn {
+    color: var(--clr-primary-100);
+    background-color: var(--clr-primary-500);
+}
+
+.services_card_images {
+    height: 80%;
+    position: relative;
+    border-radius: 0.625rem 0.625rem 0 0;
+}
+ 
+.services_card_images img {
+    width: 100%;
+    border-radius: 0.625rem 0.625rem 0 0;
+}
+
+.services_card_images img:last-child {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: auto;
+}
+
+.services_card_contain {
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem 1.25rem 1.875rem 1.25rem;
+    height: 100%;
+    gap: 1.875rem;
+    justify-content: space-between;
+}
+
+.services_card_contain a {
+    display: block;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    font-weight: var(--fw-700);
+    color: var(--clr-primary-600);
+}
+
+.services_card_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.services_card_text p {
+    font-weight: var(--fw-400);
+    color: var(--clr-text-header);
+    line-height: 1.5rem;   
+}
+
+.services_card_cost {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services_card_money {
+    display: flex;
+    flex-direction: column;
+}
+
+.services_card_money_ruble {
+    font-size: 1.5rem;
+    font-weight: var(--fw-700);
+    color: var(--clr-primary-600);
+}
+
+.services_card_money_dollar {
+    color: var(--clr-primary-200);
+}
+
+.services_card_btn {
+    padding: 0 1.875rem;
+    border: 1px solid #E55241;
+    border-radius: 0.25rem;
+    background-color: var(--clr-content-slider);
+    font-size: 1.125rem;
+    font-weight: var(--fw-700);
+    color: var(--clr-primary-500);
+}
+
+.courses {
+    background-color: var(--clr-span);
+    padding-bottom: 4.375rem;
+}
+
+.courses .services_card {
+    background-color: var(--clr-content-slider);
+}
+
+.courses .services_limit h3 {
+    padding: 4.375rem 0 1.875rem 0;
+    margin: 0;
+}
+
+.services_card_money_free {
+    padding: 0.75rem 0;
+    font-size: 1.5rem;
+    font-weight: var(--fw-700);
+    color: var(--clr-primary-600);
+}
+
+.books {
+    margin-bottom: 4.375rem;
+}
+
+.books .services_limit h3 {
+    padding: 4.375rem 0 1.875rem 0;
+    margin: 0;
+}
+
+.books_items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.875rem;
+}
+
+.books_items .books_card {
+    max-width: 100%;
+}
+
+.books_card .services_card_images {
+    height: 85%;
+    position: relative;
+    border-radius: 0.625rem 0.625rem 0 0;
+    overflow: hidden;
+    padding-top: 1rem;
+}
+
+.online_tools {
+    background-color: var(--clr-span);
+    padding-bottom: 4.375rem;
+}
+
+.online_tools .services_limit h3 {
+    padding: 4.375rem 0 1.875rem 0;
+    margin: 0;
+}
+
+.online_tools .services_card {
+    background-color: var(--clr-content-slider);
+}
+
+.online_tools .online_items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.online_card {
+    max-width: 100%;
+}
+
+.online_tools_money_free {
+    padding: 0.75rem 0;
+    font-size: 1rem;
+    font-weight: var(--fw-700);
+    color: var(--clr-primary-600);
+}
+
+.online_card .services_card_images {
+    height: 61%;
+    position: relative;
+    border-radius: 0.625rem 0.625rem 0 0;
+}
+
+.online_card .services_card_btn {
+    padding: 0 1rem;
+    border: 1px solid #E55241;
+    border-radius: 0.25rem;
+    background-color: var(--clr-content-slider);
+    font-size: 1.125rem;
+    font-weight: var(--fw-700);
+    color: var(--clr-primary-500);
+}

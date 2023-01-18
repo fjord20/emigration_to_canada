@@ -588,12 +588,6 @@ iframe {
     color: var(--clr-primary-500);
 }
 
-.aside_block_news a:hover::after {
-    content: url(/images/arrow-right_ontario.svg);
-    vertical-align: top;
-    margin-left: 0.3rem;
-} 
-
 .aside_news.aside_items_content {
     padding: 0;
     gap: 0;

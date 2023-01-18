@@ -1,0 +1,159 @@
+@import url(/style/style.css);
+@import url(/style/reset.css);
+@import url(/style/ontario_article.css);
+
+.about_article {
+    padding: 2.5rem 0 3.125rem 0;
+}
+
+.about_article h2 {
+    margin-bottom: 1.875rem;
+    font-size: 2rem;
+    color: var(--clr-primary-600);
+}
+
+.about_article img {
+    margin-top: 1.875rem;
+}
+
+.about_article_paragraph {
+    margin-top: 0;
+    font-size: 1.5rem;
+    font-weight: var(--fw-700);
+    color: var(--clr-primary-600);
+}
+
+.about_article_paragraph::before {
+    content: url(/images/about/ink-icon.svg);
+    margin-right: 0.9375rem;
+    vertical-align: middle;
+}
+
+.about_article > p {
+    margin-bottom: 0.9375rem;
+    line-height: 1.5rem;
+    color: var(--clr-text-header);
+}
+
+.about_article_paragraph_spec {
+    font-size: 1.5rem;
+    font-weight: var(--fw-700);
+    color: var(--clr-primary-600);
+}
+
+.about_article_paragraph_spec::before {
+    content: url(/images/about/light-icon.svg);
+    margin-right: 0.9375rem;
+    vertical-align: middle;
+}
+
+.about_article_paragraph_goal {
+    font-size: 1.5rem;
+    font-weight: var(--fw-700);
+    color: var(--clr-primary-600);
+}
+
+.about_article_paragraph_goal::before {
+    content: url(/images/about/hand-icon.svg);
+    margin-right: 0.9375rem;
+    vertical-align: middle;
+}
+
+.about_article_paragraph_struct {
+    font-size: 1.5rem;
+    font-weight: var(--fw-700);
+    color: var(--clr-primary-600);
+}
+
+.about_article_paragraph_struct::before {
+    content: url(/images/about/sun-icon.svg);
+    margin-right: 0.9375rem;
+    vertical-align: middle;
+}
+
+.about_article_paragraph_contact {
+    font-size: 1.5rem;
+    font-weight: var(--fw-700);
+    color: var(--clr-primary-600);
+}
+
+.about_article_paragraph_contact::before {
+    content: url(/images/about/mouthpiece-icon.svg);
+    margin-right: 0.9375rem;
+    vertical-align: middle;
+}
+
+.about_article_paragraph_legal {
+    font-size: 1.5rem;
+    font-weight: var(--fw-700);
+    color: var(--clr-primary-600);
+}
+
+.about_article_paragraph_legal::before {
+    content: url(/images/about/shield-icon.svg);
+    margin-right: 0.9375rem;
+    vertical-align: middle;
+}
+
+.about_article_paragraph_value {
+    font-size: 1.5rem;
+    font-weight: var(--fw-700);
+    color: var(--clr-primary-600);
+}
+
+.about_article_paragraph_value::before {
+    content: url(/images/about/hand-with-heart-icon.svg);
+    margin-right: 0.9375rem;
+    vertical-align: middle;
+}
+
+p a {
+    text-decoration: none;
+    color: var(--clr-primary-500);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+li {
+    display: flex;
+    align-items: baseline;
+}
+
+p[class] {
+    margin-top: 3.4375rem;
+    margin-bottom: 1.5rem;
+}
+
+
+
+p[class="about_article_paragraph"] {
+    margin-top: 2.3125rem;
+}
+
+.about_article .about_article_paragraphp {
+    margin-top: 10rem;
+}
+
+.about_article_quote {
+    position: relative;
+    padding: 2.0625rem 0 2.0625rem 3.75rem;
+    margin: 1.875rem 0;
+    background-color: var(--clr-span);
+    border-left: 5px solid var(--clr-border-about);
+}
+
+.about_article_quote img {
+    position: absolute;
+    margin: 0;
+    top: 23%;
+    left: 3%;
+
+}

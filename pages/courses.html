@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/courses.css">
+    <link rel="shortcut icon" href="/images/maple-leaf.png" type="image/x-icon">
+    <title>Услуги и курсы</title>
+</head>
+<body>
+    <header>
+        <!-- navigation header section -->
+        <div class="navigation_top">  
+            <nav class="navigation__header_top">
+                <ul class="navigation__header_top_left">
+                    <li> <a href="#" target="_blank">О проекте</a></li>
+                    <li> <a href="#" target="_blank">Вакансии</a></li>
+                    <li> <a href="#" target="_blank">Контакты</a></li>
+                </ul>
+                <ul class="navigation__header_top_right">
+                    <li  class="navigation__header_city" onclick="dropCity()"> 
+                        <a class="link" href="#">17°C,Торонто</a>
+                            <ul id="city" class="navigation__header_drop_city">
+                                <li><a href="#">Калгари</a></li>
+                                <li><a href="#">Квебек-сити</a></li>
+                                <li><a href="#">Монреаль</a></li>
+                                <li><a href="#">Оттава</a></li>
+                                <li><a href="#">Торонто</a></li>
+                            </ul>
+                    </li>
+                    <li class="navigation__header_language">
+                        <a href="#">Русский</a>
+                        <ul class="navigation__header_drop_languages">
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">Español</a></li>
+                            <li><a href="#">Français</a></li>
+                            <li><a href="#">Italiano</a></li>
+                            <li><a href="#">Polszczyzna</a></li>
+                            <li><a href="#">Português</a></li>
+                            <li><a href="#">Русский</a></li>
+                            <li><a href="#">Український</a></li>
+                        </ul>
+                    </li>
+                    <li class="navigation__header_account"> 
+                        <a href="#">Мой аккаунт</a>
+                        <ul class="navigation__header_drop_account">
+                            <li><a href="#">Профиль</a></li>
+                            <li><a href="#">Курсы</a></li>
+                            <li><a href="#">Монеты</a></li>
+                            <li><a href="#">Уведомления</a></li>
+                            <li><a href="#">Настройки</a></li>
+                            <li><a href="#"> <span> Выход </span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+        <!-- main  header navigation section -->
+        <div class="navigation__header_wide_container">
+            <nav class="navigation__header_bottom">
+            <a href="/index.html"> <img class="navigation__header_bottom_logo" src="/images/logo.png" alt="logo"></a>
+            <ul class="navigation__header_bottom_menu_row">
+                <li><a href="/pages/immigration_article.html" target="_blank">Иммиграция</a></li>
+                <li><a href="#" target="_blank">Учеба</a></li>
+                <li><a href="#" target="_blank">Работа</a></li>
+                <li><a href="#" target="_blank">Визы</a></li>
+                <li><a href="#" target="_blank">Усуги и курсы</a></li>
+                <li><a href="#" target="_blank">Блог</a></li>
+            </ul>
+        
+            <div class="navigation__header_search_section"> 
+                <div class="navigation__header_search_field">
+                    <input type="search">
+                    <input type="submit" value="">
+                    
+                </div>
+                <button class="navigation__header_button_search" type="button"></button>
+                <button class="navigation__header_bottom_button"> Оценить шансы </button>
+            </div>
+            </nav>  
+        </div>  
+    </header>
+
+    <main>
+        <div class="courses_header">
+            <h2>Услуги и курсы</h2>
+            <p>Хотите переехать в Канаду, но не знаете с чего начать или как подготовить документы? Заказывайте консультацию, проходите обучение на курсах или же приобретайте электронные книги.</p>
+        </div>
+        <!-- section services -->
+        <section class="services">
+            <div class="services_limit">
+                <h3>Услуги</h3>
+                <div class="services_items">
+                    <div class="services_card">
+                        <div class="services_card_images">
+                            <img src="/images/courses/courses_flag_canada.jpg" alt="Консультация по иммиграции или учебе">
+                            <img src="/images/courses/courses_logo.svg" alt="logo">
+                        </div>
+                        <div class="services_card_contain">
+                            <div class="services_card_text">
+                                <a href="">Консультация по иммиграции или учебе</a>
+                                <p>Нужно больше информации о переезде в Канаду? Оцените свои шансы у лицензированного иммиграционного консультатнта!</p>
+                            </div>
+                            <div class="services_card_cost"> 
+                                <div class="services_card_money">
+                                    <span class="services_card_money_ruble">5950 &#x20bd;</span>
+                                    <span class="services_card_money_dollar"> &dollar;100 CAD</span>
+                                </div>
+                                <button class="services_card_btn">Подробнее</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="services_card">
+                        <div class="services_card_images">
+                            <img src="/images/courses/courses_girl.jpg" alt="Онлайн-изучение английского языка">
+                            <img src="/images/courses/courses_logo.svg" alt="logo">
+                        </div>
+                        <div class="services_card_contain">
+                            <div class="services_card_text">
+                                <a href="">Онлайн-изучение английского языка</a>
+                                <p>Прокачайте английский в крупнейшей канадской языковой школе,не выходя из дома.Занятия в удобное для вас время!</p>
+                            </div>
+                            <div class="services_card_cost"> 
+                                <div class="services_card_money">
+                                    <span class="services_card_money_ruble">7440 &#x20bd;</span>
+                                    <span class="services_card_money_dollar"> &dollar;130 CAD</span>
+                                </div>
+                                <button class="services_card_btn">Подробнее</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="services_card">
+                        <div class="services_card_images">
+                            <img src="/images//courses/courses_write.jpg" alt="Написание резюме для различных профессий">
+                            <img src="/images/courses/courses_logo.svg" alt="logo">
+                        </div>
+                        <div class="services_card_contain">
+                            <div class="services_card_text">
+                                <a href="">Написание резюме для различных профессий</a>
+                                <p>Хотите найти работу в Канаде? Вам нужно профессиональное резюме.</p>
+                            </div>
+                            <div class="services_card_cost"> 
+                                <div class="services_card_money">
+                                    <span class="services_card_money_ruble">5950 &#x20bd;</span>
+                                    <span class="services_card_money_dollar"> &dollar;100 CAD</span>
+                                </div>
+                                <button class="services_card_btn">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+            <!-- section courses -->
+        <section class="courses">
+            <div class="services_limit">
+                <h3>Курсы</h3>
+                <div class="services_items">
+                    <div class="services_card">
+                        <div class="services_card_images">
+                            <img src="/images/courses/courses_section_pic_1.jpg" alt="Как найти работу в Канаде">
+                            <img src="/images/courses/courses_logo.svg" alt="logo">
+                        </div>
+                        <div class="services_card_contain">
+                            <div class="services_card_text">
+                                <a href="">Как найти работу в Канаде</a>
+                                <p>Обучающий курс создан при участии канадского специалиста по найму персонала с 9-летним опытом работы в Канаде.</p>
+                            </div>
+                            <div class="services_card_cost"> 
+                                <div class="services_card_money">
+                                    <span class="services_card_money_ruble">29950 &#x20bd;</span>
+                                    <span class="services_card_money_dollar"> &dollar;515 CAD</span>
+                                </div>
+                                <button class="services_card_btn">Подробнее</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="services_card">
+                        <div class="services_card_images">
+                            <img src="/images/courses/courses_section_pic_2.jpg" alt="Основные способы иммиграции в Канаду">
+                            <img src="/images/courses/courses_logo.svg" alt="logo">
+                        </div>
+                        <div class="services_card_contain">
+                            <div class="services_card_text">
+                                <a href="">Основные способы иммиграции в Канаду</a>
+                                <p>Бесплатный видеокурс, который рассказывает как вам переехать в Канаду.</p>
+                            </div>
+                            <div class="services_card_cost"> 
+                                <div class="services_card_money">
+                                    <span class="services_card_money_free">Бесплатно</span>
+                                </div>
+                                <button class="services_card_btn">Подробнее</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="services_card">
+                        <div class="services_card_images">
+                            <img src="/images//courses/courses_section_pic_3.jpg" alt="Основные способы иммиграции в Канаду">
+                            <img src="/images/courses/courses_logo.svg" alt="logo">
+                        </div>
+                        <div class="services_card_contain">
+                            <div class="services_card_text">
+                                <a href="">Основные способы иммиграции в Канаду</a>
+                                <p>Бесплатный видеокурс, который рассказывает как вам переехать в Канаду.</p>
+                            </div>
+                            <div class="services_card_cost"> 
+                                <div class="services_card_money">
+                                    <span class="services_card_money_free">Бесплатно</span>
+                                </div>
+                                <button class="services_card_btn">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section books -->
+        <section class="books">
+            <div class="services_limit">
+                <h3>Книги</h3>
+                <div class="books_items">
+                    <div class="services_card books_card">
+                        <div class="services_card_images">
+                            <img src="/images/courses/book-1.jpg" alt="15 шагов для переезда в Канаду">
+                            <img src="/images/courses/courses_logo.svg" alt="logo">
+                        </div>
+                        <div class="services_card_contain">
+                            <div class="services_card_text">
+                                <a href="">15 шагов для переезда в Канаду</a>
+                                <p>Хотите иммигрировать в Канаду, но не знаете с чего начать? Мы собрали 15 самых важных шагов, которые надо пройти.</p>
+                            </div>
+                            <div class="services_card_cost"> 
+                                <div class="services_card_money">
+                                    <span class="services_card_money_ruble">29950 &#x20bd;</span>
+                                    <span class="services_card_money_dollar"> &dollar;515 CAD</span>
+                                </div>
+                                <button class="services_card_btn">Подробнее</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="services_card books_card">
+                        <div class="services_card_images">
+                            <img src="/images/courses/book-1.jpg" alt="Расходы на переезд в Канаду">
+                            <img src="/images/courses/courses_logo.svg" alt="logo">
+                        </div>
+                        <div class="services_card_contain">
+                            <div class="services_card_text">
+                                <a href="">Расходы на переезд в Канаду</a>
+                                <p>Сколько денег нужно для иммиграции в Канаду, а также для жизни в первое время? Рассказываем в PDF-книге.</p>
+                            </div>
+                            <div class="services_card_cost"> 
+                                <div class="services_card_money">
+                                    <span class="services_card_money_ruble">29950 &#x20bd;</span>
+                                    <span class="services_card_money_dollar"> &dollar;515 CAD</span>
+                                </div>
+                                <button class="services_card_btn">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services_card books_card">
+                        <div class="services_card_images">
+                            <img src="/images/courses/book-1.jpg" alt="Выбор города для переезда в Канаду">
+                            <img src="/images/courses/courses_logo.svg" alt="logo">
+                        </div>
+                        <div class="services_card_contain">
+                            <div class="services_card_text">
+                                <a href="">Выбор города для переезда в Канаду</a>
+                                <p>Как выбрать провинцию и город для жизни в Канаде?</p>
+                            </div>
+                            <div class="services_card_cost"> 
+                                <div class="services_card_money">
+                                    <span class="services_card_money_ruble">29950 &#x20bd;</span>
+                                    <span class="services_card_money_dollar"> &dollar;515 CAD</span>
+                                </div>
+                                <button class="services_card_btn">Подробнее</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="services_card books_card">
+                        <div class="services_card_images">
+                            <img src="/images/courses/book-1.jpg" alt="Ошибки при составлении резюме">
+                            <img src="/images/courses/courses_logo.svg" alt="logo">
+                        </div>
+                        <div class="services_card_contain">
+                            <div class="services_card_text">
+                                <a href="">Ошибки при составлении резюме</a>
+                                <p>Ищете работу в Канаде, но на ваши резюме не отвечают работодатели? Возможно, дело в вашем плохом резюме.</p>
+                            </div>
+                            <div class="services_card_cost"> 
+                                <div class="services_card_money">
+                                    <span class="services_card_money_ruble">29950 &#x20bd;</span>
+                                    <span class="services_card_money_dollar"> &dollar;515 CAD</span>
+                                </div>
+                                <button class="services_card_btn">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services_card books_card">
+                        <div class="services_card_images">
+                            <img src="/images/courses/book-1.jpg" alt="15 способов иммиграции в Канаду">
+                            <img src="/images/courses/courses_logo.svg" alt="logo">
+                        </div>
+                        <div class="services_card_contain">
+                            <div class="services_card_text">
+                                <a href="">15 способов иммиграции в Канаду</a>
+                                <p>В Канаде более 120 иммиграционных программы, в которых легко запутаться. Описали 15 самых главных способов для переезда.</p>
+                            </div>
+                            <div class="services_card_cost"> 
+                                <div class="services_card_money">
+                                    <span class="services_card_money_ruble">29950 &#x20bd;</span>
+                                    <span class="services_card_money_dollar"> &dollar;515 CAD</span>
+                                </div>
+                                <button class="services_card_btn">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section online-tools -->
+        <section class="online_tools">
+            <div class="services_limit">
+                <h3>Онлайн-инструменты</h3>
+                <div class="services_items online_items">
+                    <div class="services_card online_card">
+                        <div class="services_card_images">
+                            <img src="/images/courses/online-tools-1.jpg" alt="Оценка шансов">
+                            <img src="/images/courses/courses_logo.svg" alt="logo">
+                        </div>
+                        <div class="services_card_contain">
+                            <div class="services_card_text">
+                                <a href="">Оценка шансов</a>
+                                <p>Оцените свои шансы на иммиграцию в Канаду с помощью искусственного интеллекта!</p>
+                            </div>
+                            <div class="services_card_cost"> 
+                                <div class="services_card_money">
+                                    <span class="online_tools_money_free">Бесплатно</span>
+                                </div>
+                                <button class="services_card_btn">Подробнее</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="services_card online_card">
+                        <div class="services_card_images">
+                            <img src="/images/courses/online-tools-2.jpg" alt="Тест английского языка">
+                            <img src="/images/courses/courses_logo.svg" alt="logo">
+                        </div>
+                        <div class="services_card_contain">
+                            <div class="services_card_text">
+                                <a href="">Тест английского языка</a>
+                                <p>Узнайте свой уровенень владения английским, ответив на 45 вопросов.</p>
+                            </div>
+                            <div class="services_card_cost"> 
+                                <div class="services_card_money">
+                                    <span class="online_tools_money_free">Бесплатно</span>
+                                </div>
+                                <button class="services_card_btn">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services_card online_card">
+                        <div class="services_card_images">
+                            <img src="/images//courses/online-tools-3.jpg" alt="Тест французского языка">
+                            <img src="/images/courses/courses_logo.svg" alt="logo">
+                        </div>
+                        <div class="services_card_contain">
+                            <div class="services_card_text">
+                                <a href="">Тест французского языка</a>
+                                <p>А еще у нас есть такой же тест, но для проверки знаний второго государственного языка Канады.</p>
+                            </div>
+                            <div class="services_card_cost"> 
+                                <div class="services_card_money">
+                                    <span class="online_tools_money_free">Бесплатно</span>
+                                </div>
+                                <button class="services_card_btn">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services_card online_card">
+                        <div class="services_card_images">
+                            <img src="/images/courses/online-tools-4.jpg" alt="Проверка резюме">
+                            <img src="/images/courses/courses_logo.svg" alt="logo">
+                        </div>
+                        <div class="services_card_contain">
+                            <div class="services_card_text">
+                                <a href="">Проверка резюме</a>
+                                <p>Вы знаете, что резюме для Канады и России или Украины очень отличается? Давайте проверим соответствие канадским стандартам вашего.</p>
+                            </div>
+                            <div class="services_card_cost"> 
+                                <div class="services_card_money">
+                                    <span class="online_tools_money_free">Бесплатно</span>
+                                </div>
+                                <button class="services_card_btn">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+    </main>
+      <!-- footer section -->
+
+      <footer>
+        <div class="footer_limit_container">
+            <div class="footer_content">
+                <a href="/index.html"><img src="/images/footer-logo_immigrant.png" alt="logo"></a>
+                <nav class="navigation_footer">
+                    
+                    <ul class="navigation_footer_links">
+                        <li><a href="">Иммиграция</a></li>
+                        <li><a href="">Учеба</a></li>
+                        <li><a href="">Работа</a></li>
+                        <li><a href="">Оценка шансов</a></li>
+                        <li><a href="">Тест английского</a></li>
+                        <li><a href="">Тест французского</a></li>
+                    </ul>
+                    <ul class="navigation_footer_links">
+                        <li><a href="">О проекте</a></li>
+                        <li><a href="/pages/courses.html">Услуги и курсы</a></li>
+                        <li><a href="">Каталог бизнесов</a></li>
+                        <li><a href="">Вакансии</a></li>
+                        <li><a href="">Блог</a></li>
+                        <li><a href="">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="footer_content_social">
+                    <div class="footer_content_social_links">
+                        <ul>
+                            <li><a href="https://ru-ru.facebook.com/" target="_blank"><img src="/images/facebook-footer.png" alt="facebook"></a></li>
+                            <li><a href="https://vk.com/" target="_blank"><img src="/images/vk-footer.png" alt="vk"></a></li>
+                            <li><a href="https://www.instagram.com/" target="_blank"><img src="/images/instagram-footer.png" alt="instagram"></a></li>
+                            <li><a href="https://web.telegram.org/" target="_blank"><img src="/images/telegram-footer.png" alt="telegram"></a></li>
+                        </ul>
+                        <a href=""><img src="/images/youtube-footer.png" alt="youtube"></a>
+                    </div>
+                    <a href="mail@immigrant.today">mail@immigrant.today</a> 
+                </div>
+            </div>
+            <div class="footer_copyright_licence">
+                <div class="footer_copyright_licence_limit_container">
+                    <p> &copy; 2015-2021 Imigrant.Today </p>
+                    <div class="footer_copyright_licence_block_links">
+                        <a href="">Политика конфиденциальности</a> 
+                        <a href="">Условия использования</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/script.js"></script>
+</body>
+</html>
