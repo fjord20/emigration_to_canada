@@ -23,6 +23,7 @@
     --clr-footer-border: #2F2F2F;
     --clr-footer-bottom: #202020;
     --clr-border-about: #468E87;
+    --clr-rating-stars: #FFFF00;
     --ff-primary: 'proxima-nova', sans-serif;
     --fz-primary: 16px;
     --fw-400: 400;
@@ -385,8 +386,6 @@ input[type="search"] {
     width: 45rem;
 }
 
-
-
  /* section help in immigration */
 .container__help_in_immigration {
     background: url(/images/Group_red_dotted.png) no-repeat 10% 100%,
@@ -394,47 +393,14 @@ input[type="search"] {
                 url(/images/Vector.png) no-repeat 2% 77%, 
                 url(/images/Vector.png) no-repeat 77% 30%,
                 url(/images/red_rectangle.png) no-repeat right;
-    
     background-color: var(--clr-background);
 }
-
 
 .container__help_in_immigration_limit {
     max-width: 1200px;
     height: 100%;
     margin: 0 auto;
-    background: url(/images/help_in_immigration_girl.png) no-repeat right bottom;
-    
-}
-
-@media screen and (max-width:1440px) {
-    .container__help_in_immigration {
-        background: url(/images/Group_red_dotted.png) no-repeat 1% 100%,
-                    url(/images/Group_white_dotted.png) no-repeat 110% 80%,
-                    url(/images/Vector.png) no-repeat 87% 30%,
-                    url(/images/red_rectangle.png) no-repeat 125%;
-        background-color: var(--clr-background);
-    } 
-}
-
-@media screen and (min-width:1220px) and (max-width: 1400px) {
-    .container__help_in_immigration {
-        background: url(/images/Group_white_dotted.png) no-repeat 110% 80%,
-                    url(/images/Group_red_dotted.png) no-repeat -2% 100%,
-                    url(/images/Vector.png) no-repeat 88% 30%,
-                    url(/images/red_rectangle.png) no-repeat 145%; 
-        background-color: var(--clr-background);
-    }
-    
-}
-
-@media screen and (max-width:1220px) {
-    .container__help_in_immigration {
-        background: url(/images/Vector.png) no-repeat 93% 30%,
-                    url(/images/red_rectangle.png) no-repeat 150%; 
-        background-color: var(--clr-background);
-    }
-    
+    background: url(/images/help_in_immigration_girl.png) no-repeat right bottom;   
 }
 
 .container__help_in_immigration_list {
@@ -555,7 +521,6 @@ input[type="search"] {
     background-color: var(--clr-content-slider); 
 }
 
-
 .slider li:hover {
     filter: drop-shadow(-5px 0px 10px rgba(190, 190, 190, 0.25)) drop-shadow(5px 5px 10px rgba(190, 190, 190, 0.25));
 }
@@ -563,6 +528,13 @@ input[type="search"] {
 .slider li:hover .slider_contain a {
     color: var(--clr-primary-500);
 }
+
+.slider li:hover .popular_offers_article_button {
+    background-color: var(--clr-primary-500); 
+    color: var(--clr-content-slider);
+}
+
+
 
 .slider img {
     display: block;
@@ -750,13 +722,11 @@ main .no_background {
 .immigration_article img {
     display: block;
     background-image: url(/images/logo_popular_offers_article.png);
-    transition: 0.7s;
-    
+    transition: 0.7s; 
 }
 
 .immigration_article img:hover {
     transform: scale(1.3);
-
 }
 
 /* section 3 where_to_begin */
@@ -801,6 +771,10 @@ main .no_background {
     padding: 4.375rem 0;
 }
 
+.where_to_begin_items:hover {
+    filter: drop-shadow(-5px 0px 10px rgba(190, 190, 190, 0.25)) drop-shadow(5px 5px 10px rgba(190, 190, 190, 0.25));
+}
+
 .where_to_begin_items a {
     border: 1px solid var(--clr-background);
     border-top: none;
@@ -831,6 +805,7 @@ main .no_background {
     background-color: var(--clr-link-active);
     color: var(--clr-primary-500);
     border-left: 4px solid var(--clr-primary-500);
+    
 }
 
 .where_to_begin_items > a:last-child:hover {
@@ -1050,7 +1025,6 @@ form {
     align-items: center;
     height: 4rem;
     border-radius: 0.3125rem;
-    /* border: 1px solid var(--clr-input-border); */
 }
 
 .enter_answer input:first-child {

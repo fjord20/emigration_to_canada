@@ -1,0 +1,78 @@
+@import url(/style/reset.css); 
+@import url(/style/style.css); 
+@import url(/style/immigration_article.css); 
+
+.access_limit_container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.access_limit_container > h2 {
+    padding: 2.5rem 0 1.875rem 0;
+    font-size: 2rem;
+    font-weight: var(--fw-700);
+    color: var(--clr-primary-600);
+}
+
+.access_denied {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1.875rem;
+}
+
+.add_to_community_container .access_denied_form {
+    max-width: 100%;
+}
+
+.access_denied_link {
+    display: flex;
+    flex-direction: column; 
+}
+
+.access_denied_link:hover {
+    filter: drop-shadow(-5px 0px 10px rgba(190, 190, 190, 0.25)) drop-shadow(5px 5px 10px rgba(190, 190, 190, 0.25));
+}
+
+.access_denied_link a {
+    border: 1px solid var(--clr-background);
+    border-top: none;
+}
+
+.access_denied_form form {
+    max-width: 100%;
+}
+
+.access_denied_link_main {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    border-radius: 0.625rem;
+    overflow: hidden;
+}
+
+.access_denied_link_main img {
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    opacity: 0.5;
+}
+
+.access_denied_link_main img:hover {
+   transform: scale(1.3);
+}
+
+.access_denied_link_main span {
+    position: absolute;
+    width: 100%;
+    bottom: 0%;
+    padding: 0.75rem 0.875rem;
+    font-size: 1.125rem;
+    font-weight: var(--fw-700);
+    color: var(--clr-span);
+    background: rgba(30, 34, 46, 0.4);
+}
+
+.access_denied .add_to_community_container {
+    padding-top: 0;
+}

@@ -1,0 +1,57 @@
+@import url(/style/style.css);
+@import url(/style/reset.css);
+@import url(/style/ontario_article.css);
+@import url(/style/about.css);
+
+.contacts_article {
+    padding: 2.5rem 0 3.125rem 0;
+}
+
+.contacts_article h2 {
+    margin-bottom: 1.875rem;
+    font-size: 2rem;
+    color: var(--clr-primary-600);
+}
+
+.contacts_article img {
+    margin-top: 1.875rem;
+    margin-bottom: 2.5rem;
+}
+
+.contacts_article > p {
+    margin-bottom: 0.9375rem;
+    line-height: 1.5rem;
+    color: var(--clr-text-header);
+}
+
+.contact_mail::before {
+    content: url(/images/contacts/contact_email.svg);
+    margin-right: 0.625rem;
+    vertical-align: top;
+}
+
+.contact_footer_links {
+    padding: 0;
+    list-style-type: none;
+}
+
+.contact_footer_links li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.625rem;
+}
+
+.contact_footer_links li::before{
+    display: inline-block;
+    content: url(/images/list-type-red.svg);
+    margin-right: 0.625rem;
+}
+
+.contact_footer_links li a {
+    text-decoration: none;
+    color: var(--clr-primary-600);
+}
+
+.contact_block {
+    padding-top: 0;
+}

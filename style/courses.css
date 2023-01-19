@@ -89,7 +89,7 @@
     flex-direction: column;
     padding: 1.25rem 1.25rem 1.875rem 1.25rem;
     height: 100%;
-    gap: 1.875rem;
+    gap: 1rem;
     justify-content: space-between;
 }
 

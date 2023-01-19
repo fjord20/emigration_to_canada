@@ -38,7 +38,6 @@
     border-radius: 0.25rem;
     background-color: var(--clr-background);
     /* display: none; */
-
 }
 
 .question_block {
@@ -127,7 +126,6 @@
 
 .link_transparent {
     position: absolute;
-    /* width: 40%; */
     left: 5%;
     bottom: 7%;
     padding: 0.3125rem 0.625rem;

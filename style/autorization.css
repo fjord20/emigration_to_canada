@@ -1,0 +1,121 @@
+@import url(/style/reset.css); 
+@import url(/style/style.css);
+
+
+
+.autorization_limit_container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.autorization {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--clr-input-border);
+}
+
+.autorization h1 {
+    color: var(--clr-primary-600);
+    margin-bottom: 2.5rem;
+}
+
+.back_link {
+    display: block;
+    text-decoration: none;
+    color: var(--clr-primary-200);
+    margin-top: 0.625rem;
+    margin-bottom: 1rem;
+}
+
+.back_link::before{
+    content: url(/images/autorization/back-arrow.svg);
+    vertical-align: top;
+    margin-right: 0.625rem;
+    margin-top: 0.625rem;
+}
+
+form {
+    width: 100%;
+}
+
+input {
+    margin-top: 1.25rem;
+    border: 1px solid var(--clr-input-border);
+    border-radius: 0.3125rem;
+    padding: 0.9375rem;
+    color: var(--clr-input-placeholder);
+    outline: none;
+}
+
+form button {
+    width: 100%;
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem;
+    border: none;
+    padding: 1.25rem;
+    border-radius: 0.25rem;
+    background: var(--clr-primary-500);
+    font-size: 1.125rem;
+    font-weight: var(--fw-700);
+    color: var(--clr-content-slider);
+    cursor: pointer;
+}
+
+.forget_password_link {
+    margin-bottom: 3.125rem;
+    text-decoration: underline;
+    font-size: 1.25rem;
+    color: var(--clr-primary-500);
+
+}
+
+.registration {
+    display: flex;
+    max-width: 50%;
+    padding: 3.125rem 0 4.375rem 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--clr-input-border);
+}
+
+.registration button {
+    width: 100%;
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem;
+    border: 1px solid var(--clr-primary-500);
+    padding: 1.25rem;
+    border-radius: 0.25rem;
+    background: var(----clr-content-slider);
+    font-size: 1.125rem;
+    font-weight: var(--fw-700);
+    color: var(--clr-primary-500);
+    cursor: pointer;
+}
+
+.registration button:hover {
+    color: var(--clr-content-slider);
+    background: var(--clr-btn-hover);
+}
+
+.autorization button:hover {
+    color: var(--clr-content-slider);
+    background: var(--clr-btn-hover);
+}
+
+.registration h2 {
+    color: var(--clr-primary-600);
+    margin-bottom: 1.25rem;
+}
+
+.registration p {
+    margin-bottom: 2.5rem;
+    line-height: 1.5rem;
+    color: var(--clr-text-header);
+    text-align: center;
+}

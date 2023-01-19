@@ -17,18 +17,18 @@
                 <ul class="navigation__header_top_left">
                     <li> <a href="/pages/about.html" target="_blank">О проекте</a></li>
                     <li> <a href="#" target="_blank">Вакансии</a></li>
-                    <li> <a href="#" target="_blank">Контакты</a></li>
+                    <li> <a href="/pages/contacts.html" target="_blank">Контакты</a></li>
                 </ul>
                 <ul class="navigation__header_top_right">
                     <li  class="navigation__header_city" onclick="dropCity()"> 
                         <a class="link" href="#">17°C,Торонто</a>
-                            <ul id="city" class="navigation__header_drop_city">
-                                <li><a href="#">Калгари</a></li>
-                                <li><a href="#">Квебек-сити</a></li>
-                                <li><a href="#">Монреаль</a></li>
-                                <li><a href="#">Оттава</a></li>
-                                <li><a href="#">Торонто</a></li>
-                            </ul>
+                        <ul id="city" class="navigation__header_drop_city">
+                            <li><a href="#">Калгари</a></li>
+                            <li><a href="#">Квебек-сити</a></li>
+                            <li><a href="#">Монреаль</a></li>
+                            <li><a href="#">Оттава</a></li>
+                            <li><a href="#">Торонто</a></li>
+                        </ul>
                     </li>
                     <li class="navigation__header_language">
                         <a href="#">Русский</a>
@@ -44,46 +44,43 @@
                         </ul>
                     </li>
                     <li class="navigation__header_account"> 
-                        <a href="#">Мой аккаунт</a>
+                        <a href="/pages/autorization.html">Мой аккаунт</a>
                         <ul class="navigation__header_drop_account">
                             <li><a href="#">Профиль</a></li>
-                            <li><a href="#">Курсы</a></li>
-                            <li><a href="#">Монеты</a></li>
-                            <li><a href="#">Уведомления</a></li>
-                            <li><a href="#">Настройки</a></li>
+                            <li><a href="/pages/access_denied.html">Курсы</a></li>
+                            <li><a href="/pages/access_denied.html">Монеты</a></li>
+                            <li><a href="/pages/access_denied.html">Уведомления</a></li>
+                            <li><a href="/pages/access_denied.html">Настройки</a></li>
                             <li><a href="#"> <span> Выход </span></a></li>
                         </ul>
                     </li>
                 </ul>
-
             </nav>
         </div>
         <!-- main  header navigation section -->
         <div class="navigation__header_wide_container">
             <nav class="navigation__header_bottom">
-            <a href="/index.html"> <img class="navigation__header_bottom_logo" src="/images/logo.png" alt="logo"></a>
-            <ul class="navigation__header_bottom_menu_row">
-                <li><a href="/pages/immigration_article.html" target="_blank">Иммиграция</a></li>
-                <li><a href="#" target="_blank">Учеба</a></li>
-                <li><a href="#" target="_blank">Работа</a></li>
-                <li><a href="#" target="_blank">Визы</a></li>
-                <li><a href="/pages/courses.html" target="_blank">Усуги и курсы</a></li>
-                <li><a href="#" target="_blank">Блог</a></li>
-            </ul>
-        
-            <div class="navigation__header_search_section"> 
-                <div class="navigation__header_search_field">
-                    <input type="search">
-                    <input type="submit" value="">
-                    
+                <a href="/index.html"> <img class="navigation__header_bottom_logo" src="/images/logo.png" alt="logo"></a>
+                <ul class="navigation__header_bottom_menu_row">
+                    <li><a href="/pages/immigration_article.html" target="_blank">Иммиграция</a></li>
+                    <li><a href="#" target="_blank">Учеба</a></li>
+                    <li><a href="#" target="_blank">Работа</a></li>
+                    <li><a href="#" target="_blank">Визы</a></li>
+                    <li><a href="/pages/courses.html" target="_blank">Усуги и курсы</a></li>
+                    <li><a href="#" target="_blank">Блог</a></li>
+                </ul>
+                <div class="navigation__header_search_section"> 
+                    <div class="navigation__header_search_field">
+                        <input type="search">
+                        <input type="submit" value="">
+                    </div>
+                    <button class="navigation__header_button_search"></button>
+                    <button class="navigation__header_bottom_button">Оценить шансы</button>
                 </div>
-                <button class="navigation__header_button_search" type="button"></button>
-                <button class="navigation__header_bottom_button"> Оценить шансы </button>
-            </div>
             </nav>  
         </div>  
     </header>
-
+    <!-- main section -->
     <main>
         <div class="container__help_in_immigration">
             <div class="container__help_in_immigration_limit">
@@ -97,7 +94,6 @@
                         <li> <img src="/images/maple-leaf.png" alt="maple-leaf">
                             <p> Лицензия на оказание иммиграционных услуг </p></li>
                     </ul> 
-                    
                     <div class="container__help_in_immigration_list_btn_block">
                         <button class="container__help_in_immigration_list_btn_more">Подробнее</button>
                         <button class="container__help_in_immigration_list_btn_question">Задать вопрос</button>
@@ -105,14 +101,13 @@
                 </div>
             </div>
         </div>
-        
         <!-- section slider 1 -->
         <section class="popular_offers">
             <div class="popular_offers_header">
                 <h2>Популярные предложения</h2>
                 <div class="popular_offers_header_arrow">
-                <p> <a href="#">Смотреть все</a></p>
-                <img src="/images/Arrow_right.svg" alt="Arrow_right">
+                    <p><a href="#">Смотреть все</a></p>
+                    <img src="/images/Arrow_right.svg" alt="Arrow_right">
                 </div>
             </div>
                 <ul class="slider">
@@ -122,7 +117,7 @@
                             <img src="/images/logo_popular_offers_article.png" alt="logo">
                         </div>
                         <div class="slider_contain">
-                            <a href="">Консультация по иммиграции или учебе</a>
+                            <a href="#">Консультация по иммиграции или учебе</a>
                             <div class="slider_contain_text">
                                 <p>Нужно больше информации о переезде в Канаду? Оцените свои шансы у лицензированного иммиграционного консультанта!</p>
                                 <div class="popular_offers_article_cost"> 
@@ -140,8 +135,8 @@
                             <img src="/images/popular_offers_article_2.png" alt="flag">
                             <img src="/images/logo_popular_offers_article.png" alt="logo">
                         </div>
-                         <div class="slider_contain">
-                            <a href="">Онлайн-изучение английского языка</a>
+                        <div class="slider_contain">
+                            <a href="#">Онлайн-изучение английского языка</a>
                             <div class="slider_contain_text">
                                 <p>Прокачайте английский в крупнейшей канадской языковой школе,не выходя из дома.Занятия в удобное для вас время!</p>
                                 <div class="popular_offers_article_cost"> 
@@ -160,7 +155,7 @@
                             <img src="/images/logo_popular_offers_article.png" alt="logo">
                         </div>
                          <div class="slider_contain">
-                            <a href="">Написание резюме для различных профессий</a>
+                            <a href="#">Написание резюме для различных профессий</a>
                             <div class="slider_contain_text">
                                 <p>Хотите найти работу в Канаде? Вам нужно профессиональное резюме.</p>
                                 <div class="popular_offers_article_cost"> 
@@ -178,8 +173,8 @@
                             <img src="/images/popular_offers_article_4.png" alt="flag">
                             <img src="/images/logo_popular_offers_article.png" alt="logo">
                         </div>
-                         <div class="slider_contain">
-                            <a href="">Как найти работу в Канаде</a>
+                        <div class="slider_contain">
+                            <a href="#">Как найти работу в Канаде</a>
                             <div class="slider_contain_text">
                                 <p>Обучающий курс создан при участии канадского специалиста по найму персонала с 9-летним опытом работы в Канаде.</p>
                                 <div class="popular_offers_article_cost"> 
@@ -197,8 +192,8 @@
                             <img src="/images/popular_offers_article_2.png" alt="flag">
                             <img src="/images/logo_popular_offers_article.png" alt="logo">
                         </div>
-                         <div class="slider_contain">
-                            <a href="">Консультация по иммиграции или учебе</a>
+                        <div class="slider_contain">
+                            <a href="#">Консультация по иммиграции или учебе</a>
                             <div class="slider_contain_text">
                                 <p>Нужно больше информации о переезде в Канаду? Оцените свои шансы у лицензированного иммиграционного консультанта!</p>
                                 <div class="popular_offers_article_cost"> 
@@ -216,8 +211,8 @@
                             <img src="/images/popular_offers_article_3.png" alt="flag">
                             <img src="/images/logo_popular_offers_article.png" alt="logo">
                         </div>
-                         <div class="slider_contain">
-                            <a href="">Консультация по иммиграции или учебе</a>
+                        <div class="slider_contain">
+                            <a href="#">Консультация по иммиграции или учебе</a>
                             <div class="slider_contain_text">
                                 <p>Нужно больше информации о переезде в Канаду? Оцените свои шансы у лицензированного иммиграционного консультанта!</p>
                                 <div class="popular_offers_article_cost"> 
@@ -235,8 +230,8 @@
                             <img src="/images/popular_offers_article_4.png" alt="flag">
                             <img src="/images/logo_popular_offers_article.png" alt="logo">
                         </div>
-                         <div class="slider_contain">
-                            <a href="">Консультация по иммиграции или учебе</a>
+                        <div class="slider_contain">
+                            <a href="#">Консультация по иммиграции или учебе</a>
                             <div class="slider_contain_text">
                                 <p>Нужно больше информации о переезде в Канаду? Оцените свои шансы у лицензированного иммиграционного консультанта!</p>
                                 <div class="popular_offers_article_cost"> 
@@ -254,8 +249,8 @@
                             <img src="/images/popular_offers_article_2.png" alt="flag">
                             <img src="/images/logo_popular_offers_article.png" alt="logo">
                         </div>
-                         <div class="slider_contain">
-                            <a href="">Консультация по иммиграции или учебе</a>
+                        <div class="slider_contain">
+                            <a href="#">Консультация по иммиграции или учебе</a>
                             <div class="slider_contain_text">
                                 <p>Нужно больше информации о переезде в Канаду? Оцените свои шансы у лицензированного иммиграционного консультанта!</p>
                                 <div class="popular_offers_article_cost"> 
@@ -270,15 +265,14 @@
                     </li>
                 </ul>
         </section>
-       
          <!-- section slider 2 -->
         <section class="immigration">
             <div class="immigration_limit_container">
                 <div class="popular_offers_header">
                     <h2>Иммиграция</h2>
                     <div class="popular_offers_header_arrow">
-                    <p> <a href="#">Смотреть все</a></p>
-                    <img src="/images/Arrow_right.svg" alt="Arrow_right">
+                        <p><a href="#">Смотреть все</a></p>
+                        <img src="/images/Arrow_right.svg" alt="Arrow_right">
                     </div>
                 </div>                
                 <ul class="slider slider_two">
@@ -296,8 +290,8 @@
                             <img src="/images/slider_2_2.png" alt="flag">
                             <img src="/images/logo_popular_offers_article.png" alt="logo">
                         </div>
-                         <div class="slider_contain">
-                            <a href="">Федеральные программы иммиграции</a>
+                        <div class="slider_contain">
+                            <a href="#">Федеральные программы иммиграции</a>
                         </div>
                     </li>
                     <li>
@@ -305,8 +299,8 @@
                             <img src="/images/slider_2_3.png" alt="flag">
                             <img src="/images/logo_popular_offers_article.png" alt="logo">
                         </div>
-                         <div class="slider_contain">
-                            <a href="">Провинциальные программы иммиграции</a>
+                        <div class="slider_contain">
+                            <a href="#">Провинциальные программы иммиграции</a>
                         </div>
                     </li>
                     <li>
@@ -314,8 +308,8 @@
                             <img src="/images/slider_2_4.png" alt="flag">
                             <img src="/images/logo_popular_offers_article.png" alt="logo">
                         </div>
-                         <div class="slider_contain">
-                            <a href="">Атлантический иммиграционный пилот</a>
+                        <div class="slider_contain">
+                            <a href="#">Атлантический иммиграционный пилот</a>
                         </div>
                     </li>
                     <li>
@@ -323,17 +317,17 @@
                             <img src="/images/slider_2_1.png" alt="flag">
                             <img src="/images/logo_popular_offers_article.png" alt="logo">
                         </div>
-                         <div class="slider_contain">
-                            <a href="">Консультация по иммиграции или учебе</a>
-                         </div>
+                        <div class="slider_contain">
+                            <a href="#">Консультация по иммиграции или учебе</a>
+                        </div>
                     </li>
                     <li>
                         <div class="slider_images">
                             <img src="/images/slider_2_4.png" alt="flag">
                             <img src="/images/logo_popular_offers_article.png" alt="logo">
                         </div>
-                         <div class="slider_contain">
-                            <a href="">Консультация по иммиграции или учебе</a>
+                        <div class="slider_contain">
+                            <a href="#">Консультация по иммиграции или учебе</a>
                         </div>
                     </li>
                     <li>
@@ -341,8 +335,8 @@
                             <img src="/images/slider_2_3.png" alt="flag">
                             <img src="/images/logo_popular_offers_article.png" alt="logo">
                         </div>
-                         <div class="slider_contain">
-                            <a href="">Консультация по иммиграции или учебе</a>
+                        <div class="slider_contain">
+                            <a href="#">Консультация по иммиграции или учебе</a>
                         </div>
                     </li>
                     <li>
@@ -350,19 +344,19 @@
                             <img src="/images/slider_2_2.png" alt="flag">
                             <img src="/images/logo_popular_offers_article.png" alt="logo">
                         </div>
-                         <div class="slider_contain">
-                            <a href="">Консультация по иммиграции или учебе</a>
+                        <div class="slider_contain">
+                            <a href="#">Консультация по иммиграции или учебе</a>
                         </div>
                     </li>
                 </ul>
+            </div>
         </section>
-
         <!-- section 3 where_to_begin -->
-        <section class="where_to_begin ">
+        <section class="where_to_begin">
             <div class="where_to_begin_container">
                 <div class="where_to_begin_items">
                     <div class="where_to_begin_items_header">
-                        <a href="#" ><span> С чего начать </span> </a>
+                        <a href="#" ><span>С чего начать</span></a>
                     </div>
                     <a class="where_to_begin_items_main" href="#"> <img src="/images/where_to_begin_items_1.png" alt="Бесплатная оценка шансов на иммиграцию в Канаду">
                     <span>Бесплатная оценка шансов на иммиграцию в Канаду</span></a>
@@ -371,10 +365,9 @@
                     <a class="where_to_begin_items_a" href="#">Можно ли подавать заявление на иммиграцию в две провинции</a>
                     <a class="where_to_begin_items_a" href="#">Как проверить статус рассмотрения иммиграционных документов в Канаде</a>
                 </div>
-                
                 <div class="where_to_begin_items">
                     <div class="where_to_begin_items_header">
-                        <a href="#" ><span> Новости </span> </a>
+                        <a href="#"><span>Новости</span></a>
                     </div>
                     <a class="where_to_begin_items_main" href="/pages/ontario_article.html"> <img src="/images/where_to_begin_items_2.png" alt="Онтарио восполняет нехватку квалифицированных специалистов">
                     <span>Онтарио восполняет нехватку квалифицированных специалистов</span></a>
@@ -383,7 +376,6 @@
                     <a class="where_to_begin_items_a" href="#">Альберта опубликовала результаты двух розыгрышей</a>
                     <a class="where_to_begin_items_a" href="#">30 000 кандидатов выбраны в программе семейного спонсорства</a>
                 </div>
-
                 <div class="where_to_begin_items">
                     <div class="where_to_begin_items_header">
                         <a href="#" ><span> У вас есть вопросы? </span> </a>
@@ -396,261 +388,264 @@
                 </div>
             </div>
         </section>
-                 <!-- section slider 3 -->
-                 <section class="immigration">
-                    <div class="immigration_limit_container">
-                        <div class="popular_offers_header">
-                            <h2>Учеба</h2>
-                            <div class="popular_offers_header_arrow">
-                            <p> <a href="#">Смотреть все</a></p>
-                            <img src="/images/Arrow_right.svg" alt="Arrow_right">
-                            </div>
-                        </div>                
-                        <ul class="slider slider_three">
-                            <li>  
-                                <div class="immigration_slider_images">
-                                    <img src="/images/teach_slider_1.jpg" alt="castle">
-                                    <img src="/images/logo_popular_offers_article.png" alt="logo">
-                                </div>
-                                 <div class="slider_contain">
-                                    <a href="">Университеты и колледжи Канады</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="slider_images">
-                                    <img src="/images/teach_slider_2.jpg" alt="graduate">
-                                    <img src="/images/logo_popular_offers_article.png" alt="logo">
-                                </div>
-                                 <div class="slider_contain">
-                                    <a href="">Поступление в канадские вузы</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="slider_images">
-                                    <img src="/images/teach_slider_3.jpg" alt="school">
-                                    <img src="/images/logo_popular_offers_article.png" alt="logo">
-                                </div>
-                                 <div class="slider_contain">
-                                    <a href="">Языковые школы в Канаде</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="slider_images">
-                                    <img src="/images/teach_slider_4.jpg" alt="girls">
-                                    <img src="/images/logo_popular_offers_article.png" alt="logo">
-                                </div>
-                                 <div class="slider_contain">
-                                    <a href="">Стоимость обучения в Канаде</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="slider_images">
-                                    <img src="/images/slider_2_1.png" alt="flag">
-                                    <img src="/images/logo_popular_offers_article.png" alt="logo">
-                                </div>
-                                 <div class="slider_contain">
-                                    <a href="">Консультация по иммиграции или учебе</a>
-                                 </div>
-                            </li>
-                            <li>
-                                <div class="slider_images">
-                                    <img src="/images/slider_2_4.png" alt="flag">
-                                    <img src="/images/logo_popular_offers_article.png" alt="logo">
-                                </div>
-                                 <div class="slider_contain">
-                                    <a href="">Консультация по иммиграции или учебе</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="slider_images">
-                                    <img src="/images/slider_2_3.png" alt="flag">
-                                    <img src="/images/logo_popular_offers_article.png" alt="logo">
-                                </div>
-                                 <div class="slider_contain">
-                                    <a href="">Консультация по иммиграции или учебе</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="slider_images">
-                                    <img src="/images/slider_2_2.png" alt="flag">
-                                    <img src="/images/logo_popular_offers_article.png" alt="logo">
-                                </div>
-                                 <div class="slider_contain">
-                                    <a href="">Консультация по иммиграции или учебе</a>
-                                </div>
-                            </li>
-                        </ul>
-                </section>
-                 <!-- section slider 4 -->
-                 <section class="immigration no_background">
-                    <div class="immigration_limit_container">
-                        <div class="popular_offers_header">
-                            <h2>Работа</h2>
-                            <div class="popular_offers_header_arrow">
-                            <p> <a href="#">Смотреть все</a></p>
-                            <img src="/images/Arrow_right.svg" alt="Arrow_right">
-                            </div>
-                        </div>                
-                        <ul class="slider slider_four">
-                            <li>  
-                                <div class="immigration_slider_images">
-                                    <img src="/images/work_slider_1.jpg" alt="workers">
-                                    <img src="/images/logo_popular_offers_article.png" alt="logo">
-                                </div>
-                                 <div class="slider_contain">
-                                    <a href="">Профессии в Канаде</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="slider_images">
-                                    <img src="/images/work_slider_2.jpg" alt="gorl">
-                                    <img src="/images/logo_popular_offers_article.png" alt="logo">
-                                </div>
-                                 <div class="slider_contain">
-                                    <a href="">Поиск работы в Канаде</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="slider_images">
-                                    <img src="/images/work_slider_3.jpg" alt="meeting">
-                                    <img src="/images/logo_popular_offers_article.png" alt="logo">
-                                </div>
-                                 <div class="slider_contain">
-                                    <a href="">Временная работа для иностранцев</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="slider_images">
-                                    <img src="/images/work_slider_4.jpg" alt="meeting">
-                                    <img src="/images/logo_popular_offers_article.png" alt="logo">
-                                </div>
-                                 <div class="slider_contain">
-                                    <a href="">Атлантический иммиграционный пилот</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="slider_images">
-                                    <img src="/images/slider_2_1.png" alt="flag">
-                                    <img src="/images/logo_popular_offers_article.png" alt="logo">
-                                </div>
-                                 <div class="slider_contain">
-                                    <a href="">Консультация по иммиграции или учебе</a>
-                                 </div>
-                            </li>
-                            <li>
-                                <div class="slider_images">
-                                    <img src="/images/slider_2_4.png" alt="flag">
-                                    <img src="/images/logo_popular_offers_article.png" alt="logo">
-                                </div>
-                                 <div class="slider_contain">
-                                    <a href="">Консультация по иммиграции или учебе</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="slider_images">
-                                    <img src="/images/slider_2_3.png" alt="flag">
-                                    <img src="/images/logo_popular_offers_article.png" alt="logo">
-                                </div>
-                                 <div class="slider_contain">
-                                    <a href="">Консультация по иммиграции или учебе</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="slider_images">
-                                    <img src="/images/slider_2_2.png" alt="flag">
-                                    <img src="/images/logo_popular_offers_article.png" alt="logo">
-                                </div>
-                                 <div class="slider_contain">
-                                    <a href="">Консультация по иммиграции или учебе</a>
-                                </div>
-                            </li>
-                        </ul>
-                </section>
-                <!-- section slider 5 -->
-                <section class="immigration">
-                    <div class="immigration_limit_container">
-                        <div class="popular_offers_header">
-                            <h2>Визы</h2>
-                            <div class="popular_offers_header_arrow">
-                            <p> <a href="#">Смотреть все</a></p>
-                            <img src="/images/Arrow_right.svg" alt="Arrow_right">
-                            </div>
-                        </div>                
-                        <ul class="slider slider_five">
-                            <li>  
-                                <div class="immigration_slider_images">
-                                    <img src="/images/visa_slider_1.jpg" alt="nature">
-                                    <img src="/images/logo_popular_offers_article.png" alt="logo">
-                                </div>
-                                 <div class="slider_contain">
-                                    <a href="">Визы в Канаду самостотельно</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="slider_images">
-                                    <img src="/images/visa_slider_2.jpg" alt="friends">
-                                    <img src="/images/logo_popular_offers_article.png" alt="logo">
-                                </div>
-                                 <div class="slider_contain">
-                                    <a href="">Виза для изучения языкаи поиска работы</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="slider_images">
-                                    <img src="/images/visa_slider_3.jpg" alt="visa">
-                                    <img src="/images/logo_popular_offers_article.png" alt="logo">
-                                </div>
-                                 <div class="slider_contain">
-                                    <a href="">Как продлить туристическую визу</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="slider_images">
-                                    <img src="/images/visa_slider_4.jpg" alt="change visa">
-                                    <img src="/images/logo_popular_offers_article.png" alt="logo">
-                                </div>
-                                 <div class="slider_contain">
-                                    <a href="">Изменть туристическую визу на студенческую</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="slider_images">
-                                    <img src="/images/slider_2_1.png" alt="flag">
-                                    <img src="/images/logo_popular_offers_article.png" alt="logo">
-                                </div>
-                                 <div class="slider_contain">
-                                    <a href="">Консультация по иммиграции или учебе</a>
-                                 </div>
-                            </li>
-                            <li>
-                                <div class="slider_images">
-                                    <img src="/images/slider_2_4.png" alt="flag">
-                                    <img src="/images/logo_popular_offers_article.png" alt="logo">
-                                </div>
-                                 <div class="slider_contain">
-                                    <a href="">Консультация по иммиграции или учебе</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="slider_images">
-                                    <img src="/images/slider_2_3.png" alt="flag">
-                                    <img src="/images/logo_popular_offers_article.png" alt="logo">
-                                </div>
-                                 <div class="slider_contain">
-                                    <a href="">Консультация по иммиграции или учебе</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="slider_images">
-                                    <img src="/images/slider_2_2.png" alt="flag">
-                                    <img src="/images/logo_popular_offers_article.png" alt="logo">
-                                </div>
-                                 <div class="slider_contain">
-                                    <a href="">Консультация по иммиграции или учебе</a>
-                                </div>
-                            </li>
-                        </ul>
-                </section>
+        <!-- section slider 3 -->
+        <section class="immigration">
+            <div class="immigration_limit_container">
+                <div class="popular_offers_header">
+                    <h2>Учеба</h2>
+                    <div class="popular_offers_header_arrow">
+                        <p> <a href="#">Смотреть все</a></p>
+                        <img src="/images/Arrow_right.svg" alt="Arrow_right">
+                     </div>
+                </div>                
+                <ul class="slider slider_three">
+                    <li>  
+                        <div class="immigration_slider_images">
+                            <img src="/images/teach_slider_1.jpg" alt="castle">
+                            <img src="/images/logo_popular_offers_article.png" alt="logo">
+                        </div>
+                        <div class="slider_contain">
+                            <a href="">Университеты и колледжи Канады</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slider_images">
+                            <img src="/images/teach_slider_2.jpg" alt="graduate">
+                            <img src="/images/logo_popular_offers_article.png" alt="logo">
+                        </div>
+                        <div class="slider_contain">
+                            <a href="">Поступление в канадские вузы</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slider_images">
+                            <img src="/images/teach_slider_3.jpg" alt="school">
+                            <img src="/images/logo_popular_offers_article.png" alt="logo">
+                        </div>
+                        <div class="slider_contain">
+                            <a href="">Языковые школы в Канаде</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slider_images">
+                            <img src="/images/teach_slider_4.jpg" alt="girls">
+                            <img src="/images/logo_popular_offers_article.png" alt="logo">
+                        </div>
+                        <div class="slider_contain">
+                            <a href="">Стоимость обучения в Канаде</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slider_images">
+                            <img src="/images/slider_2_1.png" alt="flag">
+                            <img src="/images/logo_popular_offers_article.png" alt="logo">
+                        </div>
+                        <div class="slider_contain">
+                            <a href="">Консультация по иммиграции или учебе</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slider_images">
+                            <img src="/images/slider_2_4.png" alt="flag">
+                            <img src="/images/logo_popular_offers_article.png" alt="logo">
+                        </div>
+                        <div class="slider_contain">
+                            <a href="">Консультация по иммиграции или учебе</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slider_images">
+                            <img src="/images/slider_2_3.png" alt="flag">
+                            <img src="/images/logo_popular_offers_article.png" alt="logo">
+                        </div>
+                        <div class="slider_contain">
+                            <a href="">Консультация по иммиграции или учебе</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slider_images">
+                            <img src="/images/slider_2_2.png" alt="flag">
+                            <img src="/images/logo_popular_offers_article.png" alt="logo">
+                        </div>
+                        <div class="slider_contain">
+                            <a href="">Консультация по иммиграции или учебе</a>
+                         </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- section slider 4 -->
+        <section class="immigration no_background">
+            <div class="immigration_limit_container">
+                <div class="popular_offers_header">
+                    <h2>Работа</h2>
+                    <div class="popular_offers_header_arrow">
+                        <p><a href="#">Смотреть все</a></p>
+                        <img src="/images/Arrow_right.svg" alt="Arrow_right">
+                    </div>
+                </div>                
+                <ul class="slider slider_four">
+                    <li>  
+                        <div class="immigration_slider_images">
+                            <img src="/images/work_slider_1.jpg" alt="workers">
+                            <img src="/images/logo_popular_offers_article.png" alt="logo">
+                        </div>
+                        <div class="slider_contain">
+                         <a href="#">Профессии в Канаде</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slider_images">
+                            <img src="/images/work_slider_2.jpg" alt="gorl">
+                            <img src="/images/logo_popular_offers_article.png" alt="logo">
+                        </div>
+                        <div class="slider_contain">
+                            <a href="#">Поиск работы в Канаде</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slider_images">
+                            <img src="/images/work_slider_3.jpg" alt="meeting">
+                            <img src="/images/logo_popular_offers_article.png" alt="logo">
+                        </div>
+                        <div class="slider_contain">
+                            <a href="#">Временная работа для иностранцев</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slider_images">
+                            <img src="/images/work_slider_4.jpg" alt="meeting">
+                            <img src="/images/logo_popular_offers_article.png" alt="logo">
+                        </div>
+                        <div class="slider_contain">
+                            <a href="#">Атлантический иммиграционный пилот</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slider_images">
+                            <img src="/images/slider_2_1.png" alt="flag">
+                            <img src="/images/logo_popular_offers_article.png" alt="logo">
+                        </div>
+                        <div class="slider_contain">
+                            <a href="#">Консультация по иммиграции или учебе</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slider_images">
+                            <img src="/images/slider_2_4.png" alt="flag">
+                            <img src="/images/logo_popular_offers_article.png" alt="logo">
+                        </div>
+                        <div class="slider_contain">
+                            <a href="#">Консультация по иммиграции или учебе</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slider_images">
+                            <img src="/images/slider_2_3.png" alt="flag">
+                            <img src="/images/logo_popular_offers_article.png" alt="logo">
+                        </div>
+                        <div class="slider_contain">
+                            <a href="#">Консультация по иммиграции или учебе</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slider_images">
+                            <img src="/images/slider_2_2.png" alt="flag">
+                            <img src="/images/logo_popular_offers_article.png" alt="logo">
+                        </div>
+                        <div class="slider_contain">
+                            <a href="#">Консультация по иммиграции или учебе</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- section slider 5 -->
+        <section class="immigration">
+            <div class="immigration_limit_container">
+               <div class="popular_offers_header">
+                    <h2>Визы</h2>
+                    <div class="popular_offers_header_arrow">
+                        <p> <a href="#">Смотреть все</a></p>
+                        <img src="/images/Arrow_right.svg" alt="Arrow_right">
+                    </div>
+                </div>                
+                <ul class="slider slider_five">
+                    <li>  
+                        <div class="immigration_slider_images">
+                            <img src="/images/visa_slider_1.jpg" alt="nature">
+                            <img src="/images/logo_popular_offers_article.png" alt="logo">
+                        </div>
+                        <div class="slider_contain">
+                                <a href="#">Визы в Канаду самостотельно</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slider_images">
+                            <img src="/images/visa_slider_2.jpg" alt="friends">
+                            <img src="/images/logo_popular_offers_article.png" alt="logo">
+                        </div>
+                        <div class="slider_contain">
+                            <a href="#">Виза для изучения языкаи поиска работы</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slider_images">
+                            <img src="/images/visa_slider_3.jpg" alt="visa">
+                            <img src="/images/logo_popular_offers_article.png" alt="logo">
+                        </div>
+                        <div class="slider_contain">
+                            <a href="#">Как продлить туристическую визу</a>
+                         </div>
+                    </li>
+                    <li>
+                        <div class="slider_images">
+                            <img src="/images/visa_slider_4.jpg" alt="change visa">
+                            <img src="/images/logo_popular_offers_article.png" alt="logo">
+                        </div>
+                        <div class="slider_contain">
+                            <a href="">Изменть туристическую визу на студенческую</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slider_images">
+                            <img src="/images/slider_2_1.png" alt="flag">
+                            <img src="/images/logo_popular_offers_article.png" alt="logo">
+                        </div>
+                        <div class="slider_contain">
+                            <a href="#">Консультация по иммиграции или учебе</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slider_images">
+                            <img src="/images/slider_2_4.png" alt="flag">
+                            <img src="/images/logo_popular_offers_article.png" alt="logo">
+                        </div>
+                        <div class="slider_contain">
+                            <a href="#">Консультация по иммиграции или учебе</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slider_images">
+                            <img src="/images/slider_2_3.png" alt="flag">
+                            <img src="/images/logo_popular_offers_article.png" alt="logo">
+                        </div>
+                        <div class="slider_contain">
+                            <a href="#">Консультация по иммиграции или учебе</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slider_images">
+                            <img src="/images/slider_2_2.png" alt="flag">
+                            <img src="/images/logo_popular_offers_article.png" alt="logo">
+                        </div>
+                        <div class="slider_contain">
+                            <a href="#">Консультация по иммиграции или учебе</a>
+                        </div>
+                    </li>
+                </ul>
+             </div>
+        </section>
         <!-- section common -->
         <section class="where_to_begin ">
             <div class="where_to_begin_container">
@@ -716,53 +711,49 @@
                     <p>Получите профессиональные советы об иммиграции в Канаду, новости, стратегии и опыт других людей.</p>
                     <p>Нас уже &ndash; <span>55574</span> человек (а)</p>
                 </article>
-                <form action="" method="">                      
-                        <div class="input_fields">
-                            <input id="nameUser" type="text" name="1234" placeholder="Ваше имя">
-                            <input id="email_not_valid" type="email" placeholder="Ваш e-mail">
-                            <input id="pass_empty" type="password" placeholder="Пароль">
-                            <div class="enter_answer">
-                                <input id="numbers" type="text" placeholder="9 + 3 =" disabled>
-                                <input id="answer" type="text" placeholder="Введите ответ">
-                            </div>
+                <form action="#" method="post">                      
+                    <div class="input_fields">
+                        <input id="nameUser" type="text" name="1234" placeholder="Ваше имя">
+                        <input id="email_not_valid" type="email" placeholder="Ваш e-mail">
+                        <input id="pass_empty" type="password" placeholder="Пароль">
+                        <div class="enter_answer">
+                            <input id="numbers" type="text" placeholder="9 + 3 =" disabled>
+                            <input id="answer" type="text" placeholder="Введите ответ">
                         </div>
-                        <div class="form_submit_field">
-                            <input id="submit" type="checkbox" >
-                            <label for="submit"> Я согласен(а) на обработку моих персональных данных </label>
-                        </div>
-                        <div class="form_button_field">
-                            <button class="form_registration_btn"> Зарегистрироваться </button>
-                            <button class="form_login_btn" type="button" onclick="userid_validation()">Войти в аккаунт </button>
-                        </div>
+                    </div>
+                    <div class="form_submit_field">
+                        <input id="submit" type="checkbox" >
+                        <label for="submit"> Я согласен(а) на обработку моих персональных данных </label>
+                    </div>
+                    <div class="form_button_field">
+                        <button class="form_registration_btn"> Зарегистрироваться </button>
+                        <button class="form_login_btn" type="button" onclick="userid_validation()">Войти в аккаунт </button>
+                    </div>
                 </form>
-
             </div>
         </section>
     </main>
-
     <!-- footer section -->
-
     <footer>
         <div class="footer_limit_container">
             <div class="footer_content">
                 <a href="/index.html"><img src="/images/footer-logo_immigrant.png" alt="logo"></a>
-                <nav class="navigation_footer">
-                    
+                <nav class="navigation_footer">   
                     <ul class="navigation_footer_links">
                         <li><a href="/pages/immigration_article.html">Иммиграция</a></li>
-                        <li><a href="">Учеба</a></li>
-                        <li><a href="">Работа</a></li>
-                        <li><a href="">Оценка шансов</a></li>
-                        <li><a href="">Тест английского</a></li>
-                        <li><a href="">Тест французского</a></li>
+                        <li><a href="#">Учеба</a></li>
+                        <li><a href="#">Работа</a></li>
+                        <li><a href="#">Оценка шансов</a></li>
+                        <li><a href="#">Тест английского</a></li>
+                        <li><a href="#">Тест французского</a></li>
                     </ul>
                     <ul class="navigation_footer_links">
                         <li><a href="/pages/about.html">О проекте</a></li>
                         <li><a href="/pages/courses.html">Услуги и курсы</a></li>
-                        <li><a href="">Каталог бизнесов</a></li>
-                        <li><a href="">Вакансии</a></li>
-                        <li><a href="">Блог</a></li>
-                        <li><a href="">Контакты</a></li>
+                        <li><a href="#">Каталог бизнесов</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="/pages/contacts.html">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="footer_content_social">
@@ -773,7 +764,7 @@
                             <li><a href="https://www.instagram.com/" target="_blank"><img src="/images/instagram-footer.png" alt="instagram"></a></li>
                             <li><a href="https://web.telegram.org/" target="_blank"><img src="/images/telegram-footer.png" alt="telegram"></a></li>
                         </ul>
-                        <a href=""><img src="/images/youtube-footer.png" alt="youtube"></a>
+                        <a href="https://youtube.com/"><img src="/images/youtube-footer.png" alt="youtube"></a>
                     </div>
                     <a href="mail@immigrant.today">mail@immigrant.today</a> 
                 </div>
@@ -782,8 +773,8 @@
                 <div class="footer_copyright_licence_limit_container">
                     <p> &copy; 2015-2021 Imigrant.Today </p>
                     <div class="footer_copyright_licence_block_links">
-                        <a href="">Политика конфиденциальности</a> 
-                        <a href="">Условия использования</a>
+                        <a href="#">Политика конфиденциальности</a> 
+                        <a href="#">Условия использования</a>
                     </div>
                 </div>
             </div>

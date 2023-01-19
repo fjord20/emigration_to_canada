@@ -1,3 +1,6 @@
+@import url(/style/style.css);
+@import url(/style/reset.css);
+
 iframe {
     max-width: 100%;
 }
@@ -72,7 +75,7 @@ iframe {
 
 .stars:hover .fa-regular{
     cursor: pointer;
-    color: orange;
+    color: var(--clr-rating-stars);
     border-width: 1px;
 }
 
@@ -228,7 +231,6 @@ iframe {
     color: var(--clr-content-slider);
 }
 
-
 .article_footer {
     margin-top: 4.625rem;
 }
@@ -239,7 +241,6 @@ iframe {
 }
 
 .article_footer_links {
-    /* /* list-style-image: url(/images/list-type-red.svg); */
     padding: 0;
     list-style-type: none;
 }
