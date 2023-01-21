@@ -76,3 +76,21 @@
 .access_denied .add_to_community_container {
     padding-top: 0;
 }
+
+.navigation__header_search_field input {
+    margin: 0;
+}
+
+.navigation__header_button_search {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+input[type='submit'] {
+    border-radius: 0;
+}
+
+input[type='search'] {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}

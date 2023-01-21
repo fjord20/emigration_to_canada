@@ -42,6 +42,24 @@ form {
     width: 100%;
 }
 
+.navigation__header_search_field input {
+    margin: 0;
+}
+
+.navigation__header_button_search {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+input[type='submit'] {
+    border-radius: 0;
+}
+
+input[type='search'] {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
 input {
     margin-top: 1.25rem;
     border: 1px solid var(--clr-input-border);

@@ -264,7 +264,6 @@ ul li.active_menu a {
 
 .navigation__header_search_section {
     display: flex;
-    /* width: 100%; */
     justify-content: right;
 }
 
@@ -292,10 +291,6 @@ ul li.active_menu a {
 }
 
 .navigation__header_search_field {
-    /* display: flex; */
-    position: absolute;
-    width: 45rem;
-    right: 20rem;
     justify-content: right;
     display: none;
 }
@@ -309,7 +304,9 @@ input[type="submit"] {
 
 input[type="search"] {
     height: 2.75rem;
-    width: 45rem;
+    width: 100%;
+    border: 1px solid var(--clr-input-border);
+    outline: none;
 }
 
  /* section help in immigration */
