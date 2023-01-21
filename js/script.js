@@ -24,8 +24,32 @@ sliders.forEach(sliderEl => {
   });
 });
 
+// выпадающее меню
 function dropCity() {
     document.getElementById("city").style.display = "block";
+    document.getElementById("lang").style.display = "block";
+    document.getElementById("arr_1").style.transform = 'rotate(180deg)';
+    document.getElementById("arrow_1").style.fill = '#E55241';
+    document.getElementById('town').style.color = '#E55241';
+    document.getElementById('temp').style.color = '#E55241';
+    document.getElementById('clouds').style.fill = '#E55241';
+}
+
+function dropLang() {
+  document.getElementById("lang_menu").style.display = "block";
+  document.getElementById("arr_2").style.transform = 'rotate(180deg)';
+  document.getElementById("arrow_2").style.fill = '#E55241';
+  document.getElementById('lang').style.color = '#E55241';
+  document.getElementById("earth").style.fill = '#E55241';
+}
+
+function dropAccount() {
+  document.getElementById("account_menu").style.display = "block";
+  document.getElementById("arr_3").style.transform = 'rotate(180deg)';
+  document.getElementById("arrow_3").style.fill = '#E55241';
+  document.getElementById('acc').style.color = '#E55241';
+  document.getElementById("user_1").style.fill = '#E55241';
+  document.getElementById("user_2").style.fill = '#E55241';
 }
 
 // скрывает меню блок вопроса на странице Иммиграция
