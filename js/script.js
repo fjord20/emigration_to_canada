@@ -26,39 +26,39 @@ sliders.forEach(sliderEl => {
 
 // выпадающее меню
 function dropCity() {
-  document.getElementById("city").style.display = "block";
-  document.getElementById("arr_1").style.transform = 'rotate(180deg)';
-  document.getElementById("arrow_1").style.fill = '#E55241';
+  document.getElementById('city').style.display = 'block';
+  document.getElementById('arr_1').style.transform = 'rotate(180deg)';
+  document.getElementById('arrow_1').style.fill = '#E55241';
   document.getElementById('town').style.color = '#E55241';
   document.getElementById('temp').style.color = '#E55241';
   document.getElementById('clouds').style.fill = '#E55241';
 }
 
 function dropLang() {
-  document.getElementById("lang_menu").style.display = "block";
-  document.getElementById("arr_2").style.transform = 'rotate(180deg)';
-  document.getElementById("arrow_2").style.fill = '#E55241';
+  document.getElementById('lang_menu').style.display = 'block';
+  document.getElementById('arr_2').style.transform = 'rotate(180deg)';
+  document.getElementById('arrow_2').style.fill = '#E55241';
   document.getElementById('lang').style.color = '#E55241';
-  document.getElementById("earth").style.fill = '#E55241';
+  document.getElementById('earth').style.fill = '#E55241';
 }
 
 function dropAccount() {
-  document.getElementById("account_menu").style.display = "block";
-  document.getElementById("arr_3").style.transform = 'rotate(180deg)';
-  document.getElementById("arrow_3").style.fill = '#E55241';
+  document.getElementById('account_menu').style.display = 'block';
+  document.getElementById('arr_3').style.transform = 'rotate(180deg)';
+  document.getElementById('arrow_3').style.fill = '#E55241';
   document.getElementById('acc').style.color = '#E55241';
-  document.getElementById("user_1").style.fill = '#E55241';
-  document.getElementById("user_2").style.fill = '#E55241';
+  document.getElementById('user_1').style.fill = '#E55241';
+  document.getElementById('user_2').style.fill = '#E55241';
  }
 
 // закрытие меню по клику вне блока
 document.addEventListener("mouseup", function(event) {
-  const cityShow = document.getElementById("city");
+  const cityShow = document.getElementById('city');
   if (!cityShow.contains(event.target)) {
       cityShow.style.display = 'none'
       document.getElementById('clouds').style.fill = '#3A3E48';
-      document.getElementById("arr_1").style.transform = 'rotate(0deg)';
-      document.getElementById("arrow_1").style.fill = '#3A3E48';
+      document.getElementById('arr_1').style.transform = 'rotate(0deg)';
+      document.getElementById('arrow_1').style.fill = '#3A3E48';
       document.getElementById('town').style.color = '#3A3E48';
       document.getElementById('temp').style.color = '#3A3E48';
       document.getElementById('clouds').style.fill = '#3A3E48';
@@ -66,40 +66,40 @@ document.addEventListener("mouseup", function(event) {
 });
 
 document.addEventListener("mouseup", function(event) {
-  const langShow = document.getElementById("lang_menu");
+  const langShow = document.getElementById('lang_menu');
   if (!langShow.contains(event.target)) {
     langShow.style.display = 'none';
-    document.getElementById("arr_2").style.transform = 'rotate(0deg)';
-    document.getElementById("arrow_2").style.fill = '#3A3E48';
+    document.getElementById('arr_2').style.transform = 'rotate(0deg)';
+    document.getElementById('arrow_2').style.fill = '#3A3E48';
     document.getElementById('lang').style.color = '#3A3E48';
-    document.getElementById("earth").style.fill = '#3A3E48';
+    document.getElementById('earth').style.fill = '#3A3E48';
   }
 });
 
 document.addEventListener("mouseup", function(event) {
-  const accShow = document.getElementById("account_menu");
+  const accShow = document.getElementById('account_menu');
   if (!accShow.contains(event.target)) {
     accShow.style.display = 'none';
-    document.getElementById("arr_3").style.transform = 'rotate(0deg)';
-    document.getElementById("arrow_3").style.fill = '#3A3E48';
+    document.getElementById('arr_3').style.transform = 'rotate(0deg)';
+    document.getElementById('arrow_3').style.fill = '#3A3E48';
     document.getElementById('acc').style.color = '#3A3E48';
-    document.getElementById("user_1").style.fill = '#3A3E48';
-    document.getElementById("user_2").style.fill = '#3A3E48';
+    document.getElementById('user_1').style.fill = '#3A3E48';
+    document.getElementById('user_2').style.fill = '#3A3E48';
   }
 });
 
 // поле поиск
 function btnOn() {
-  document.getElementById("row_2").style.display = "flex";
-  document.getElementById("row_2").style.width = "65%";
-  document.getElementById("row_1").style.display = "none";
+  document.getElementById('row_2').style.display = 'flex';
+  document.getElementById('row_2').style.width = '65%';
+  document.getElementById('row_1').style.display = 'none';
   document.getElementById('btn_search').style.background = "url(/images/search_close.svg)";
   document.getElementById('header_search').style.width = '70%';
 }
 
 // скрывает меню блок вопроса на странице Иммиграция
 function closeQuestion() {
-    document.getElementById("btn").style.display = 'none';
+    document.getElementById('btn').style.display = 'none';
 }
 
 //валидация формы авторизации
