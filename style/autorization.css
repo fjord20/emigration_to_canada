@@ -39,7 +39,7 @@
 }
 
 form {
-    width: 100%;
+    width: 40%;
 }
 
 .navigation__header_search_field input {
@@ -103,7 +103,7 @@ form button {
 }
 
 .registration button {
-    width: 100%;
+    width: 80%;
     margin-top: 1.875rem;
     margin-bottom: 1.875rem;
     border: 1px solid var(--clr-primary-500);

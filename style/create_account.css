@@ -6,9 +6,11 @@
 .check_answer {
     display: flex;
     width: 100%;
-
 }
 
+form {
+    max-width: 40%;
+}
 
 .check_answer input:first-child {
     max-width: 15%;
@@ -49,4 +51,8 @@
 
 .autorization_enter {
     margin-top: 0;
+}
+
+.registration button {
+    max-width: 80%;
 }
