@@ -1,3 +1,52 @@
 @import url(/style/reset.css);
 @import url(/style/style.css);
 @import url(/style/autorization.css);
+
+
+.check_answer {
+    display: flex;
+    width: 100%;
+
+}
+
+
+.check_answer input:first-child {
+    max-width: 15%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border: 1px solid var(--clr-input-border);
+    background-color: var(--clr-input-border);
+    color: var(--clr-primary-600);
+}
+
+.check_answer input:last-child {
+    width: 100%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: none;
+    border: 1px solid var(--clr-input-border);
+    color: var(--clr-primary-600);
+}
+
+.form_submit {
+    display: flex;
+    align-items: center;
+    margin: 1.25rem 0;
+    
+}
+
+.form_submit input {
+    width: 2rem;
+    height: 2rem;
+    margin-top: 0;
+    margin-right: 0.9375rem;
+}
+
+.form_submit label {
+    font-size: 0.875rem;
+    color: var(--clr-primary-600);
+}
+
+.autorization_enter {
+    margin-top: 0;
+}
