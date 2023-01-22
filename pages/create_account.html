@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/create_account.css">
+    <link rel="shortcut icon" href="/images/maple-leaf.png" type="image/x-icon">
+    <title>Создать учетную запись</title>
+</head>
+<body>  
+    <header>
+        <!-- navigation header section -->
+        <div class="navigation_top">  
+            <nav class="navigation__header_top">
+                <ul class="navigation__header_top_left">
+                    <li> <a href="/pages/about.html" target="_blank">О проекте</a></li>
+                    <li> <a href="/pages/access_denied.html" target="_blank">Вакансии</a></li>
+                    <li> <a href="/pages/contacts.html" target="_blank">Контакты</a></li>
+                </ul>
+                <ul class="navigation__header_top_right">
+                    <li class="navigation__header_city" onclick="dropCity()"> 
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="clouds" d="M20 8.82644C20 7.20998 18.8162 5.86483 17.2701 5.61213C16.7846 3.49625 14.8909 1.95691 12.673 1.95691C10.6894 1.95691 8.92136 3.20829 8.24553 5.04408C5.93992 5.57093 4.10755 7.40396 3.62359 9.76672C1.58247 10.0285 0 11.7769 0 13.888C0 16.1792 1.864 18.0432 4.15518 18.0432H15.0666C17.3577 18.0432 19.2217 16.1792 19.2217 13.888C19.2217 13.0281 18.9591 12.2285 18.5099 11.565C19.4259 10.9774 20 9.95996 20 8.82644ZM12.6731 3.19402C14.4365 3.19402 15.9221 4.51237 16.1287 6.26066L16.1932 6.80664H16.7429C17.8567 6.80664 18.7629 7.71274 18.7629 8.82644C18.7629 9.60569 18.3259 10.2968 17.6474 10.6339C17.0692 10.1744 16.3661 9.86524 15.5981 9.76668C15.0267 6.97683 12.5754 4.92557 9.68474 4.8911C10.3019 3.8605 11.4297 3.19402 12.6731 3.19402ZM15.0666 16.8061H4.15518C2.54614 16.8061 1.23711 15.497 1.23711 13.888C1.23711 12.279 2.54623 10.9699 4.15538 10.9699H4.70515L4.76965 10.424C5.05905 7.97452 7.14033 6.12743 9.61085 6.12743C12.0814 6.12743 14.1626 7.97452 14.452 10.424L14.5165 10.9699H15.0663C16.6754 10.9699 17.9846 12.279 17.9846 13.888C17.9846 15.497 16.6756 16.8061 15.0666 16.8061Z" fill="#3A3E48"/>
+                        </svg>
+                        <span id="temp" class="temperature"> 17°C, </span>
+                        <a class="town_links" href="#"><span id="town">Торонто</span> </a>
+                        <svg class="arrow_down" id="arr_1" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="arrow_1" d="M8.00002 10.6666C7.84425 10.6669 7.69329 10.6127 7.57335 10.5133L3.57335 7.17998C3.43721 7.06682 3.35159 6.90421 3.33534 6.72793C3.31909 6.55165 3.37353 6.37612 3.48669 6.23998C3.59985 6.10384 3.76245 6.01822 3.93874 6.00197C4.11502 5.98571 4.29054 6.04015 4.42669 6.15331L8.00002 9.13998L11.5734 6.25998C11.6415 6.2046 11.72 6.16325 11.8042 6.13829C11.8885 6.11334 11.9768 6.10528 12.0641 6.11457C12.1515 6.12386 12.2361 6.15033 12.3132 6.19244C12.3903 6.23456 12.4583 6.2915 12.5134 6.35998C12.5744 6.42853 12.6206 6.50895 12.6492 6.59619C12.6777 6.68344 12.6879 6.77564 12.6791 6.86702C12.6704 6.9584 12.6428 7.04698 12.5983 7.12721C12.5537 7.20745 12.493 7.27762 12.42 7.33331L8.42002 10.5533C8.29663 10.637 8.14875 10.6769 8.00002 10.6666Z" fill="#3A3E48"/>
+                        </svg>         
+                        <ul id="city" class="navigation__header_drop_city">
+                            <li><a href="#">Калгари</a></li>
+                            <li><a href="#">Квебек-сити</a></li>
+                            <li><a href="#">Монреаль</a></li>
+                            <li><a href="#">Оттава</a></li>
+                            <li><a href="#">Торонто</a></li>
+                        </ul>
+                    </li>
+                    <li class="navigation__header_language" onclick="dropLang()">
+                        <svg class="earth_icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1402_2778)">
+                                <path id="earth" d="M17.0711 2.92892C15.1823 1.04019 12.6711 0 10 0C7.32895 0 4.81766 1.04019 2.92892 2.92892C1.04019 4.81766 0 7.32895 0 10C0 12.6711 1.04019 15.1823 2.92892 17.0711C4.81766 18.9598 7.32895 20 10 20C12.6711 20 15.1823 18.9598 17.0711 17.0711C18.9598 15.1823 20 12.6711 20 10C20 7.32895 18.9598 4.81766 17.0711 2.92892ZM13.97 7.40494C14.8807 7.56851 15.719 7.78931 16.4517 8.0629C17.9398 8.61862 18.8281 9.3428 18.8281 10C18.8281 10.6572 17.9398 11.3814 16.4517 11.937C15.719 12.2107 14.8807 12.4315 13.97 12.5949C14.0567 11.7593 14.1016 10.8884 14.1016 10C14.1016 9.11163 14.0567 8.24066 13.97 7.40494ZM16.2424 3.75763C17.3801 4.89517 18.1686 6.28876 18.5551 7.80823C18.0936 7.4971 17.5272 7.21375 16.8617 6.96518C15.9676 6.63132 14.933 6.37039 13.81 6.19019C13.6296 5.06699 13.3688 4.03244 13.0348 3.13828C12.7864 2.47284 12.5029 1.90643 12.1918 1.44485C13.7112 1.83136 15.1048 2.61993 16.2424 3.75763ZM12.9297 10C12.9297 10.9561 12.8755 11.8883 12.7718 12.7718C11.8883 12.8755 10.9561 12.9297 10 12.9297C9.04388 12.9297 8.11172 12.8755 7.22824 12.7718C7.12448 11.8883 7.07031 10.9561 7.07031 10C7.07031 9.04388 7.12448 8.11172 7.22824 7.22824C8.11172 7.12448 9.04388 7.07031 10 7.07031C10.9561 7.07031 11.8883 7.12448 12.7718 7.22824C12.8755 8.11172 12.9297 9.04388 12.9297 10ZM10 1.17188C10.6572 1.17188 11.3814 2.06024 11.9371 3.54828C12.2107 4.28101 12.4315 5.11932 12.5951 6.02997C11.7595 5.9433 10.8884 5.89844 10 5.89844C9.11163 5.89844 8.24066 5.9433 7.40509 6.02997C7.56851 5.11932 7.78931 4.28101 8.06305 3.54828C8.61862 2.06024 9.3428 1.17188 10 1.17188ZM3.75763 3.75763C4.89517 2.61993 6.28876 1.83136 7.80823 1.44485C7.4971 1.90643 7.21375 2.47284 6.96518 3.13828C6.63132 4.03244 6.37039 5.06699 6.19019 6.19019C5.06699 6.37039 4.03244 6.63132 3.13828 6.96518C2.47284 7.21375 1.90643 7.4971 1.44485 7.80823C1.83136 6.28876 2.61993 4.89517 3.75763 3.75763ZM3.54828 8.06305C4.28101 7.78931 5.11932 7.56851 6.02997 7.40509C5.9433 8.24066 5.89844 9.11163 5.89844 10C5.89844 10.8884 5.9433 11.7593 6.02997 12.5949C5.11932 12.4315 4.28101 12.2107 3.54828 11.937C2.06024 11.3814 1.17188 10.6572 1.17188 10C1.17188 9.3428 2.06024 8.61862 3.54828 8.06305ZM3.75763 16.2424C2.61993 15.1048 1.83136 13.7112 1.44485 12.1918C1.90643 12.5029 2.47284 12.7863 3.13828 13.0348C4.03244 13.3687 5.06699 13.6296 6.19019 13.8098C6.37039 14.933 6.63132 15.9676 6.96518 16.8617C7.21375 17.5272 7.4971 18.0936 7.80823 18.5551C6.28876 18.1686 4.89517 17.3801 3.75763 16.2424ZM10 18.8281C9.3428 18.8281 8.61862 17.9398 8.06305 16.4517C7.78931 15.719 7.56851 14.8807 7.40509 13.97C8.24066 14.0567 9.11163 14.1016 10 14.1016C10.8884 14.1016 11.7595 14.0567 12.5951 13.97C12.4315 14.8807 12.2107 15.719 11.9371 16.4517C11.3814 17.9398 10.6572 18.8281 10 18.8281ZM16.2424 16.2424C15.1048 17.3801 13.7112 18.1686 12.1918 18.5551C12.5029 18.0936 12.7864 17.5272 13.0348 16.8617C13.3688 15.9676 13.6296 14.933 13.81 13.8098C14.933 13.6296 15.9676 13.3687 16.8617 13.0348C17.5272 12.7863 18.0936 12.5029 18.5551 12.1918C18.1686 13.7112 17.3801 15.1048 16.2424 16.2424Z" fill="#3A3E48"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1402_2778">
+                                    <rect width="20" height="20" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <a class="lang_links" href="#"> <span id="lang"> Русский </span></a>
+                        <svg class="arrow_down" id="arr_2" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="arrow_2" d="M8.00002 10.6666C7.84425 10.6669 7.69329 10.6127 7.57335 10.5133L3.57335 7.17998C3.43721 7.06682 3.35159 6.90421 3.33534 6.72793C3.31909 6.55165 3.37353 6.37612 3.48669 6.23998C3.59985 6.10384 3.76245 6.01822 3.93874 6.00197C4.11502 5.98571 4.29054 6.04015 4.42669 6.15331L8.00002 9.13998L11.5734 6.25998C11.6415 6.2046 11.72 6.16325 11.8042 6.13829C11.8885 6.11334 11.9768 6.10528 12.0641 6.11457C12.1515 6.12386 12.2361 6.15033 12.3132 6.19244C12.3903 6.23456 12.4583 6.2915 12.5134 6.35998C12.5744 6.42853 12.6206 6.50895 12.6492 6.59619C12.6777 6.68344 12.6879 6.77564 12.6791 6.86702C12.6704 6.9584 12.6428 7.04698 12.5983 7.12721C12.5537 7.20745 12.493 7.27762 12.42 7.33331L8.42002 10.5533C8.29663 10.637 8.14875 10.6769 8.00002 10.6666Z" fill="#3A3E48"/>
+                        </svg>  
+                        <ul id="lang_menu" class="navigation__header_drop_languages">
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">Español</a></li>
+                            <li><a href="#">Français</a></li>
+                            <li><a href="#">Italiano</a></li>
+                            <li><a href="#">Polszczyzna</a></li>
+                            <li><a href="#">Português</a></li>
+                            <li><a href="#">Русский</a></li>
+                            <li><a href="#">Український</a></li>
+                        </ul>
+                    </li>
+                    <li class="navigation__header_account" onclick="dropAccount()"> 
+                        <svg class="icon-user" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1402_2785)">
+                                <path id="user_1"  d="M9.9999 11.2652C3.99064 11.2652 0.681152 14.108 0.681152 19.2701C0.681152 19.6732 1.00791 20 1.41107 20H18.5887C18.9919 20 19.3186 19.6732 19.3186 19.2701C19.3186 14.1083 16.0092 11.2652 9.9999 11.2652ZM2.16756 18.5402C2.45467 14.6805 5.08603 12.7251 9.9999 12.7251C14.9138 12.7251 17.5452 14.6805 17.8325 18.5402H2.16756Z" fill="#3A3E48"/>
+                                <path id="user_2" d="M10 0C7.23969 0 5.1582 2.12336 5.1582 4.93895C5.1582 7.83699 7.33023 10.1944 10 10.1944C12.6698 10.1944 14.8419 7.83699 14.8419 4.93918C14.8419 2.12336 12.7604 0 10 0ZM10 8.7348C8.13508 8.7348 6.61805 7.03211 6.61805 4.93918C6.61805 2.92313 8.04043 1.45984 10 1.45984C11.9283 1.45984 13.382 2.95547 13.382 4.93918C13.382 7.03211 11.865 8.7348 10 8.7348Z" fill="#3A3E48"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1402_2785">
+                                    <rect width="20" height="20" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>                            
+                        <a href="#"><span id="acc"> Мой аккаунт </span></a>
+                        <svg class="arrow_down" id="arr_3" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="arrow_3" d="M8.00002 10.6666C7.84425 10.6669 7.69329 10.6127 7.57335 10.5133L3.57335 7.17998C3.43721 7.06682 3.35159 6.90421 3.33534 6.72793C3.31909 6.55165 3.37353 6.37612 3.48669 6.23998C3.59985 6.10384 3.76245 6.01822 3.93874 6.00197C4.11502 5.98571 4.29054 6.04015 4.42669 6.15331L8.00002 9.13998L11.5734 6.25998C11.6415 6.2046 11.72 6.16325 11.8042 6.13829C11.8885 6.11334 11.9768 6.10528 12.0641 6.11457C12.1515 6.12386 12.2361 6.15033 12.3132 6.19244C12.3903 6.23456 12.4583 6.2915 12.5134 6.35998C12.5744 6.42853 12.6206 6.50895 12.6492 6.59619C12.6777 6.68344 12.6879 6.77564 12.6791 6.86702C12.6704 6.9584 12.6428 7.04698 12.5983 7.12721C12.5537 7.20745 12.493 7.27762 12.42 7.33331L8.42002 10.5533C8.29663 10.637 8.14875 10.6769 8.00002 10.6666Z" fill="#3A3E48"/>
+                        </svg> 
+                        <ul id="account_menu" class="navigation__header_drop_account">
+                            <li><a href="/pages/autorization.html">Профиль</a></li>
+                            <li><a href="/pages/access_denied.html">Курсы</a></li>
+                            <li><a href="/pages/access_denied.html">Монеты</a></li>
+                            <li><a href="/pages/access_denied.html">Уведомления</a></li>
+                            <li><a href="/pages/access_denied.html">Настройки</a></li>
+                            <li><a href="#"> <span> Выход </span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- main  header navigation section -->
+        <div class="navigation__header_wide_container">
+            <nav class="navigation__header_bottom">
+                <a href="/index.html"> <img class="navigation__header_bottom_logo" src="/images/logo.png" alt="logo"></a>
+                <ul id="row_1" class="navigation__header_bottom_menu_row">
+                    <li><a href="/pages/immigration_article.html" target="_blank">Иммиграция</a></li>
+                    <li><a href="/pages/access_denied.html" target="_blank">Учеба</a></li>
+                    <li><a href="/pages/access_denied.html" target="_blank">Работа</a></li>
+                    <li><a href="/pages/access_denied.html" target="_blank">Визы</a></li>
+                    <li><a href="/pages/courses.html" target="_blank">Усуги и курсы</a></li>
+                    <li><a href="/pages/access_denied.html" target="_blank">Блог</a></li>
+                </ul>
+                <div id="header_search" class="navigation__header_search_section"> 
+                    <div id="row_2" class="navigation__header_search_field">
+                        <input type="search">
+                        <input type="submit" value="">
+                    </div>
+                    <button id="btn_search" class="navigation__header_button_search" onclick="btnOn()"></button>
+                    <button class="navigation__header_bottom_button">Оценить шансы</button>
+                </div>
+            </nav>  
+        </div> 
+    </header>
+    <main>
+        <div class="autorization_limit_container"> 
+            <!-- <a class="back_link" href="../index.html">назад</a> -->
+            <div class="autorization">
+                <h1>Создать учетную запись</h1>
+                <form action="" method="post"> 
+                    <input type="text" placeholder="Ваше имя">         
+                    <input type="email" placeholder="Ваш e-mail">
+                    <input type="password" placeholder="Пароль">
+                    <div class="enter_answer">
+                        <input id="numbers" type="text" placeholder="9 + 3 =" disabled>
+                        <input id="answer" type="text" placeholder="Введите ответ">
+                    </div>
+                    <div class="form_submit_field">
+                        <input id="submit" type="checkbox" >
+                        <label for="submit"> Я согласен(а) на обработку моих персональных данных </label>
+                    </div>
+                    <button>Войти</button>
+                </form>
+                <a class="forget_password_link" href="">Забыли пароль?</a>
+            </div>
+            <div class="registration">
+                <h2>У вас нет учетной записи?</h2>
+                <p>Станьте членом сообщества, чтобы разблокировать функции,которые предназначены только для зарегестированных пользователей</p>
+                <button>Зарегистрироваться</button>
+            </div>
+        </div>
+    </main>
+    <!-- footer section -->
+    <footer>
+        <div class="footer_limit_container">
+            <div class="footer_content">
+                <a href="/index.html"><img src="/images/footer-logo_immigrant.png" alt="logo"></a>
+                <nav class="navigation_footer">
+                    <ul class="navigation_footer_links">
+                        <li><a href="/pages/immigration_article.html">Иммиграция</a></li>
+                        <li><a href="#">Учеба</a></li>
+                        <li><a href="#">Работа</a></li>
+                        <li><a href="#">Оценка шансов</a></li>
+                        <li><a href="#">Тест английского</a></li>
+                        <li><a href="#">Тест французского</a></li>
+                    </ul>
+                    <ul class="navigation_footer_links">
+                        <li><a href="/pages/about.html">О проекте</a></li>
+                        <li><a href="/pages/courses.html">Услуги и курсы</a></li>
+                        <li><a href="/pages/access_denied.html">Каталог бизнесов</a></li>
+                        <li><a href="/pages/access_denied.html">Вакансии</a></li>
+                        <li><a href="/pages/access_denied.html">Блог</a></li>
+                        <li><a href="/pages/contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="footer_content_social">
+                    <div class="footer_content_social_links">
+                        <ul>
+                            <li><a href="https://ru-ru.facebook.com/" target="_blank"><img src="/images/facebook-footer.png" alt="facebook"></a></li>
+                            <li><a href="https://vk.com/" target="_blank"><img src="/images/vk-footer.png" alt="vk"></a></li>
+                            <li><a href="https://www.instagram.com/" target="_blank"><img src="/images/instagram-footer.png" alt="instagram"></a></li>
+                            <li><a href="https://web.telegram.org/" target="_blank"><img src="/images/telegram-footer.png" alt="telegram"></a></li>
+                        </ul>
+                        <a href="https://youtube.com/"><img src="/images/youtube-footer.png" alt="youtube"></a>
+                    </div>
+                    <a href="mail@immigrant.today">mail@immigrant.today</a> 
+                </div>
+            </div>
+            <div class="footer_copyright_licence">
+                <div class="footer_copyright_licence_limit_container">
+                    <p> &copy; 2015-2021 Imigrant.Today </p>
+                    <div class="footer_copyright_licence_block_links">
+                        <a href="">Политика конфиденциальности</a> 
+                        <a href="">Условия использования</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/script.js"></script>
+</body>
+</html>
