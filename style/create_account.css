@@ -12,6 +12,10 @@ form {
     max-width: 40%;
 }
 
+form button {
+    margin-bottom: 3.125rem;
+}
+
 .check_answer input:first-child {
     max-width: 15%;
     border-top-right-radius: 0;
@@ -34,7 +38,6 @@ form {
     display: flex;
     align-items: center;
     margin: 1.25rem 0;
-    
 }
 
 .form_submit input {
