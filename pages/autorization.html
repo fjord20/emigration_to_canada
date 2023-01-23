@@ -119,9 +119,9 @@
             <div class="autorization">
                 <h1>Войти в учетную запись</h1>
                 <form action="" method="post">          
-                    <input type="email" placeholder="Ваш e-mail">
-                    <input type="password" placeholder="Пароль">
-                    <button>Войти</button>
+                    <input id="email_not_valid" type="email" placeholder="Ваш e-mail">
+                    <input id="pass_empty" type="password" placeholder="Пароль">
+                    <button type="button" onclick="enter_validation()">Войти</button>
                 </form>
                 <a class="forget_password_link" href="/pages/password_restore.html">Забыли пароль?</a>
             </div>

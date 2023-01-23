@@ -113,7 +113,7 @@ const uid_len = checkEmpty.value.length;
 const uid_len_last = checkEmptyname.value.length;
 const uid_len_pass = passEmpty.value.length;
 const uid_len_email = emailValid.value.length;
-const re = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
+// const re = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
   
       if (uid_len == 0)  {
         checkEmpty.style.borderColor = '#E55241';
@@ -128,10 +128,9 @@ const re = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].
       if (uid_len_last == 0) {
         checkEmptyname.style.borderColor = '#E55241';
         checkEmptyname.style.borderWidth = '1px';
-        checkEmptyname.placeholder = 'Введите пароль';
+        checkEmptyname.placeholder = 'Введите результат';
         document.getElementById('numbers').style.borderColor = '#E55241';
         document.getElementById('numbers').style.borderWidth = '1px';
-
       }
       
       else {
@@ -142,7 +141,7 @@ const re = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].
       if (uid_len_pass == 0) {
         passEmpty.style.borderColor = '#E55241';
         passEmpty.style.borderWidth = '1px'
-        passEmpty.placeholder = 'Введите правильный ответ';
+        passEmpty.placeholder = 'Введите пароль';
       }
       
       else {
@@ -159,16 +158,46 @@ const re = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].
         emailValid.style.borderColor = 'limegreen';
       }
 
-      if (isEmailValid(emailValid.value)) {
-        emailValid.style.borderColor = 'limegreen';
+      // if (isEmailValid(emailValid.value)) {
+      //   emailValid.style.borderColor = 'limegreen';
   
-      } else {
-        emailValid.style.borderColor = '#E55241';
-        emailValid.style.borderWidth = '1px';
-        alert('введите правильный адрес электронной почты');
-      }
+      // } else {
+      //   emailValid.style.borderColor = '#E55241';
+      //   emailValid.style.borderWidth = '1px';
+      //   alert('введите правильный адрес электронной почты');
+      // }
   
-      function isEmailValid(value) {
-        return re.test(value);
-      }
+      // function isEmailValid(value) {
+      //   return re.test(value);
+      // }
   } 
+
+//валидация формы входа в личный кабинет
+  function enter_validation() {
+    const emailValid = document.getElementById('email_not_valid');
+    const passEmpty = document.getElementById('pass_empty');
+    const uid_len_pass = passEmpty.value.length;
+    const uid_len_email = emailValid.value.length;
+    
+    if (uid_len_pass == 0) {
+      passEmpty.style.borderColor = '#E55241';
+      passEmpty.style.borderWidth = '1px'
+      passEmpty.placeholder = 'Введите пароль';
+    }
+    
+    else {
+      passEmpty.style.borderColor = 'limegreen';
+    }
+
+    if (uid_len_email == 0) {
+      emailValid.style.borderColor = '#E55241';
+      emailValid.style.borderWidth = '1px';
+      emailValid.placeholder = 'Введите электронной почты';
+    }
+    
+    else {
+      emailValid.style.borderColor = 'limegreen';
+    }
+
+
+  }

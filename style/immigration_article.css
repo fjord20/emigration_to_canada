@@ -180,11 +180,6 @@
     height: 80%;
 }
 
-.active {
-    background-color: var(--clr-primary-500);
-    color: var(--clr-content-slider);
-}
-
 li.active {
     background-color: var(--clr-primary-500);
     color: var(--clr-content-slider);

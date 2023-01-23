@@ -452,12 +452,12 @@
                 </article>
                 <form action="" method="post">                      
                     <div class="input_fields">
-                        <input type="text" placeholder="Ваше имя">
-                        <input type="email" placeholder="Ваш e-mail">
-                        <input type="password" placeholder="Пароль">
+                        <input id="nameUser" type="text" placeholder="Ваше имя">
+                        <input id="email_not_valid" type="email" placeholder="Ваш e-mail">
+                        <input id="pass_empty" type="password" placeholder="Пароль">
                         <div class="enter_answer">
-                            <input type="text" placeholder="9 + 3 =" disabled>
-                            <input type="text" placeholder="Введите ответ">
+                            <input id="numbers" type="text" placeholder="9 + 3 =" disabled>
+                            <input id="answer" type="text" placeholder="Введите ответ">
                         </div>
                     </div>
                     <div class="form_submit_field">
@@ -465,8 +465,8 @@
                         <label for="submit"> Я согласен(а) на обработку моих персональных данных </label>
                     </div>
                     <div class="form_button_field">
-                        <button class="form_registration_btn"> Зарегистрироваться </button>
-                        <button class="form_login_btn">Войти в аккаунт </button>
+                        <button class="form_registration_btn" type="button" onclick="userid_validation()">Зарегистрироваться</button>
+                        <button class="form_login_btn" type="button" onclick="document.location = '/pages/autorization.html'">Войти в аккаунт </button>
                     </div>
                 </form>
             </div>

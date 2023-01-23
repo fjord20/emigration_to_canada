@@ -17,10 +17,10 @@ form button {
 }
 
 .check_answer input:first-child {
-    max-width: 15%;
+    max-width: 17%;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-    border: 1px solid var(--clr-input-border);
+    border-right: none;
     background-color: var(--clr-input-border);
     color: var(--clr-primary-600);
 }
@@ -30,7 +30,6 @@ form button {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     border-left: none;
-    border: 1px solid var(--clr-input-border);
     color: var(--clr-primary-600);
 }
 
@@ -41,8 +40,8 @@ form button {
 }
 
 .form_submit input {
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
     margin-top: 0;
     margin-right: 0.9375rem;
 }
