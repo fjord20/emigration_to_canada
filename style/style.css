@@ -1186,19 +1186,9 @@ form {
     
 }
 
-/* @media screen and (min-width:1200px) {
-    .container__help_in_immigration {
-        background: url(/images/Vector.png) no-repeat 93% 30%,
-                    url(/images/red_rectangle.png) no-repeat 150%; 
-        background-color: var(--clr-background);
-    }
-    
-} */
 
-/* @media screen and (min-width:600px) and (max-width:1220px) {
-    html {
-        font-size: 0.5rem;
-    }
+@media screen and (min-width:600px) and (max-width:1200px) {
+   
 
     .container__help_in_immigration {
         background: url(/images/Vector.png) no-repeat 93% 30%,
@@ -1206,7 +1196,7 @@ form {
         background-color: var(--clr-background);
     }
     
-} */
+}
 
 @media screen and (min-width: 320px) and (max-width: 599px) {
     html {
