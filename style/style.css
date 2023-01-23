@@ -296,8 +296,9 @@ ul li.active_menu a {
 }
 
 .navigation__header_search_field {
-    justify-content: right;
     display: none;
+    width: 65%;
+    justify-content: right;
 }
 
 input[type="submit"] {
@@ -311,6 +312,8 @@ input[type="search"] {
     height: 2.75rem;
     width: 100%;
     border: 1px solid var(--clr-input-border);
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
     outline: none;
 }
 

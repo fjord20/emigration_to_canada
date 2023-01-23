@@ -91,7 +91,6 @@ document.addEventListener("mouseup", function(event) {
 // поле поиск
 function btnOn() {
   document.getElementById('row_2').style.display = 'flex';
-  document.getElementById('row_2').style.width = '65%';
   document.getElementById('row_1').style.display = 'none';
   document.getElementById('btn_search').style.background = "url(/images/search_close.svg)";
   document.getElementById('header_search').style.width = '70%';
