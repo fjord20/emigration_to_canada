@@ -150,7 +150,7 @@ const uid_len_email = emailValid.value.length;
       if (uid_len_email == 0) {
         emailValid.style.borderColor = '#E55241';
         emailValid.style.borderWidth = '1px';
-        emailValid.placeholder = 'Введите электронной почты';
+        emailValid.placeholder = 'Введите e-mail';
       }
       
       else {
@@ -191,7 +191,7 @@ const uid_len_email = emailValid.value.length;
     if (uid_len_email == 0) {
       emailValid.style.borderColor = '#E55241';
       emailValid.style.borderWidth = '1px';
-      emailValid.placeholder = 'Введите электронной почты';
+      emailValid.placeholder = 'Введите e-mail';
     }
     
     else {
