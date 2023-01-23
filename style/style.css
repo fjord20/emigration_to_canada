@@ -431,7 +431,7 @@ input[type="search"] {
 .slider {
     display: flex;
     gap: 1.8rem;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .slider > * {
@@ -1165,7 +1165,7 @@ form {
     padding-left: 0.3125rem;
 }
 
-@media screen and (max-width:1440px) {
+@media screen and (min-width:1441px) {
     .container__help_in_immigration {
         background: url(/images/Group_red_dotted.png) no-repeat 1% 100%,
                     url(/images/Group_white_dotted.png) no-repeat 110% 80%,
@@ -1175,7 +1175,7 @@ form {
     } 
 }
 
-@media screen and (min-width:1220px) and (max-width: 1400px) {
+@media screen and (min-width:1201px) and (max-width: 1440px) {
     .container__help_in_immigration {
         background: url(/images/Group_white_dotted.png) no-repeat 110% 80%,
                     url(/images/Group_red_dotted.png) no-repeat -2% 100%,
@@ -1186,16 +1186,94 @@ form {
     
 }
 
-@media screen and (max-width:1220px) {
+/* @media screen and (min-width:1200px) {
     .container__help_in_immigration {
         background: url(/images/Vector.png) no-repeat 93% 30%,
                     url(/images/red_rectangle.png) no-repeat 150%; 
         background-color: var(--clr-background);
     }
     
+} */
+
+/* @media screen and (min-width:600px) and (max-width:1220px) {
+    html {
+        font-size: 0.5rem;
+    }
+
+    .container__help_in_immigration {
+        background: url(/images/Vector.png) no-repeat 93% 30%,
+                    url(/images/red_rectangle.png) no-repeat 150%; 
+        background-color: var(--clr-background);
+    }
+    
+} */
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+    html {
+        font-size: 14px;
+    }
+
+    .popular_offers {
+        padding: 4.375rem 1.125rem 0 1.125rem;
+    }
+
+
+
+    .popular_offers_header_arrow a {
+        display: none;
+    }
+
+
+
+    .navigation__header_wide_container {
+        display: none;
+    }
+    .navigation__header_top {
+        display: none;
+    }
+
+    .navigation__header_bottom {
+        display: none;
+    }
+
+    .popular_offers .slider > * {
+        width: 50%;
+        flex: 0 0 auto;
+        
+    } 
+
+
+
+    .slider li {
+       
+    }
+
+    .slider_images {
+        
+    }
+
+    .a11y-slider-container {
+        
+    }
+
+    .about_project_content {
+        flex-direction: column;
+    }
+
+    .add_to_community_container {
+        flex-direction: column;
+    }
+    /* .container__help_in_immigration {
+        background: url(/images/Vector.png) no-repeat 93% 30%,
+                    url(/images/red_rectangle.png) no-repeat 150%; 
+        background-color: var(--clr-background);
+    } */
+    
 }
 
-@media (min-width: 768px) {
+
+
+/* @media (min-width: 768px) {
     .slider > * {
       width: 50%;
     }
@@ -1211,7 +1289,7 @@ form {
     .slider > * {
       width: 25%;
     }
-  }
+  } */
 
 
 

@@ -5,11 +5,14 @@ sliders.forEach(sliderEl => {
     adaptiveHeight: true,
     dots: true,
     arrows: false,
-    slidesToShow: 2,
+    slidesToShow: 4,
     responsive: {
-        768: {
+        325: {
           slidesToShow: 2,
-          arrows: false
+        },
+        599: {
+          slidesToShow: 2,
+          arrows: true
         },
         960: {
           disable: false, // slider disabled 960px to 1199px
