@@ -7,15 +7,15 @@ sliders.forEach(sliderEl => {
     arrows: false,
     slidesToShow: 4,
     responsive: {
-        599: {
+        320: {
           slidesToShow: 2,
           arrows: false
         },
-        // 960: {
-        //   disable: false, // slider disabled 960px to 1199px
-        //   dots: true,
-        //   slidesToShow: 3,
-        // },
+        599: {
+          disable: false, // slider disabled 960px to 1199px
+          dots: true,
+          slidesToShow: 3,
+        },
         1200: {
           disable: false,
           slidesToShow: 4,

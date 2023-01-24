@@ -112,19 +112,21 @@ p a {
     color: var(--clr-primary-500);
 }
 
-ul {
+.value_list {
+    display: block;
     list-style-type: none;
     padding: 0;
 }
 
-li img {
-    width: 1.5rem;
-    height: 1.5rem;
+.value_list li {
+    display: flex;
+    align-items: top;
+    margin-bottom: 0.75rem;
 }
 
-li {
-    display: flex;
-    align-items: baseline;
+.value_list li::before {
+    content: url(/images/about/leaf-icon.svg);
+    margin-right: 0.5rem;
 }
 
 p[class] {
