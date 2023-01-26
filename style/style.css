@@ -1239,6 +1239,7 @@ form {
     .navigation_mobile {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         padding: 1.43rem 1.28rem;
         box-shadow: 0px 5px 10px rgba(190, 190, 190, 0.25);
     }
@@ -1459,4 +1460,54 @@ form {
         height: 4.57rem;
         font-size: 1rem;
     }
+
+    .footer_content {
+        flex-direction: column;
+        padding: 2.14rem 1.28rem;
+        gap: 2.14rem;
+    }
+
+    .navigation_footer {
+        width: 100%;
+        flex-direction: column;
+        gap: 2.14rem;
+    }
+
+    .navigation_footer_links {
+        width: 100%;
+        font-size: 0.85rem;
+        
+    }
+
+    .navigation_footer_links li a {
+        width: 100%;
+        font-size: 0.85rem;
+        
+    }
+
+
+    .footer_content_social {
+        align-items: flex-start;
+        gap: 1.43rem;
+    }
+
+    .footer_content_social_links {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .footer_content_social a {
+        font-size: 1rem;
+    }
+
+    .footer_copyright_licence_limit_container p {
+        display: none;
+    }
+
+    .footer_copyright_licence_limit_container {
+        justify-content: center;
+        font-size: 0.85rem;
+    }
+
+
 }
