@@ -1518,8 +1518,10 @@ form {
 
     /* slider */
     .slider_content {
-        width: 95%;
-        height: 92%;
+        height: auto;
+        gap: 0;
+
+        padding-bottom: 0;
     }
 
     .slider .slider_images_limit {
@@ -1532,7 +1534,7 @@ form {
     }
 
     .slider_contain > a {
-        padding: 0rem 0.85rem 1.07rem 0.85rem ;
+        padding: 1.07rem 0.85rem 1.07rem 0.85rem ;
         margin: 0;
         font-size: 1rem;
     }
@@ -1576,6 +1578,10 @@ form {
     .slider {
         padding-left: 0;
         gap: 0;
+    }
+
+    .slider li {
+        height: 100%;
     }
 
     .a11y-slider-dots {
