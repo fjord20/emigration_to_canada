@@ -1423,6 +1423,11 @@ form {
     .form_submit_field input {
         height: 1.7rem;
         width: 1.7rem;
+        margin: 0;
+    }
+
+    .add_to_community_information p {
+        font-size: 1.14rem;
     }
 
 
