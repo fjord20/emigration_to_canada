@@ -137,3 +137,52 @@ form button {
     color: var(--clr-text-header);
     text-align: center;
 }
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+    .back_link {
+        display: inline-block;
+        padding: 1.07rem 1.28rem;
+        margin: 0;
+    }
+
+    .autorization h1 {
+        font-size: 1.57rem;
+        margin-bottom: 0;
+    }
+
+    form {
+        width: 100%;
+        padding: 0 1.28rem;
+    }
+
+    form button {
+        margin-top: 1.42rem;
+        margin-bottom: 1.42rem;
+        font-size: 1rem;
+    }
+
+    .registration p,
+    form input {
+        font-size: 1rem;
+    }
+
+    .forget_password_link {
+        font-size: 1.14rem;
+    }
+
+    .registration {
+        max-width: 100%;
+        padding: 2.85rem 1.28rem;
+    }
+
+    .registration  h2 {
+        font-size: 1.57rem;
+    }
+
+    .registration button {
+        width: 100%;
+        font-size: 1rem;
+        margin-top: 0; 
+    }
+     
+}

@@ -50,11 +50,11 @@ iframe {
     vertical-align: top;
 }
 
-.datetime::after {
+/* .datetime::after {
     content: url(/images/bookmark.svg); 
     vertical-align: top;
     visibility: hidden;
-}
+} */
 
 .ontario_article_date_rating a {
     display: inline-block;
@@ -766,7 +766,7 @@ iframe {
     }
 
     .datetime {
-        margin: 0;
+        margin-right: 1.42rem;
     }
 
     .ontario_article_date_rating {
