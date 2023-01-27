@@ -1230,7 +1230,7 @@ form {
 
     .slider_contain {
         padding: 0;
-        height: auto;
+        /* height: auto; */
     }
 
     .slider_contain > a {
