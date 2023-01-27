@@ -19,7 +19,7 @@ iframe {
 }
 
 .slider_one .slider_images {
-    height: 67%;
+    /* height: 67%; */
 }
 
 .ontario_article {
@@ -630,4 +630,138 @@ iframe {
     color: var(--clr-primary-600);
 }
 
+.book_img_hide {
+    display: none;
+}
 
+@media screen and (min-width: 320px) and (max-width: 599px) {
+    .limit_container {
+        grid-template-columns: 1fr;
+        padding: 2.85rem 1.28rem 2.5rem 1.28rem;
+    }
+
+    .books_offers_buy {
+        flex-direction: column;
+    }
+   
+    .book_img_visible {
+        display: none;
+    }
+
+    .book_img_hide {
+        display: block;
+    }
+
+    .books_offers {
+        padding: 2.14rem 1.42rem;
+    }
+
+    .books_offers_cost {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    .books_offers_cost span {
+        margin-left: 1rem;
+    }
+
+    .books_offers_btn_block {
+        margin-top: 2.14rem;
+    }
+
+    .ontario_article {
+        padding-top: 0;
+    }
+
+    .where_to_begin_items_a,
+    .where_to_begin_items_main span,
+    .aside_items_video p,
+    .aside_block_news a,
+    .aside_items_content_questions p,
+    .comments_list_text p,
+    .article_footer_links li a,
+    .books_offers_info p,
+    .ontario_article p {
+        font-size: 1rem;
+    }
+
+    .ontario_article h2 {
+        font-size: 1.57rem;
+    }
+
+    .books_offers_info h3 {
+        font-size: 1.28rem;
+    }
+
+    .books_offers_cost span:first-child {
+        font-size: 2.14rem;
+    }
+
+    .books_offers_cost span:last-child {
+        font-size: 1.14rem;
+    }
+
+    .books_offer_money {
+        display: flex;
+        align-items: center;
+    }
+
+    .ontario_article .ontario_article_main_p {
+        font-size: 1.28rem;
+    }
+
+    .article_footer p {
+        font-size:  1.28rem;
+    }
+
+    .article_footer_links li {
+        align-items:flex-start;
+    }
+
+    .article_footer_suggestion {
+        flex-direction: column;
+    }
+
+    .suggestion {
+        max-width: 100%;
+    } 
+
+    .suggestion p a {
+        font-weight: var(--fw-400);
+    } 
+
+    .comments_add p {
+        font-size: 1.28rem;
+    }
+
+    .comments_add_btn {
+        width: 35%;
+    }
+
+    .comments_author_activity {
+        font-size: 0.85rem;
+    }
+
+    .comments_list li:first-child {
+        padding-top: 0;
+    }
+
+    .show_more_btn button {
+        display: none;
+    }
+
+    .popular_offers {
+        padding-top: 0;
+    }
+
+    .where_to_begin_items_header a,
+    .popular_offers_header h2
+    .where_to_begin_items_header a,
+    .aside_items_video_header a span,
+    .aside_items_content_header a span {
+        font-size: 1.28rem;
+    }
+}
