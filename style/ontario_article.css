@@ -28,7 +28,7 @@ iframe {
 
 .ontario_article h2 {
     font-size: 2rem;
-    line-height: 3rem;
+    line-height: 2.14   rem;
     color: var(--clr-primary-600);
 }
 
@@ -763,5 +763,22 @@ iframe {
     .aside_items_video_header a span,
     .aside_items_content_header a span {
         font-size: 1.28rem;
+    }
+
+    .datetime {
+        margin: 0;
+    }
+
+    .ontario_article_date_rating {
+        margin-top: 1.42rem;
+    }
+
+    .comments_author_name {
+        font-size: 1.14rem;
+    }
+
+    .ontario_article_tags li a{
+        display: block;
+        font-size: 0.71rem;
     }
 }
