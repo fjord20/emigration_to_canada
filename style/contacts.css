@@ -52,6 +52,31 @@
     color: var(--clr-primary-600);
 }
 
-.contact_block {
-    padding-top: 0;
+@media screen and (min-width: 320px) and (max-width: 599px) {
+    .contacts_article {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .contacts_article h2 {
+        font-size: 1.28rem;
+    }
+
+    .contacts_article p:first-child {
+        font-size: 1.14rem;
+    }
+
+    .contacts_article p:not(:first-child) {
+        font-size: 1rem;
+        line-height: 1.42rem;
+    }
+
+    .contact_footer_links li a {
+        font-size: 1rem;
+        font-weight: var(--fw-400);
+    }
+
+    .limit_container {
+        padding-bottom: 0;
+    }
 }

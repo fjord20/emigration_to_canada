@@ -1,6 +1,7 @@
 @import url(/style/reset.css); 
 @import url(/style/style.css); 
-@import url(/style/immigration_article.css); 
+@import url(/style/about.css);
+/* @import url(/style/immigration_article.css);  */
 
 .access_limit_container {
     width: 100%;
@@ -93,4 +94,47 @@ input[type='submit'] {
 input[type='search'] {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
+}
+
+.mobile_container {
+    display: flex;
+}
+
+.aside_items_content {
+    display: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+    .access_denied {
+        grid-template-columns: 1fr;
+    }
+
+    .access_denied_link {
+        padding: 0 1.28rem;
+    }
+
+    .access_limit_container h2 {
+        padding: 2.85rem 1.28rem 2.14rem 1.28rem;
+        font-size: 1.57rem;
+    }
+
+    .add_to_community_information_header {
+        align-items: center;
+    }
+
+    .add_to_community_information_header h2 {
+        padding: 0;
+    }
+
+    .aside_items {
+        padding: 0 1.28rem 5rem 1.28rem;
+    }
+
+    .aside_items_content {
+        display: flex;
+    }
+
+    .mobile_container {
+        padding-bottom: 3rem;
+    }
 }

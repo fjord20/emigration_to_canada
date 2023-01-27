@@ -156,3 +156,35 @@ p[class="about_article_paragraph"] {
     top: 23%;
     left: 3%;
 }
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+    .about_article {
+        padding-top: 0;
+    }
+
+    .about_article h2 {
+        font-size: 1.57rem;
+    }
+
+    .about_article p {
+        font-size: 1.14rem;
+        line-height: 1.71rem;
+    }
+
+
+    .about_article > p[class^='about'] {
+        font-size: 1.28rem;
+    }
+
+    .about_article_quote p {
+        font-size: 1rem;
+    }
+
+    .aside_items {
+        padding-top: 0;
+    }
+
+    .aside_items_content_header a {
+        font-size: 1.28rem;
+    }
+}
