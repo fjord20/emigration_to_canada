@@ -239,3 +239,65 @@
     font-weight: var(--fw-700);
     color: var(--clr-primary-500);
 }
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+
+    .courses_header {
+        padding: 0 1.28rem;
+    }
+
+    .courses_header h2 {
+        font-size: 1.57rem;
+    }
+
+    .services_card_money_dollar,
+    .services_card_text a,
+    .courses_header p {
+        font-size: 1.14rem;
+    }
+
+    .online_tools .services_limit h3,
+    .books .services_limit h3,
+    .services_limit h3 {
+        padding-left: 1.28rem;
+        font-size: 1.28rem;
+        margin-bottom: 0;
+    }
+
+    .services_items {
+        display: flex;
+        flex-direction: column;
+        gap: 2.14rem;
+        padding: 1.42rem 1.28rem 0rem 1.28rem;
+    }
+
+    .services_card {
+        max-width: 100%;
+    }
+
+    .services_card_text p {
+        font-size: 1rem;
+    }
+
+    .services_card_money_ruble {
+        font-size: 1.71rem;
+    }
+
+    .courses .services_limit h3 {
+        padding: 2.5rem 1.28rem 0 1.28rem;
+    }
+
+    .books_items {
+        grid-template-columns: 1fr;
+        padding: 1.42rem 1.28rem 0rem 1.28rem; ;
+    }
+
+    .services_card_contain {
+        height: auto;
+    }
+
+    .online_tools .online_items {
+        grid-template-columns: 1fr;
+    }
+}
+

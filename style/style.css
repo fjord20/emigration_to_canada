@@ -509,12 +509,12 @@ input[type="search"] {
 
 } */
 
-/* .slider_two  .slider_contain,
+.slider_two  .slider_contain,
 .slider_three  .slider_contain,
 .slider_four  .slider_contain,
 .slider_five  .slider_contain {
     height: auto;
-} */
+}
 
 .a11y-slider-dots {
     display: flex;
