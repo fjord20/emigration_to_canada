@@ -1477,6 +1477,14 @@ form {
         font-size: 1rem;
     }
 
+    .enter_answer input:last-child {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+
+
+
     .form_submit_field {
         margin-top: 1.42rem;
         margin-bottom: 2.14rem;
