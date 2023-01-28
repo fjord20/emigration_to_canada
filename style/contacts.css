@@ -26,13 +26,12 @@
 
 .contact_mail {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
 }
 
-.contact_mail::before {
-    content: url(/images/contacts/contact_email.svg);
-    margin-right: 0.625rem;
-    vertical-align: top;
+.contact_mail img {
+    margin: 0;
+    margin-right: 0.45rem;
 }
 
 .contact_footer_links {
