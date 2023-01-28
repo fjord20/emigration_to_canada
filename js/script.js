@@ -200,9 +200,17 @@ const uid_len_email = emailValid.value.length;
     }
   }
 
-  // появление формы для ввода комментариев 
-  function addComments() {
-    document.getElementById('comm').style.display = 'block';
-    document.getElementById('openText').style.backgroundColor = '#F4F4F4';
-    document.getElementById('openText').style.color = '#A6A6A6';
-  }
+  // появление формы для ввода комментариев   
+  let textShow = false;
+  let isFieldShow = document.getElementById('openText');
+   isFieldShow.addEventListener('click', function() {
+    if (textShow) {
+      document.getElementById('comm').style.display = 'none';
+      textShow = false;
+    } else {
+      document.getElementById('comm').style.display = 'flex';
+      textShow = true;
+    }
+  });
+  
+  
