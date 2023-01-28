@@ -53,7 +53,8 @@ iframe {
 } */
 
 .ontario_article_date_rating a {
-    display: inline-block;
+    display: flex;
+    align-items: center;
     margin-right: 1.875rem;
     text-decoration: none;
     font-size: 0.875rem;
@@ -62,7 +63,7 @@ iframe {
 
 .ontario_article_date_rating a::before {
     content: url(/images/bookmark.svg);
-    vertical-align: top;
+   
 }
 
 .stars {
@@ -766,6 +767,7 @@ iframe {
     }
 
     .ontario_article_date_rating {
+        align-items: center;
         margin-top: 1.42rem;
     }
 
