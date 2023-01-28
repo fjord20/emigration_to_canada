@@ -800,6 +800,7 @@ textarea {
     }
 
     .comments_push_btn {
-        padding: 0;
+        width: 35%;
+        margin-bottom: 2.85rem;
     }
 }
