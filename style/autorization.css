@@ -141,7 +141,7 @@ form button {
 @media screen and (min-width: 320px) and (max-width: 599px) {
     .back_link {
         display: block;
-        margin: 1.07rem 1.28rem;
+        margin: 5.07rem 1.28rem;
        
         font-size: 0.85rem;
     }
