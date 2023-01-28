@@ -143,6 +143,13 @@ form button {
         display: block;
         padding: 1.07rem 1.28rem;
         margin: 0;
+        font-size: 0.85rem;
+    }
+
+    .back_link::before{
+        content: url(/images/mobile/autorization/arrow_left_back.svg);
+        margin: 0;
+
     }
 
     .autorization h1 {
