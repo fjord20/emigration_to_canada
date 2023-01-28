@@ -153,13 +153,13 @@
             <a class="back_link" href="../index.html">Назад</a>
             <div class="autorization">
                 <h1>Создать учетную запись</h1>
-                <form action="https://fe.it-academy.by/TestForm.php" method="post"> 
-                    <input id="nameUser" type="text" placeholder="Ваше имя">         
-                    <input id="email_not_valid" type="email" placeholder="Ваш e-mail">
-                    <input id="pass_empty" type="password" placeholder="Пароль">
+                <form action="https://fe.it-academy.by/TestForm.php" method="get"> 
+                    <input id="nameUser" type="text" name="your_name" placeholder="Ваше имя">         
+                    <input id="email_not_valid" type="email" name="your_email" placeholder="Ваш e-mail">
+                    <input id="pass_empty" type="password" name="your_password" placeholder="Пароль">
                     <div class="check_answer">
                         <input id="numbers" type="text" placeholder="9 + 3 =" disabled>
-                        <input id="answer" type="text" placeholder="Введите ответ">
+                        <input id="answer" type="text" name="your_answer" placeholder="Введите ответ">
                     </div>
                     <div class="form_submit">
                         <input id="submit" type="checkbox" >

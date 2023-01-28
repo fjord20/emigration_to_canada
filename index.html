@@ -875,19 +875,19 @@
                     <p>Получите профессиональные советы об иммиграции в Канаду, новости, стратегии и опыт других людей.</p>
                     <p>Нас уже &ndash; <span>55574</span> человек (а)</p>
                 </article>
-                <form action="https://fe.it-academy.by/TestForm.php" method="post">                      
+                <form action="https://fe.it-academy.by/TestForm.php" method="get">                      
                     <div class="input_fields">
-                        <input id="nameUser" type="text" name="1234" placeholder="Ваше имя">
-                        <input id="email_not_valid" type="email" placeholder="Ваш e-mail">
-                        <input id="pass_empty" type="password" placeholder="Пароль">
+                        <input id="nameUser" type="text" name="your_name" placeholder="Ваше имя">
+                        <input id="email_not_valid" type="email" name="your_email" placeholder="Ваш e-mail">
+                        <input id="pass_empty" type="password" name="your_password" placeholder="Пароль">
                         <div class="enter_answer">
                             <input id="numbers" type="text" placeholder="9 + 3 =" disabled>
-                            <input id="answer" type="text" placeholder="Введите ответ">
+                            <input id="answer" type="text" name="your_answer" placeholder="Введите ответ">
                         </div>
                     </div>
                     <div class="form_submit_field">
-                        <input id="submit" type="checkbox" >
-                        <label for="submit"> Я согласен(а) на обработку моих персональных данных </label>
+                        <input id="sub" type="checkbox">
+                        <label for="sub"> Я согласен(а) на обработку моих персональных данных </label>
                     </div>
                     <div class="form_button_field">
                         <button class="form_registration_btn" type="submit" onclick="userid_validation()">Зарегистрироваться</button>
@@ -903,16 +903,15 @@
                      </div>
                     <p>Получите профессиональные советы об иммиграции в Канаду,новости,стратегии и опыт других людей.</p>
                     <p>Нас уже &ndash; <span>55574</span> человек (а)</p>
-                    <form action="https://fe.it-academy.by/TestForm.php" method="post">                      
+                    <form action="https://fe.it-academy.by/TestForm.php" method="get">                      
                         <div class="input_fields">
-                            <input id="nameUser" type="text" placeholder="Ваше имя">
-                            <input id="email_not_valid" type="email" placeholder="Ваш e-mail">
-                            <input id="pass_empty" type="password" placeholder="Пароль">
+                            <input id="nameUser" type="text" name="your_name" placeholder="Ваше имя">
+                            <input id="email_not_valid" type="email" name="your_email" placeholder="Ваш e-mail">
+                            <input id="pass_empty" type="password" name="your_password" placeholder="Пароль">
                             <div class="enter_answer">
                                 <input id="numbers" type="text" placeholder="9 + 3 =" disabled>
-                                <input id="answer" type="text" placeholder="Введите ответ">
+                                <input id="answer" type="text" name="your_answer" placeholder="Введите ответ">
                             </div>
-                        </div>
                         <div class="form_submit_field">
                             <input id="submit" type="checkbox" >
                             <label for="submit"> Я согласен(а) на обработку моих персональных данных </label>
