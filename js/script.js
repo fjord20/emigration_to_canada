@@ -198,6 +198,11 @@ const uid_len_email = emailValid.value.length;
     else {
       emailValid.style.borderColor = 'limegreen';
     }
+  }
 
-
+  // появление формы для ввода комментариев 
+  function addComments() {
+    document.getElementById('comm').style.display = 'block';
+    document.getElementById('openText').style.backgroundColor = '#F4F4F4';
+    document.getElementById('openText').style.color = '#A6A6A6';
   }

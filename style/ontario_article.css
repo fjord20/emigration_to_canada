@@ -294,10 +294,13 @@ iframe {
 }
 
 .comments_area {
+    display: none;
     max-width: 100%;
+    flex-direction: column;
 }
 
 textarea {
+    width: 100%;
     padding: 1.25rem;
     margin-bottom: 1.25rem;
     outline: none;
@@ -320,6 +323,7 @@ textarea {
     font-weight: var(--fw-700);
 }
 
+.comments_push_btn, 
 .comments_add_btn {
     width: 25%;
     height: 4rem;
@@ -331,7 +335,7 @@ textarea {
     color: var(--clr-content-slider);
     cursor: pointer;
 }
-
+.comments_push_btn:hover,
 .comments_add_btn:hover {
     background-color: var(--clr-btn-hover);
 }
