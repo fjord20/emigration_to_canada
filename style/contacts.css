@@ -24,6 +24,11 @@
     color: var(--clr-text-header);
 }
 
+.contact_mail {
+    display: flex;
+    align-items: flex-start;
+}
+
 .contact_mail::before {
     content: url(/images/contacts/contact_email.svg);
     margin-right: 0.625rem;
