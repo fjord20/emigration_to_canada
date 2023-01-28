@@ -61,9 +61,15 @@ form button {
 
 @media screen and (min-width: 320px) and (max-width: 599px) {
     .back_link {
-        display: inline-block;
+        display: flex;
         padding: 1.07rem 1.28rem;
         margin: 0;
+        font-size: 0.85rem;
+        align-items: flex-start;
+    }
+
+    .back_link::before{
+        content: url(/images/mobile/autorization/arrow_left_back.svg);
     }
 
     .autorization h1 {
