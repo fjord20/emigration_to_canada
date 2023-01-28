@@ -798,4 +798,8 @@ textarea {
         display: block;
         font-size: 0.71rem;
     }
+
+    .comments_push_btn {
+        padding: 0;
+    }
 }
