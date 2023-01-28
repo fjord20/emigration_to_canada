@@ -293,6 +293,20 @@ iframe {
     border-top: 1px solid var(--clr-input-border);
 }
 
+.comments_area {
+    max-width: 100%;
+}
+
+textarea {
+    padding: 1.25rem;
+    margin-bottom: 1.25rem;
+    outline: none;
+    resize: none;
+    border-radius: 0.625rem;
+    border: 1px solid var(--clr-input-border);
+    color: var(--clr-input-placeholder);
+}
+
 .comments_add {
     display: flex;
     padding: 2.375rem 0 1.75rem 0;
@@ -357,7 +371,6 @@ iframe {
 .comments_list_header {
     display: flex;
     gap: 0.9375rem;
-    
 }
 
 .comments_author_name {
