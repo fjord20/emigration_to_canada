@@ -690,6 +690,8 @@ textarea {
         padding-top: 0;
     }
 
+    .comments_push_btn,
+    .comments_add_btn,
     .where_to_begin_items_a,
     .where_to_begin_items_main span,
     .aside_items_video p,
