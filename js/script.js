@@ -201,15 +201,19 @@ const uid_len_email = emailValid.value.length;
   }
 
   // появление формы для ввода комментариев   
-  let textShow = false;
-  let isFieldShow = document.getElementById('openText');
-   isFieldShow.addEventListener('click', function() {
-    if (textShow) {
+  let isTextShow = false;
+  let fieldShow = document.getElementById('openText');
+   fieldShow.addEventListener('click', function() {
+    if (isTextShow) {
       document.getElementById('comm').style.display = 'none';
-      textShow = false;
+      fieldShow.style.backgroundColor = '#E55241';
+      fieldShow.style.color = '#FFF';
+      isTextShow = false;
     } else {
       document.getElementById('comm').style.display = 'flex';
-      textShow = true;
+      fieldShow.style.backgroundColor = '#F4F4F4';
+      fieldShow.style.color = '#A6A6A6';
+      isTextShow = true;
     }
   });
   
