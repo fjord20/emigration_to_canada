@@ -141,14 +141,15 @@ form button {
 @media screen and (min-width: 320px) and (max-width: 599px) {
     .back_link {
         display: block;
-        padding: 1.07rem 1.28rem;
-        margin: 0;
+        margin: 1.07rem 1.28rem;
+       
         font-size: 0.85rem;
     }
 
     .back_link::before{
         content: url(/images/mobile/autorization/arrow_left_back.svg);
         margin: 0;
+        height: 100%;
 
     }
 
