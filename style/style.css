@@ -1328,7 +1328,7 @@ form {
         max-width: 100%;
         height: 100%;
         margin: 0;
-        background-color: var(--clr-background-dropmenu);
+        background: none;
     }
 
     .container__help_in_immigration {
@@ -1653,7 +1653,7 @@ form {
     }
 
     /* hamburger */
-    .navigation__header_wide_container {
+    /* .navigation__header_wide_container {
         display: flex;
    }
 
@@ -1737,6 +1737,6 @@ form {
         color: var(--clr-content-slider);
         font-size: 1rem;
         font-weight: var(--fw-700);
-   }
+   } */
 
 }
