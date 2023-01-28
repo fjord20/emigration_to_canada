@@ -1302,6 +1302,7 @@ form {
         align-items: center;
         padding: 1.43rem 1.28rem;
         box-shadow: 0px 5px 10px rgba(190, 190, 190, 0.25);
+        
     }
 
     .navigation_left_side {
@@ -1327,7 +1328,7 @@ form {
         max-width: 100%;
         height: 100%;
         margin: 0;
-        background: none;
+        background-color: var(--clr-background-dropmenu);
     }
 
     .container__help_in_immigration {
@@ -1652,8 +1653,7 @@ form {
     }
 
     /* hamburger */
-    .navigation__header_wide_container,
-    .navigation_top {
+    .navigation__header_wide_container {
         display: flex;
    }
 
@@ -1667,14 +1667,18 @@ form {
    }
 
    .navigation_top {
+        display: flex;
         width: 100%;
         margin: 0;
+        border-top: 1px solid var(--clr-input-border);
+        border-bottom: 1px solid var(--clr-input-border);
         background: none;
    }
-   
+
    .navigation__header_top {
         margin: 0;
         grid-template-columns: 1fr;
+        
    }
 
    .navigation__header_top_right {
@@ -1685,6 +1689,7 @@ form {
         flex-direction: column;
         align-items: flex-start;
         justify-content: left;
+        padding: 0;
    }
 
    main,
@@ -1699,6 +1704,7 @@ form {
         flex-direction: column;
         gap: 0;
         margin: 0;
+        margin-bottom: 2.85rem;
    }
 
    .navigation__header_bottom_menu_row li {
@@ -1711,14 +1717,26 @@ form {
 
    .navigation__header_bottom_menu_row li::after {
         content: url(/images/mobile/main/arrow_down_menu.svg);
-        
    }
 
    .navigation__header_bottom_menu_row li a {
         display: block;
         font-size: 1.28rem;
         font-weight: var(--fw-700);
+   }
 
+   .navigation__header_search_section {
+        width: 100%;
+        justify-content: left;
+        padding-left: 1.28rem;
+   }
+   .navigation__header_bottom_button {
+        width: auto;
+        padding: 1.07rem 2.28rem;
+        background-color: var(--clr-primary-500);
+        color: var(--clr-content-slider);
+        font-size: 1rem;
+        font-weight: var(--fw-700);
    }
 
 }
