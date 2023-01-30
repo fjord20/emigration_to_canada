@@ -284,5 +284,8 @@ function userid_validation_() {
     document.getElementById('wide').style.display = 'flex';
     document.getElementById('main').style.display = 'none';
     document.getElementById('footer').style.display = 'none';
+    document.getElementById('ham').style.display = 'none';
+    document.getElementById('ham_close').style.display = 'block';
+
 }
 

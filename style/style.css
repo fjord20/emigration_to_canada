@@ -1679,8 +1679,7 @@ form {
 
    .navigation__header_top {
         margin: 0;
-        grid-template-columns: 1fr;
-        
+        grid-template-columns: 1fr;  
    }
 
    .navigation__header_top_right {
@@ -1694,7 +1693,7 @@ form {
         padding: 0;
    }
 
-   
+   .btn_close,
    .navigation__header_button_search,
    .navigation__header_bottom_logo {
         display: none;

@@ -13,11 +13,14 @@
     <header>
         <nav class="navigation_mobile">
             <div class="navigation_left_side">
-                
-                <svg onclick="hamBurger()" type="button" class="hamburger" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg onclick="hamBurger()" id="ham" type="button" class="hamburger" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="40" height="40" rx="4" fill="#E55241"/>
                     <path d="M8 28H32M8 12H32H8ZM8 20H32H8Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
+                <svg id="ham_close" class="btn_close" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="4" fill="#E55241"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M29.1354 12.6016C29.2494 12.4877 29.3399 12.3525 29.4016 12.2037C29.4634 12.0548 29.4952 11.8953 29.4953 11.7341C29.4954 11.5729 29.4638 11.4134 29.4022 11.2644C29.3406 11.1155 29.2503 10.9802 29.1364 10.8661C29.0226 10.7521 28.8873 10.6616 28.7385 10.5999C28.5896 10.5381 28.4301 10.5063 28.2689 10.5062C28.1078 10.5061 27.9482 10.5377 27.7993 10.5993C27.6503 10.6609 27.515 10.7512 27.401 10.8651L20.0004 18.2656L12.602 10.8651C12.3718 10.6348 12.0594 10.5054 11.7338 10.5054C11.4081 10.5054 11.0958 10.6348 10.8655 10.8651C10.6352 11.0954 10.5059 11.4077 10.5059 11.7333C10.5059 12.059 10.6352 12.3713 10.8655 12.6016L18.266 20L10.8655 27.3984C10.7515 27.5124 10.661 27.6478 10.5993 27.7968C10.5376 27.9458 10.5059 28.1054 10.5059 28.2667C10.5059 28.4279 10.5376 28.5876 10.5993 28.7366C10.661 28.8856 10.7515 29.0209 10.8655 29.1349C11.0958 29.3652 11.4081 29.4946 11.7338 29.4946C11.895 29.4946 12.0547 29.4628 12.2037 29.4011C12.3527 29.3394 12.488 29.249 12.602 29.1349L20.0004 21.7344L27.401 29.1349C27.6313 29.3649 27.9435 29.494 28.2689 29.4938C28.5944 29.4936 28.9064 29.3642 29.1364 29.1339C29.3664 28.9036 29.4955 28.5914 29.4953 28.2659C29.4951 27.9405 29.3657 27.6284 29.1354 27.3984L21.7348 20L29.1354 12.6016Z" fill="white"/>
+                    </svg>
                 <a href="/index.html"><img src="/images/mobile/main/logo_header.png" alt="logo"></a>
             </div>
             <div class="navigation_right_side">
@@ -925,7 +928,7 @@
                 </article>
             </div> 
         </section>
-    </main>
+    </main> 
     <!-- footer section -->
     <footer id="footer">
         <div class="footer_limit_container">
