@@ -278,7 +278,9 @@ function userid_validation_() {
   //   document.getElementById('top').style.display = 'flex';
   // })
   
+  // меню гамбургер
   function hamBurger() {
-    document.getElementById('top').style.display = 'none';
+    document.getElementById('top').style.display = 'flex';
+    document.getElementById('wide').style.display = 'flex';
 }
 

@@ -1694,12 +1694,11 @@ form {
         padding: 0;
    }
 
-   /* main,
-   footer,
+   
    .navigation__header_button_search,
    .navigation__header_bottom_logo {
         display: none;
-   } */
+   }
 
    .navigation__header_bottom_menu_row {
         width: 100%;
