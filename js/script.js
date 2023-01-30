@@ -282,5 +282,7 @@ function userid_validation_() {
   function hamBurger() {
     document.getElementById('top').style.display = 'flex';
     document.getElementById('wide').style.display = 'flex';
+    document.getElementById('main').style.display = 'none';
+    document.getElementById('footer').style.display = 'none';
 }
 
