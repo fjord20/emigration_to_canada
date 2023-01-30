@@ -286,6 +286,14 @@ function userid_validation_() {
     document.getElementById('footer').style.display = 'none';
     document.getElementById('ham').style.display = 'none';
     document.getElementById('ham_close').style.display = 'block';
+}
 
+function hamBurger_close() {
+  document.getElementById('top').style.display = 'none';
+  document.getElementById('wide').style.display = 'none';
+  document.getElementById('main').style.display = 'block';
+  document.getElementById('footer').style.display = 'block';
+  document.getElementById('ham').style.display = 'block';
+  document.getElementById('ham_close').style.display = 'none';
 }
 
