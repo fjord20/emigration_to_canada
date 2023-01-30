@@ -13,11 +13,11 @@
     <header>
         <nav class="navigation_mobile">
             <div class="navigation_left_side">
-                <svg  class="hamburger" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="hamburger" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="40" height="40" rx="4" fill="#E55241"/>
                     <path d="M8 28H32M8 12H32H8ZM8 20H32H8Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-                <img src="/images/mobile/main/logo_header.png" alt="logo">
+                <a href="/index.html"><img src="/images/mobile/main/logo_header.png" alt="logo"></a>
             </div>
             <div class="navigation_right_side">
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -46,7 +46,7 @@
             </div>     
         </nav>
         <!-- navigation header section -->
-        <div class="navigation_top">  
+        <div id="top" class="navigation_top">  
             <nav class="navigation__header_top">
                 <ul class="navigation__header_top_left">
                     <li> <a href="/pages/about.html" target="_blank">О проекте</a></li>
@@ -905,19 +905,19 @@
                     <p>Нас уже &ndash; <span>55574</span> человек (а)</p>
                     <form action="https://fe.it-academy.by/TestForm.php" method="get">                      
                         <div class="input_fields">
-                            <input id="nameUser" type="text" name="your_name" placeholder="Ваше имя">
-                            <input id="email_not_valid" type="email" name="your_email" placeholder="Ваш e-mail">
-                            <input id="pass_empty" type="password" name="your_password" placeholder="Пароль">
+                            <input id="nameUser_1" type="text" name="your_name" placeholder="Ваше имя">
+                            <input id="email_not_valid_1" type="email" name="your_email" placeholder="Ваш e-mail">
+                            <input id="pass_empty_1" type="password" name="your_password" placeholder="Пароль">
                             <div class="enter_answer">
-                                <input id="numbers" type="text" placeholder="9 + 3 =" disabled>
-                                <input id="answer" type="text" name="your_answer" placeholder="Введите ответ">
+                                <input id="numbers_1" type="text" placeholder="9 + 3 =" disabled>
+                                <input id="answer_1" type="text" name="your_answer" placeholder="Введите ответ">
                             </div>
                         <div class="form_submit_field">
                             <input id="submit" type="checkbox" >
                             <label for="submit"> Я согласен(а) на обработку моих персональных данных </label>
                         </div>
                         <div class="form_button_field">
-                            <button class="form_registration_btn" type="submit" onclick="userid_validation()">Зарегистрироваться</button>
+                            <button class="form_registration_btn" type="submit" onclick="userid_validation_()">Зарегистрироваться</button>
                             <button class="form_login_btn" type="button" onclick="document.location = '/pages/autorization.html'">Войти в аккаунт </button>
                         </div>
                     </form>
