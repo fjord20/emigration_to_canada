@@ -273,27 +273,27 @@ function userid_validation_() {
     }
   });
 
-  // let hamBurger = document.getElementById('ham');
-  // hamBurger.addEventListener('click', function {
-  //   document.getElementById('top').style.display = 'flex';
-  // })
-  
   // меню гамбургер
   function hamBurger() {
     document.getElementById('top').style.display = 'flex';
     document.getElementById('wide').style.display = 'flex';
-    document.getElementById('main').style.display = 'none';
-    document.getElementById('footer').style.display = 'none';
+    // document.querySelector('main').style.display = 'none';
+    // document.querySelector('footer').style.display = 'none';
     document.getElementById('ham').style.display = 'none';
     document.getElementById('ham_close').style.display = 'block';
 }
 
-function hamBurger_close() {
-  document.getElementById('top').style.display = 'none';
-  document.getElementById('wide').style.display = 'none';
-  document.getElementById('main').style.display = 'block';
-  document.getElementById('footer').style.display = 'block';
-  document.getElementById('ham').style.display = 'block';
-  document.getElementById('ham_close').style.display = 'none';
-}
+  function hamBurger_close() {
+    document.getElementById('top').style.display = 'none';
+    document.getElementById('wide').style.display = 'none';
+    // document.querySelector('main').style.display = 'block';
+    // document.querySelector('footer').style.display = 'block';
+    document.getElementById('ham').style.display = 'block';
+    document.getElementById('ham_close').style.display = 'none';
+  }
+
+  function drop_immigr() {
+      document.querySelector('.drop_immigration').style.display = 'block';
+  }
+
 

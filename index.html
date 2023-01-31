@@ -13,7 +13,7 @@
     <header>
         <nav class="navigation_mobile">
             <div class="navigation_left_side">
-                <svg onclick="hamBurger()" id="ham" type="button" class="hamburger" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg onclick="hamBurger()" id="ham" class="hamburger" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="40" height="40" rx="4" fill="#E55241"/>
                     <path d="M8 28H32M8 12H32H8ZM8 20H32H8Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
@@ -123,7 +123,7 @@
                             <li><a href="/pages/access_denied.html">Монеты</a></li>
                             <li><a href="/pages/access_denied.html">Уведомления</a></li>
                             <li><a href="/pages/access_denied.html">Настройки</a></li>
-                            <li><a href="#"> <span> Выход </span></a></li>
+                            <li><a href="#"><span> Выход </span></a></li>
                         </ul>
                     </li>
                 </ul>
@@ -134,7 +134,15 @@
             <nav class="navigation__header_bottom">
                 <a href="/index.html"> <img class="navigation__header_bottom_logo" src="/images/logo.png" alt="logo"></a>
                 <ul id="row_1" class="navigation__header_bottom_menu_row">
-                    <li><a href="/pages/immigration_article.html" target="_blank">Иммиграция</a></li>
+                    <li onclick="drop_immigr()" ><a href="/pages/immigration_article.html" target="_blank">Иммиграция</a>
+                        <ul class="drop_immigration">
+                            <li><a href="">Вузы Канады, после которых вы найдете работу!</a></li>
+                            <li><a href="">Онтарио восполняет нехватку квалифицированных специалистов</a></li>
+                            <li><a href="">Акции от канадский колледжей: стипендия &dollar;10 000 и бесплатный</a></li>
+                            <li><a href="">Новая Шотландия пригласла иммигрировать предпринимателей</a></li>
+                            <li><a href="">Одна из провинций Канады будет трудоустраивать иммигрантов</a></li>
+                        </ul>
+                    </li>
                     <li><a href="/pages/access_denied.html" target="_blank">Учеба</a></li>
                     <li><a href="/pages/access_denied.html" target="_blank">Работа</a></li>
                     <li><a href="/pages/access_denied.html" target="_blank">Визы</a></li>
@@ -153,7 +161,7 @@
         </div>  
     </header>
     <!-- main section -->
-    <main id="main">
+    <main>
         <div class="container__help_in_immigration">
             <div class="container__help_in_immigration_limit">
                 <div class="container__help_in_immigration_list">
@@ -916,6 +924,7 @@
                                 <input id="numbers_1" type="text" placeholder="9 + 3 =" disabled>
                                 <input id="answer_1" type="text" name="your_answer" placeholder="Введите ответ">
                             </div>
+                        </div>    
                         <div class="form_submit_field">
                             <input id="submit" type="checkbox" >
                             <label for="submit"> Я согласен(а) на обработку моих персональных данных </label>
@@ -930,7 +939,7 @@
         </section>
     </main> 
     <!-- footer section -->
-    <footer id="footer">
+    <footer>
         <div class="footer_limit_container">
             <div class="footer_content">
                 <a href="/index.html"><img src="/images/footer-logo_immigrant.png" alt="logo"></a>
