@@ -256,23 +256,26 @@ function userid_validation_() {
     }
   }
 
-  // появление формы для ввода комментариев   
-  let isTextShow = false;
-  let fieldShow = document.getElementById('openText');
-   fieldShow.addEventListener('click', function() {
-    if (isTextShow) {
-      document.getElementById('comm').style.display = 'none';
-      fieldShow.style.backgroundColor = '#E55241';
-      fieldShow.style.color = '#FFF';
-      isTextShow = false;
-    } else {
-      document.getElementById('comm').style.display = 'flex';
-      fieldShow.style.backgroundColor = '#F4F4F4';
-      fieldShow.style.color = '#A6A6A6';
-      isTextShow = true;
+  // появление формы для ввода комментариев
+  
+    let isTextShow = false;
+    let fieldShow = document.getElementById('openText');
+    if (fieldShow !== null) {
+      fieldShow.addEventListener('click', function() {
+        if (isTextShow) {
+            document.getElementById('comm').style.display = 'none';
+            fieldShow.style.backgroundColor = '#E55241';
+            fieldShow.style.color = '#FFF';
+            isTextShow = false;
+          } 
+          else {
+            document.getElementById('comm').style.display = 'flex';
+            fieldShow.style.backgroundColor = '#F4F4F4';
+            fieldShow.style.color = '#A6A6A6';
+            isTextShow = true;
+          } 
+      });
     }
-  });
-
   // меню гамбургер
   function hamBurger() {
     document.getElementById('top').style.display = 'flex';
@@ -292,8 +295,46 @@ function userid_validation_() {
     document.getElementById('ham_close').style.display = 'none';
   }
 
-  function drop_immigr() {
-      document.querySelector('.drop_immigration').style.display = 'block';
-  }
+//   function drop_immigr() {
+//       document.querySelector('.drop_menu_mobile').style.display = 'block';
+//   }
+
+//   function drop_immigr_1() {
+//     document.querySelector('.drop_menu_mobile_1').style.display = 'block';
+// }
+
+  // let drop = document.querySelector('.btn_arrow');
+  //   if (drop !== null) {
+  //     drop.addEventListener('click', function() {
+  //     document.querySelector('.drop_menu_mobile').style.display = 'block';
+  //     drop.style.transform = 'rotate(180deg)';
+  //   });
+  // }
+
+  let isListShow = false;
+  let drop = document.querySelector('.btn_arrow');
+  if (drop !== null) {
+    drop.addEventListener('click', function(event) {
+    if (isListShow) {
+    document.querySelector('.drop_menu_mobile').style.display = 'block';
+    drop.style.transform = 'rotate(180deg)';
+    isListShow = false;
+    }
+    else {
+      document.querySelector('.drop_menu_mobile').style.display = 'none';
+      drop.style.transform = 'rotate(0deg)';
+      isListShow = true;
+    }
+    drop.removeEventListener('click', event);
+  });
+}
+
+
+
+
+
+  
+ 
+    
 
 
