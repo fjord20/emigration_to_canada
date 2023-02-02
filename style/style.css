@@ -1177,7 +1177,7 @@ form {
 
 .mobile_container,
 .about_mobile,
-/* .drop_menu_account_mobile, */
+.drop_menu_account_mobile,
 .mobile_main_img {
     display: none;
 }
@@ -1782,7 +1782,7 @@ form {
 
    .drop_menu_mobile li a {
         font-size: 1.14rem;
-        font-weight:var(--fw-400);
+        font-weight: var(--fw-400);
    }
 
    .drop_menu_mobile {
