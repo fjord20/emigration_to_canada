@@ -1353,6 +1353,7 @@ form {
         width: 2.85rem;
         height: 2.85rem;
         border: none;
+        border-radius: 0;
         background: url(/images/search_active.png) center;
         padding-right: 1rem;
     }
@@ -1361,8 +1362,8 @@ form {
         height: 2.85rem;
         width: 100%;
         border: 1px solid var(--clr-input-border);
-        border-top-left-radius: 0.25rem;
-        border-bottom-left-radius: 0.25rem;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
         outline: none;
     }
 
