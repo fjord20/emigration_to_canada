@@ -1805,6 +1805,7 @@ form {
         border: none;
         background-image: url(/images/mobile/main/arrow_down_menu.svg);
         background-color: var(--clr-content-slider);
+        background-repeat: no-repeat;
    }
 
    .account_mobile_icon {
