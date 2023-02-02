@@ -268,7 +268,7 @@ ul li.active_menu a {
     color: var(--clr-primary-500);
 }
 
-.menu_row_mobile button,
+.btn_arrow,
 .drop_menu_mobile {
     display: none;
 }
@@ -1798,7 +1798,7 @@ form {
         margin: 0;
    }
 
-   .menu_row_mobile button {
+   .btn_arrow {
         display: block;
         height: 1.14rem;
         width: 1.14rem;
