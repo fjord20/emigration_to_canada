@@ -369,23 +369,23 @@ function userid_validation_() {
     document.getElementById('ham_close').style.display = 'none';
   }
 
-  let isListShow = false;
-  let drop = document.querySelector('.btn_arrow');
-  if (drop !== null) {
-    drop.addEventListener('click', function(event) {
-    if (isListShow) {
-    document.querySelector('.drop_menu_mobile').style.display = 'block';
-    drop.style.transform = 'rotate(180deg)';
-    isListShow = false;
-    }
-    else {
-      document.querySelector('.drop_menu_mobile').style.display = 'none';
-      drop.style.transform = 'rotate(0deg)';
-      isListShow = true;
-    }
-    drop.removeEventListener('click', event);
-  });
-}
+//   let isListShow = false;
+//   let drop = document.querySelector('.btn_arrow');
+//   if (drop !== null) {
+//     drop.addEventListener('click', function(event) {
+//     if (isListShow) {
+//     document.querySelector('.drop_menu_mobile').style.display = 'block';
+//     drop.style.transform = 'rotate(180deg)';
+//     isListShow = false;
+//     }
+//     else {
+//       document.querySelector('.drop_menu_mobile').style.display = 'none';
+//       drop.style.transform = 'rotate(0deg)';
+//       isListShow = true;
+//     }
+//     drop.removeEventListener('click', event);
+//   });
+// }
 
 
 
