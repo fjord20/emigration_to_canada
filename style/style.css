@@ -1177,20 +1177,10 @@ form {
 
 .mobile_container,
 .about_mobile,
-.drop_menu_account_mobile,
+/* .drop_menu_account_mobile, */
 .mobile_main_img {
     display: none;
 }
-
-/* @media screen and (min-width:1441px) {
-    .container__help_in_immigration {
-        background: url(/images/Group_red_dotted.png) no-repeat 1% 100%,
-                    url(/images/Group_white_dotted.png) no-repeat 110% 80%,
-                    url(/images/Vector.png) no-repeat 87% 30%,
-                    url(/images/red_rectangle.png) no-repeat 110%;
-        background-color: var(--clr-background);
-    } 
-} */
 
 @media screen and (min-width:1201px) {
     .container__help_in_immigration {
