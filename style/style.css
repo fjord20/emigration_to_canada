@@ -46,6 +46,7 @@ html, body {
 
 .navigation__header_top {
     display: grid;
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     grid-template-columns: 1fr 1fr; 
@@ -317,10 +318,13 @@ input[type="submit"] {
 input[type="search"] {
     height: 2.75rem;
     width: 100%;
+    padding-left: 0.714rem;
     border: 1px solid var(--clr-input-border);
     border-top-left-radius: 0.25rem;
     border-bottom-left-radius: 0.25rem;
     outline: none;
+    font-size: 1rem;
+   
 }
 
  /* section help in immigration */
@@ -1171,15 +1175,10 @@ form {
     padding-left: 0.3125rem;
 }
 
+.mobile_container,
+.about_mobile,
+.drop_menu_account_mobile,
 .mobile_main_img {
-    display: none;
-}
-
-.about_mobile {
-    display: none;
-}
-
-.mobile_container {
     display: none;
 }
 
@@ -1308,19 +1307,73 @@ form {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 1.43rem 1.28rem;
-        box-shadow: 0px 5px 10px rgba(190, 190, 190, 0.25);
-        
-    }
-
-    .navigation_left_side {
-        display: flex;
         gap: 1.43rem;
+        padding: 1.43rem 1.28rem;
+        box-shadow: 0px 5px 10px rgba(190, 190, 190, 0.25);  
     }
 
+    /* .navigation_right_side a,
+    .navigation_left_side {
+        display: none;
+    } */
+
+    .navigation_left_side img {
+        max-width: none;
+    }
+
+    
     .navigation_right_side {
         display: flex;
+        width: 100%;
         gap: 1.43rem;
+        justify-content: space-between;
+        align-content: center;
+    }
+    
+    .right_side_btn_block {
+        display: flex;
+        gap: 1.07rem;
+        align-items: center;
+        justify-content: space-between
+    }
+
+    .btn_block_btn_search {
+        width: 2.85rem;
+        height: 2.85rem;
+        background: url(/images/mobile/main/search.svg) no-repeat center;
+        border: none;
+        border-radius: 0.285rem;
+    }
+
+    .btn_block_btn_account {
+        width: 2.85rem;
+        height: 2.85rem;
+        background: url(/images/mobile/main/account.svg) no-repeat center;
+        border: none;
+        border-radius: 0.285rem;
+    }
+
+    .right_side_search_field {
+        display: none;
+        width: 100%;
+        justify-content: right;
+    }
+
+    input[type="submit"] {
+        width: 2.85rem;
+        height: 2.85rem;
+        border: none;
+        background: url(/images/search_active.png) center;
+        padding-right: 1rem;
+    }
+    
+    input[type="search"] {
+        height: 2.85rem;
+        width: 100%;
+        border: 1px solid var(--clr-input-border);
+        border-top-left-radius: 0.25rem;
+        border-bottom-left-radius: 0.25rem;
+        outline: none;
     }
 
     /* body */
@@ -1329,7 +1382,6 @@ form {
         max-width: 100%;
         flex-direction: column;
         padding: 2.5rem 1.28rem 0 1.28rem;
-
     }
 
     .container__help_in_immigration_limit {
@@ -1678,6 +1730,7 @@ form {
 
    .navigation__header_top_right {
         padding: 0.71rem 1.28rem ;
+        justify-content: left;
    }
 
    .navigation__header_bottom {
@@ -1709,11 +1762,6 @@ form {
         padding: 0.71rem 1.28rem ;
         border-bottom: 1px solid var(--clr-input-border);
    }
-
-   /* .navigation__header_bottom_menu_row li::after {
-        content: url(/images/mobile/main/arrow_down_menu.svg);
-        display: block;
-   } */
 
    .navigation__header_bottom_menu_row li a {
         display: block;
@@ -1768,7 +1816,47 @@ form {
         background-color: var(--clr-content-slider);
    }
 
-   .drop_menu_mobile_1 {
-    display: none;
+   .account_mobile_icon {
+        display: flex;
+        gap: 0.714rem;
    }
+
+   .account_mobile_icon p {
+        font-size: 1.285rem;
+        font-weight: var(--fw-700)
+   }
+   
+   .drop_menu_account_mobile {
+        display: none;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+   }
+
+   .drop_menu_account_mobile li {
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0.71rem;
+        border-bottom: 1px solid var(--clr-input-border);
+        list-style: none;
+   }
+
+   .drop_menu_account_mobile li a {
+        display: block;
+        width: 100%;
+        font-size: 1.14rem;
+        color: var(--clr-text-header);
+        text-decoration: none;
+   }
+
+   .drop_menu_account_mobile li a span {
+    font-weight: var(--fw-700);
+    }
+
+    .account_navigation {
+        display: none;
+        
+    }
 }

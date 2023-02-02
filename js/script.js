@@ -53,49 +53,124 @@ function dropAccount() {
  }
 
 // закрытие меню по клику вне блока
-document.addEventListener("mouseup", function(event) {
+  document.addEventListener("mouseup", function(event) {
   const cityShow = document.getElementById('city');
-  if (!cityShow.contains(event.target)) {
-      cityShow.style.display = 'none'
-      document.getElementById('clouds').style.fill = '#3A3E48';
-      document.getElementById('arr_1').style.transform = 'rotate(0deg)';
-      document.getElementById('arrow_1').style.fill = '#3A3E48';
-      document.getElementById('town').style.color = '#3A3E48';
-      document.getElementById('temp').style.color = '#3A3E48';
-      document.getElementById('clouds').style.fill = '#3A3E48';
-  }
+    if (!cityShow.contains(event.target)) {
+        cityShow.style.display = 'none'
+        document.getElementById('clouds').style.fill = '#3A3E48';
+        document.getElementById('arr_1').style.transform = 'rotate(0deg)';
+        document.getElementById('arrow_1').style.fill = '#3A3E48';
+        document.getElementById('town').style.color = '#3A3E48';
+        document.getElementById('temp').style.color = '#3A3E48';
+        document.getElementById('clouds').style.fill = '#3A3E48';
+    }
 });
 
-document.addEventListener("mouseup", function(event) {
+  document.addEventListener("mouseup", function(event) {
   const langShow = document.getElementById('lang_menu');
-  if (!langShow.contains(event.target)) {
-    langShow.style.display = 'none';
-    document.getElementById('arr_2').style.transform = 'rotate(0deg)';
-    document.getElementById('arrow_2').style.fill = '#3A3E48';
-    document.getElementById('lang').style.color = '#3A3E48';
-    document.getElementById('earth').style.fill = '#3A3E48';
-  }
+    if (!langShow.contains(event.target)) {
+      langShow.style.display = 'none';
+      document.getElementById('arr_2').style.transform = 'rotate(0deg)';
+      document.getElementById('arrow_2').style.fill = '#3A3E48';
+      document.getElementById('lang').style.color = '#3A3E48';
+      document.getElementById('earth').style.fill = '#3A3E48';
+    }
 });
 
-document.addEventListener("mouseup", function(event) {
+  document.addEventListener("mouseup", function(event) {
   const accShow = document.getElementById('account_menu');
-  if (!accShow.contains(event.target)) {
-    accShow.style.display = 'none';
-    document.getElementById('arr_3').style.transform = 'rotate(0deg)';
-    document.getElementById('arrow_3').style.fill = '#3A3E48';
-    document.getElementById('acc').style.color = '#3A3E48';
-    document.getElementById('user_1').style.fill = '#3A3E48';
-    document.getElementById('user_2').style.fill = '#3A3E48';
-  }
+    if (!accShow.contains(event.target)) {
+      accShow.style.display = 'none';
+      document.getElementById('arr_3').style.transform = 'rotate(0deg)';
+      document.getElementById('arrow_3').style.fill = '#3A3E48';
+      document.getElementById('acc').style.color = '#3A3E48';
+      document.getElementById('user_1').style.fill = '#3A3E48';
+      document.getElementById('user_2').style.fill = '#3A3E48';
+    }
 });
 
 // поле поиск
-function btnOn() {
-  document.getElementById('row_2').style.display = 'flex';
-  document.getElementById('row_1').style.display = 'none';
-  document.getElementById('btn_search').style.background = "url(/images/search_close.svg)";
-  document.getElementById('header_search').style.width = '70%';
-}
+    let isSearchFull = true;
+    let searchShowFull = document.getElementById('btn_search');
+    if (searchShowFull !== null) {
+      searchShowFull.addEventListener('click', function() {
+        if (isSearchFull) {
+          document.getElementById('row_2').style.display = 'flex';
+          document.getElementById('row_1').style.display = 'none';
+          document.getElementById('btn_search').style.background = "url(/images/search_close.svg)";
+          document.getElementById('header_search').style.width = '70%';
+            isSearchFull = false;
+          } 
+          else {
+            document.getElementById('row_2').style.display = 'none';
+            document.getElementById('row_1').style.display = 'flex';
+            document.getElementById('btn_search').style.background = "url(/images/search.png)";
+            document.getElementById('header_search').style.width = 'auto';
+            isSearchFull = true;
+          } 
+      });
+    }
+
+// поле поиск мобильная версия
+    let isSearchShow = true;
+    let searchShow = document.getElementById('btn_search_mobile');
+    if (searchShow !== null) {
+      searchShow.addEventListener('click', function() {
+        if (isSearchShow) {
+            document.getElementById('search_field_mobile').style.display = 'flex';
+            document.getElementById('link_header').style.display = 'none';
+            document.getElementById('left_side').style.display = 'none';
+            document.getElementById('btn_search_mobile').style.background = "url(/images/search_close.svg) no-repeat center";
+            document.querySelector('.navigation_right_side').style.gap = '0';
+            isSearchShow = false;
+          } 
+          else {
+            document.getElementById('search_field_mobile').style.display = 'none';
+            document.getElementById('link_header').style.display = 'flex';
+            document.getElementById('left_side').style.display = 'block';
+            document.getElementById('btn_search_mobile').style.background = "url(/images/mobile/main/search.svg)";
+            document.querySelector('.navigation_right_side').style.gap = '1.43rem';
+            isSearchShow = true;
+          } 
+      });
+    }
+
+// поле аккаунт мобильная версия 
+    let isAccShow = true;
+    let AccShow = document.getElementById('btn_acc_mobile');
+    if (AccShow !== null) {
+      AccShow.addEventListener('click', function() {
+        if (isAccShow) {
+            document.getElementById('btn_search_mobile').style.display = 'none';
+            document.getElementById('link_header').style.display = 'none';
+            document.getElementById('left_side').style.display = 'none';
+            document.getElementById('btn_acc_mobile').style.background = "url(/images/search_close.svg) no-repeat center";
+            document.getElementById('user_3').style.fill = '#E55241'
+            document.querySelector('.account_navigation').style.display = 'flex';
+            document.querySelector('.right_side_btn_block').style.width = '100%';
+            document.querySelector('.drop_menu_account_mobile').style.display = 'block';
+            isAccShow = false;
+          } 
+          else {
+            document.getElementById('btn_search_mobile').style.display = 'block';
+            document.getElementById('link_header').style.display = 'flex';
+            document.getElementById('left_side').style.display = 'flex';
+            document.getElementById('btn_acc_mobile').style.background = "url(/images/search_close.svg) no-repeat center";
+            document.querySelector('.account_navigation').style.display = 'none';
+            document.querySelector('.right_side_btn_block').style.width = 'auto';
+            document.querySelector('.drop_menu_account_mobile').style.display = 'none';
+            document.getElementById('btn_acc_mobile').style.background = "url(/images/mobile/main/account.svg)";
+            isAccShow = true;
+          } 
+      });
+    }
+
+
+
+
+
+
+
 
 // скрывает меню блок вопроса на странице Иммиграция
 function closeQuestion() {
@@ -103,16 +178,15 @@ function closeQuestion() {
 }
 
 //валидация формы авторизации
-
 function userid_validation() {
-const checkEmpty = document.getElementById('nameUser');
-const checkEmptyname = document.getElementById('answer');
-const emailValid = document.getElementById('email_not_valid');
-const passEmpty = document.getElementById('pass_empty');
-const uid_len = checkEmpty.value.length;
-const uid_len_last = checkEmptyname.value.length;
-const uid_len_pass = passEmpty.value.length;
-const uid_len_email = emailValid.value.length;
+    const checkEmpty = document.getElementById('nameUser');
+    const checkEmptyname = document.getElementById('answer');
+    const emailValid = document.getElementById('email_not_valid');
+    const passEmpty = document.getElementById('pass_empty');
+    const uid_len = checkEmpty.value.length;
+    const uid_len_last = checkEmptyname.value.length;
+    const uid_len_pass = passEmpty.value.length;
+    const uid_len_email = emailValid.value.length;
 // const re = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
   
       if (uid_len == 0)  {
@@ -257,7 +331,6 @@ function userid_validation_() {
   }
 
   // появление формы для ввода комментариев
-  
     let isTextShow = false;
     let fieldShow = document.getElementById('openText');
     if (fieldShow !== null) {
@@ -276,6 +349,7 @@ function userid_validation_() {
           } 
       });
     }
+
   // меню гамбургер
   function hamBurger() {
     document.getElementById('top').style.display = 'flex';
@@ -295,46 +369,24 @@ function userid_validation_() {
     document.getElementById('ham_close').style.display = 'none';
   }
 
-//   function drop_immigr() {
-//       document.querySelector('.drop_menu_mobile').style.display = 'block';
-//   }
-
-//   function drop_immigr_1() {
-//     document.querySelector('.drop_menu_mobile_1').style.display = 'block';
+//   let isListShow = false;
+//   let drop = document.querySelector('.btn_arrow');
+//   if (drop !== null) {
+//     drop.addEventListener('click', function(event) {
+//     if (isListShow) {
+//     document.querySelector('.drop_menu_mobile').style.display = 'block';
+//     drop.style.transform = 'rotate(180deg)';
+//     isListShow = false;
+//     }
+//     else {
+//       document.querySelector('.drop_menu_mobile').style.display = 'none';
+//       drop.style.transform = 'rotate(0deg)';
+//       isListShow = true;
+//     }
+//     drop.removeEventListener('click', event);
+//   });
 // }
-
-  // let drop = document.querySelector('.btn_arrow');
-  //   if (drop !== null) {
-  //     drop.addEventListener('click', function() {
-  //     document.querySelector('.drop_menu_mobile').style.display = 'block';
-  //     drop.style.transform = 'rotate(180deg)';
-  //   });
-  // }
-
-  let isListShow = false;
-  let drop = document.querySelector('.btn_arrow');
-  if (drop !== null) {
-    drop.addEventListener('click', function(event) {
-    if (isListShow) {
-    document.querySelector('.drop_menu_mobile').style.display = 'block';
-    drop.style.transform = 'rotate(180deg)';
-    isListShow = false;
-    }
-    else {
-      document.querySelector('.drop_menu_mobile').style.display = 'none';
-      drop.style.transform = 'rotate(0deg)';
-      isListShow = true;
-    }
-    drop.removeEventListener('click', event);
-  });
-}
-
-
 
 
 
   
- 
-    
-
-

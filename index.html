@@ -15,16 +15,47 @@
     <header>
         <!-- mobile header and navigation -->
         <nav class="navigation_mobile">
-            <div class="navigation_left_side">
+            <div id="left_side" class="navigation_left_side">
                 <img  id="ham" onclick="hamBurger()" src="/images/mobile/main/burger.svg" alt="menu left side">
                 <img id="ham_close" class="btn_close" onclick="hamBurger_close()" src="/images/mobile/main/menu_hamburger_close.svg" alt="close menu">
-                <a href="/index.html"><img src="/images/mobile/main/logo_header.png" alt="logo"></a>
             </div>
             <div class="navigation_right_side">
-                <img src="/images/mobile/main/search.svg" alt="search field">
-                <img src="/images/mobile/main/account.svg" alt="account">
+                <a id="link_header" href="/index.html"><img src="/images/mobile/main/logo_header.png" alt="logo"></a>
+                <div id="search_field_mobile" class="right_side_search_field">
+                    <input type="search" placeholder="Введите поисковой запрос">
+                    <input type="submit" value="">
+                </div>
+                <div class="right_side_btn_block">
+                    <div class="account_navigation">
+                        <div class="account_mobile_icon">
+                            <svg class="icon-acc" width="24" height="24" viewBox="0 0 20 20" fill="#E55241" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1402_2785)">
+                                    <path id="user_3"  d="M9.9999 11.2652C3.99064 11.2652 0.681152 14.108 0.681152 19.2701C0.681152 19.6732 1.00791 20 1.41107 20H18.5887C18.9919 20 19.3186 19.6732 19.3186 19.2701C19.3186 14.1083 16.0092 11.2652 9.9999 11.2652ZM2.16756 18.5402C2.45467 14.6805 5.08603 12.7251 9.9999 12.7251C14.9138 12.7251 17.5452 14.6805 17.8325 18.5402H2.16756Z" fill="#E55241"/>
+                                    <path id="user_4" d="M10 0C7.23969 0 5.1582 2.12336 5.1582 4.93895C5.1582 7.83699 7.33023 10.1944 10 10.1944C12.6698 10.1944 14.8419 7.83699 14.8419 4.93918C14.8419 2.12336 12.7604 0 10 0ZM10 8.7348C8.13508 8.7348 6.61805 7.03211 6.61805 4.93918C6.61805 2.92313 8.04043 1.45984 10 1.45984C11.9283 1.45984 13.382 2.95547 13.382 4.93918C13.382 7.03211 11.865 8.7348 10 8.7348Z" fill="#E55241"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1402_2785">
+                                        <rect width="20" height="20" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>                            
+                            <p> Мой аккаунт </p>
+                        </div>
+                    </div>
+                    <button  id="btn_search_mobile" class="btn_block_btn_search"></button>
+                    <button  id="btn_acc_mobile" class="btn_block_btn_account"></button>
+                </div>
             </div>     
         </nav>
+        <ul class="drop_menu_account_mobile">
+            <li><a href="/pages/autorization.html">Профиль</a></li>
+            <li><a href="/pages/access_denied.html">Курсы</a></li>
+            <li><a href="/pages/access_denied.html">Монеты</a></li>
+            <li><a href="/pages/access_denied.html">Уведомления</a></li>
+            <li><a href="/pages/access_denied.html">Настройки</a></li>
+            <li><a href="/index.html"><span> Выход </span></a></li>
+        </ul>
+
         <!-- navigation header section -->
         <div id="top" class="navigation_top">  
             <nav class="navigation__header_top">
@@ -126,7 +157,7 @@
                     <li>
                         <div class="menu_row_mobile">
                             <a href="/pages/access_denied.html">Учеба</a>
-                            <button class="btn_arrow_1"></button>
+                            <button class="btn_arrow"></button>
                         </div>
                         <ul class="drop_menu_mobile">
                             <li><a href="#">Университеты и колледжи Канады</a></li>
@@ -188,10 +219,10 @@
                 </ul>
                 <div id="header_search" class="navigation__header_search_section"> 
                     <div id="row_2" class="navigation__header_search_field">
-                        <input type="search">
+                        <input type="search" placeholder="Введите поисковой запрос">
                         <input type="submit" value="">
                     </div>
-                    <button id="btn_search" class="navigation__header_button_search" onclick="btnOn()"></button>
+                    <button id="btn_search" class="navigation__header_button_search"></button>
                     <button class="navigation__header_bottom_button">Оценить шансы</button>
                 </div>
             </nav>  
