@@ -1803,11 +1803,10 @@ form {
         height: 1.14rem;
         width: 1.14rem;
         border: none;
-        background-image: url(/images/mobile/main/arrow_down_menu.svg);
+        background: url(/images/mobile/main/arrow_down_menu.svg) no-repeat center;
         background-color: var(--clr-content-slider);
-        background-repeat: no-repeat;
    }
-
+       
    .account_mobile_icon {
         display: flex;
         gap: 0.714rem;
