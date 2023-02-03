@@ -46,12 +46,6 @@ iframe {
     vertical-align: top;
 }
 
-/* .datetime::after {
-    content: url(/images/bookmark.svg); 
-    vertical-align: top;
-    visibility: hidden;
-} */
-
 .ontario_article_date_rating a {
     display: flex;
     align-items: center;
@@ -647,6 +641,12 @@ textarea {
 .book_img_hide {
     display: none;
 }
+
+.comments_list .hidden {
+    display: none;
+    border-top: none;
+}
+
 
 @media screen and (min-width: 320px) and (max-width: 599px) {
     .limit_container {

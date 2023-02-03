@@ -165,13 +165,6 @@ function dropAccount() {
       });
     }
 
-
-
-
-
-
-
-
 // скрывает меню блок вопроса на странице Иммиграция
 function closeQuestion() {
     document.getElementById('btn').style.display = 'none';
@@ -350,7 +343,28 @@ function userid_validation_() {
       });
     }
 
-  // меню гамбургер
+//отображение дополнительных комментариев
+    let isCommMore = false;
+        let commMore = document.querySelector('.show_more');
+        if (commMore !== null) {
+          commMore.addEventListener('click', function() {
+            if (isCommMore) {
+                document.querySelector('.hidden').style.display = 'none';
+                commMore.style.backgroundColor = '#E55241';
+                commMore.style.color = '#FFF';
+                isCommMore = false;
+              } 
+              else {
+                document.querySelector('.hidden').style.display = 'flex';
+                commMore.style.backgroundColor = '#F4F4F4';
+                commMore.style.color = '#A6A6A6';
+                commMore.style.border = 'none';
+                isCommMore = true;
+              } 
+          });
+        }
+
+// меню гамбургер
   function hamBurger() {
     document.getElementById('top').style.display = 'flex';
     document.getElementById('wide').style.display = 'flex';
@@ -358,7 +372,7 @@ function userid_validation_() {
     // document.querySelector('footer').style.display = 'none';
     document.getElementById('ham').style.display = 'none';
     document.getElementById('ham_close').style.display = 'block';
-}
+  }
 
   function hamBurger_close() {
     document.getElementById('top').style.display = 'none';
