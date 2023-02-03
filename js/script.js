@@ -352,6 +352,7 @@ function userid_validation_() {
                 document.querySelector('.hidden').style.display = 'none';
                 commMore.style.backgroundColor = '#E55241';
                 commMore.style.color = '#FFF';
+                commMore.innerText = 'Показать еще';
                 isCommMore = false;
               } 
               else {
@@ -359,6 +360,7 @@ function userid_validation_() {
                 commMore.style.backgroundColor = '#F4F4F4';
                 commMore.style.color = '#A6A6A6';
                 commMore.style.border = 'none';
+                commMore.innerText = 'Скрыть комментарии';
                 isCommMore = true;
               } 
           });
