@@ -414,23 +414,21 @@ function add_favorite(a) {
   }
   return false;
 }
-//   let isListShow = false;
-//   let drop = document.querySelector('.btn_arrow');
-//   if (drop !== null) {
-//     drop.addEventListener('click', function(event) {
-//     if (isListShow) {
-//     document.querySelector('.drop_menu_mobile').style.display = 'block';
-//     drop.style.transform = 'rotate(180deg)';
-//     isListShow = false;
-//     }
-//     else {
-//       document.querySelector('.drop_menu_mobile').style.display = 'none';
-//       drop.style.transform = 'rotate(0deg)';
-//       isListShow = true;
-//     }
-//     drop.removeEventListener('click', event);
-//   });
-// }
+//aккордион
+  let acc = document.getElementsByClassName("menu_row_mobile");
+  let i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active_");
+      let drop_menu_mobile = this.nextElementSibling;
+      if (drop_menu_mobile.style.display === "block") {
+        drop_menu_mobile.style.display = "none";
+      } else {
+        drop_menu_mobile.style.display = "block";
+      }
+    });
+  }
 
 
 
