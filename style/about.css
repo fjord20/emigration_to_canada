@@ -157,6 +157,17 @@ p[class="about_article_paragraph"] {
     left: 3%;
 }
 
+@media screen and (min-width:600px) and (max-width:1200px) {
+    html {
+        font-size: var(--fz-secondary);
+    }
+
+    .aside_items_content_questions button span::after {
+        content: none;
+    }
+
+}
+
 @media screen and (min-width: 320px) and (max-width: 599px) {
     .about_article {
         padding-top: 0;

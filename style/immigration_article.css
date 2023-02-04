@@ -193,6 +193,10 @@ li.active a {
 }
 
 @media screen and (min-width:600px) and (max-width:1200px) {
+    html {
+        font-size: var(--fz-secondary);
+    }
+    
     .arcicle_section {
         padding-inline: 1rem ;
     }

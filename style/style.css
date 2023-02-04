@@ -23,6 +23,7 @@
     --clr-rating-stars: #FFFF00;
     --ff-primary: 'proxima-nova', sans-serif;
     --fz-primary: 16px;
+    --fz-secondary: 14px;
     --fw-400: 400;
     --fw-600: 600;
     --fw-700: 700;
@@ -1189,7 +1190,7 @@ form {
 
 @media screen and (min-width:600px) and (max-width:1200px) {
     html {
-        font-size: 14px;
+        font-size: var(--fz-secondary);
     }
 
     .container__help_in_immigration {

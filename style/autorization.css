@@ -142,6 +142,16 @@ form button {
     text-align: center;
 }
 
+@media screen and (min-width:600px) and (max-width:1200px) {
+    html {
+        font-size: var(--fz-secondary);
+    }
+
+    .back_link {
+        padding-inline: 1rem;
+    }
+}
+
 @media screen and (min-width: 320px) and (max-width: 599px) {
     .back_link {
         display: flex;
