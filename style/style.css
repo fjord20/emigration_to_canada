@@ -112,6 +112,10 @@ html, body {
     padding: 0;
 }
 
+.menu_row_mobile {
+    display: none;
+}
+
 .navigation__header_drop_city li {
     border-bottom: 1px solid var(--clr-background);
 }
@@ -270,6 +274,7 @@ ul li.active_menu a {
 .drop_menu_mobile {
     display: none;
 }
+
 /* search section */
 
 .navigation__header_search_section {
@@ -324,16 +329,6 @@ input[type="search"] {
     font-size: 1rem;
    
 }
-
- /* section help in immigration */
-/* .container__help_in_immigration {
-    background: url(/images/Group_red_dotted.png) no-repeat 10% 100%,
-                url(/images/Group_white_dotted.png) no-repeat 102% 80%,
-                url(/images/Vector.png) no-repeat 2% 77%, 
-                url(/images/Vector.png) no-repeat 77% 30%,
-                url(/images/red_rectangle.png) no-repeat right;
-    background-color: var(--clr-background);
-} */
 
 .container__help_in_immigration_limit {
     max-width: 1200px;
@@ -405,7 +400,7 @@ input[type="search"] {
     color: var(--clr-content-slider);
 }
 
- /* section popular offers slider 1*/
+/* section popular offers slider 1*/
 .popular_offers {
     width: 100%;
     max-width: 1200px;
@@ -1261,7 +1256,7 @@ form {
         margin-top: 2.14rem;
     }
    
-    .menu_row_mobile button,
+    .menu_row_mobile,
     .drop_menu_mobile {
         display: none;
     }
@@ -1388,7 +1383,6 @@ form {
     .container__help_in_immigration_list_btn_question {
         width: auto;
     }
-
 }
 
 @media screen and (min-width: 320px) and (max-width: 599px) {
@@ -1864,6 +1858,12 @@ form {
         font-size: 1.28rem;
         font-weight: var(--fw-700);
    }
+
+   .navigation__header_bottom_menu_row > li > a {
+    display: none;
+}
+
+
 
    .navigation__header_search_section {
         width: 100%;
