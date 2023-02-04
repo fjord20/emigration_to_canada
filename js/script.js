@@ -97,14 +97,14 @@ function dropAccount() {
         if (isSearchFull) {
           document.getElementById('row_2').style.display = 'flex';
           document.getElementById('row_1').style.display = 'none';
-          document.getElementById('btn_search').style.background = "url(/images/search_close.svg)";
+          document.getElementById('btn_search').style.background = "url(/images/search_close.svg) no-repeat center";
           document.getElementById('header_search').style.width = '70%';
             isSearchFull = false;
           } 
           else {
             document.getElementById('row_2').style.display = 'none';
             document.getElementById('row_1').style.display = 'flex';
-            document.getElementById('btn_search').style.background = "url(/images/search.png)";
+            document.getElementById('btn_search').style.background = "url(/images/search.png) no-repeat center";
             document.getElementById('header_search').style.width = 'auto';
             isSearchFull = true;
           } 

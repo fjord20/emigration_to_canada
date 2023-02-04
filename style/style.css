@@ -130,7 +130,6 @@ html, body {
 }
 
 /* drop languages*/
-
 .navigation__header_language {
     display: flex;
     position: relative;
@@ -247,7 +246,6 @@ html, body {
     display: flex;
     gap: 1.875rem; 
     padding: 0;
-    /* display: none; */
 }
 
 .navigation__header_bottom_menu_row li {
@@ -284,7 +282,7 @@ ul li.active_menu a {
     border: none;
     border-radius: 0.25rem;
     margin-right: 0.9375rem;;
-    background: url(/images/search.png) no-repeat ;
+    background: url(/images/search.png) no-repeat center;
 }
 
 .navigation__header_bottom_button {
@@ -311,7 +309,7 @@ input[type="submit"] {
     width: 2.75rem;
     height: 2.75rem;
     border: none;
-    background: url(/images/search_active.png);
+    background: url(/images/search_active.png) no-repeat center;
 }
 
 input[type="search"] {
@@ -327,14 +325,14 @@ input[type="search"] {
 }
 
  /* section help in immigration */
-.container__help_in_immigration {
+/* .container__help_in_immigration {
     background: url(/images/Group_red_dotted.png) no-repeat 10% 100%,
                 url(/images/Group_white_dotted.png) no-repeat 102% 80%,
                 url(/images/Vector.png) no-repeat 2% 77%, 
                 url(/images/Vector.png) no-repeat 77% 30%,
                 url(/images/red_rectangle.png) no-repeat right;
     background-color: var(--clr-background);
-}
+} */
 
 .container__help_in_immigration_limit {
     max-width: 1200px;
@@ -510,10 +508,6 @@ input[type="search"] {
     overflow: hidden;   
 }
 
-/* .slider .slider_images_limit {
-
-} */
-
 .slider_two  .slider_contain,
 .slider_three  .slider_contain,
 .slider_four  .slider_contain,
@@ -667,7 +661,6 @@ main .no_background {
 }
 
 /* section 3 where_to_begin */
-
 .where_to_begin {
     width: 100%;
     max-width: 1200px;
@@ -882,7 +875,6 @@ main .no_background {
 }
 
 /* section add_to_community */
-
 .add_to_community {
     width: 100%;
     max-width: 1200px;
@@ -1181,7 +1173,7 @@ form {
     display: none;
 }
 
-@media screen and (min-width:1201px) {
+
     .container__help_in_immigration {
         background: url(/images/Group_white_dotted.png) no-repeat 110% 80%,
                     url(/images/Group_red_dotted.png) no-repeat -2% 100%,
@@ -1190,14 +1182,14 @@ form {
         background-color: var(--clr-background);
     }
 
-    .slider > * {
+    /* .slider > * {
         width: 25%;
-    }
-}
+    } */
+
 
 @media screen and (min-width:600px) and (max-width:1200px) {
     html {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .container__help_in_immigration {
@@ -1276,6 +1268,51 @@ form {
         display: none;
     }
 }
+
+.navigation_top {
+    padding-inline: 1rem;
+}
+
+.navigation__header_bottom_button {
+    display: none;
+}
+
+.navigation__header_top_right {
+    gap: 0.3rem;
+}
+
+.navigation__header_bottom > a {
+    max-width: 20%;
+}
+
+.navigation__header_button_search {
+    margin-right: 0;
+}
+
+.navigation__header_search_field {
+    width: 100%;
+}
+
+.navigation__header_bottom {
+    gap: 2rem;
+    
+    padding-inline: 1rem;
+}
+
+.navigation__header_bottom_menu_row {
+    width: 100%;
+    gap: 0;
+    justify-content: space-between;
+}
+
+.container__help_in_immigration_list {
+    padding: 5.75rem 0rem 8.4375rem 1rem;
+}
+
+.container__help_in_immigration_list ul li {
+    text-align: left;
+}
+
 
 
 @media screen and (min-width: 320px) and (max-width: 599px) {
