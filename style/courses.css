@@ -287,7 +287,6 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 599px) {
-
     .courses_header {
         padding: 0 1.28rem;
     }
@@ -348,6 +347,12 @@
 
     .services_card_cost {
         flex-direction: row;
+    }
+
+    .online_tools .services_limit h3,
+    .books .services_limit h3 {
+        padding-top: 2.5rem;
+        padding-bottom: 0;
     }
 }
 
