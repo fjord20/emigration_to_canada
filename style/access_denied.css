@@ -1,7 +1,6 @@
 @import url(/style/reset.css); 
 @import url(/style/style.css); 
 @import url(/style/about.css);
-/* @import url(/style/immigration_article.css);  */
 
 .access_limit_container {
     width: 100%;
@@ -102,6 +101,17 @@ input[type='search'] {
 
 .aside_items_content {
     display: none;
+}
+
+@media screen and (min-width:600px) and (max-width:1200px) {
+    .access_limit_container {
+        padding-inline: 1rem;
+    }
+
+    .access_denied {
+        grid-template-columns: 1fr;
+    }
+
 }
 
 @media screen and (min-width: 320px) and (max-width: 599px) {

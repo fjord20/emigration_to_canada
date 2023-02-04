@@ -240,6 +240,52 @@
     color: var(--clr-primary-500);
 }
 
+@media screen and (min-width:600px) and (max-width:1200px) {
+    .services_limit,    
+    .courses_header {
+        padding-inline: 1rem;
+    }
+
+    .online_tools .online_items {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .services_items {
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    .online_tools .services_card:last-child {
+        display: none;
+    }
+
+    .services_card_cost {
+        flex-direction: column;
+    }
+
+    .online_tools .online_items,
+    .books_items {
+        gap: 1rem;
+    }
+
+    .services_card_money {
+        margin-bottom: 1rem;
+        padding-inline: 1.25rem;
+    }
+
+    .services_card_contain {
+        padding: 1.25rem 0 0 0;
+    }
+
+    .services_card_text {
+        padding-inline: 1.25rem;
+    }
+
+    .services_card_images {
+        height: auto;
+    }
+}
+
 @media screen and (min-width: 320px) and (max-width: 599px) {
 
     .courses_header {
@@ -298,6 +344,10 @@
 
     .online_tools .online_items {
         grid-template-columns: 1fr;
+    }
+
+    .services_card_cost {
+        flex-direction: row;
     }
 }
 

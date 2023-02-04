@@ -192,6 +192,12 @@ li.active a {
     background-color: var(--clr-background);
 }
 
+@media screen and (min-width:600px) and (max-width:1200px) {
+    .arcicle_section {
+        padding-inline: 1rem ;
+    }
+}
+
 @media screen and (min-width: 320px) and (max-width: 599px) {
     .arcicle_container_header p {
         display: none;
