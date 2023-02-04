@@ -1221,10 +1221,6 @@ form {
         font-size: 1rem;
     }
 
-    .slider_contain_text {
-        height: auto;
-    }
-
     .popular_offers_article_cost {
         flex-direction: column;
     }
@@ -1254,6 +1250,7 @@ form {
         gap: 0;
     }
 
+    .slider_contain_text,
     .slider li {
         height: 100%;
     }
@@ -1313,7 +1310,57 @@ form {
     text-align: left;
 }
 
+.footer_content,
+.footer_copyright_licence,
+.add_to_community,
+.about_project_limit_container,
+.where_to_begin_container,
+.immigration_limit_container,
+.popular_offers {
+    padding-inline: 1rem;
+}
 
+.slider_contain_text p {
+    padding-inline: 1.14rem;
+}
+
+.where_to_begin_items_main span {
+    display: none;
+}
+
+.where_to_begin_items_header a::after {
+    content: none;
+}
+
+.about_project_content_information h2 {
+    font-size: 1.3rem;
+}
+
+.about_project_content_information p {
+    font-size: 1rem;
+}
+
+.about_project_content_information_button span::after {
+    content: none;
+}
+
+.footer_content,
+.footer_copyright_licence,
+.add_to_community {
+    padding-inline: 1rem;
+}
+
+.add_to_community_information_header img {
+    display: none;
+}
+
+.add_to_community_information {
+    max-width: none;
+}
+
+.form_button_field button {
+    width: auto;
+}
 
 @media screen and (min-width: 320px) and (max-width: 599px) {
     html {
