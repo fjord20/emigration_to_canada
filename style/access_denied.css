@@ -113,7 +113,28 @@ input[type='search'] {
     }
 
     .access_denied {
-        grid-template-columns: 1fr;
+        /* grid-template-columns: 1fr; */
+    }
+
+    .access_denied_link {
+        display: flex;
+    }
+
+    .add_to_community_information {
+        padding: 1.5rem;
+    } 
+
+    .add_to_community_information p {
+        display: none;
+    }
+
+    .access_denied .add_to_community_container {
+    
+    }
+
+    .enter_answer input:first-child {
+        width: 5rem;
+        max-width: fit-content;
     }
 }
 
