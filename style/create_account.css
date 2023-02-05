@@ -17,7 +17,8 @@ form button {
 }
 
 .check_answer input:first-child {
-    max-width: 17%;
+    width: 5rem;
+    max-width: fit-content;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     border-right: none;
@@ -66,6 +67,11 @@ form button {
     
     .back_link {
         padding-inline: 1rem;
+    }
+
+    .check_answer input:first-child {
+        width: 5.5rem;
+        max-width: fit-content;
     }
 }
 
@@ -120,5 +126,9 @@ form button {
         max-width: 100%;
         font-size: 1rem;
         margin-top: 0;
+    }
+
+    .check_answer input:first-child {
+        width: 5rem;
     }
 }
