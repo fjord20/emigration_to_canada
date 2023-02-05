@@ -149,13 +149,14 @@ function dropAccount() {
             document.querySelector('.account_navigation').style.display = 'flex';
             document.querySelector('.right_side_btn_block').style.width = '100%';
             document.querySelector('.drop_menu_account_mobile').style.display = 'block';
+            document.querySelector('.right_side_search_field').style.display = 'none';
             isAccShow = false;
           } 
           else {
             document.getElementById('btn_search_mobile').style.display = 'block';
             document.getElementById('link_header').style.display = 'flex';
             document.getElementById('left_side').style.display = 'flex';
-            document.getElementById('btn_acc_mobile').style.background = "url(/images/search_close.svg) no-repeat center";
+            document.querySelector('.btn_block_btn_search').style.background = "url(/images/mobile/main/search.svg) no-repeat center";
             document.querySelector('.account_navigation').style.display = 'none';
             document.querySelector('.right_side_btn_block').style.width = 'auto';
             document.querySelector('.drop_menu_account_mobile').style.display = 'none';
