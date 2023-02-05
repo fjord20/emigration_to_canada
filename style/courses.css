@@ -293,10 +293,9 @@
         color: var(--clr-content-slider);
     }
 
-    .online_card .services_card_btn,
-    .services_card_btn:hover {
+    .services_card:hover .services_card_btn {
         background-color: var(--clr-btn-hover);
-    }
+    } 
 
     .services_card_images {
         height: auto;
