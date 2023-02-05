@@ -172,7 +172,7 @@ function closeQuestion() {
 }
 
 //валидация формы авторизации
-function userid_validation() {
+function userid_validation(event) {
     const checkEmpty = document.getElementById('nameUser');
     const checkEmptyname = document.getElementById('answer');
     const emailValid = document.getElementById('email_not_valid');
@@ -187,6 +187,7 @@ function userid_validation() {
         checkEmpty.style.borderColor = '#E55241';
         checkEmpty.style.borderWidth = '1px';
         checkEmpty.placeholder = 'Введите имя';
+        event.preventDefault();
       }
       
       else {
@@ -199,6 +200,7 @@ function userid_validation() {
         checkEmptyname.placeholder = 'Введите результат';
         document.getElementById('numbers').style.borderColor = '#E55241';
         document.getElementById('numbers').style.borderWidth = '1px';
+        event.preventDefault();
       }
       
       else {
@@ -210,6 +212,7 @@ function userid_validation() {
         passEmpty.style.borderColor = '#E55241';
         passEmpty.style.borderWidth = '1px'
         passEmpty.placeholder = 'Введите пароль';
+        event.preventDefault();
       }
       
       else {
@@ -220,6 +223,7 @@ function userid_validation() {
         emailValid.style.borderColor = '#E55241';
         emailValid.style.borderWidth = '1px';
         emailValid.placeholder = 'Введите e-mail';
+        event.preventDefault();
       }
       
       else {
@@ -241,7 +245,7 @@ function userid_validation() {
   } 
 
 // //валидация формы авторизации fun_2
-function userid_validation_() {
+function userid_validation_(event) {
   const checkEmpty = document.getElementById('nameUser_1');
   const checkEmptyname = document.getElementById('answer_1');
   const emailValid = document.getElementById('email_not_valid_1');
@@ -256,6 +260,7 @@ function userid_validation_() {
           checkEmpty.style.borderColor = '#E55241';
           checkEmpty.style.borderWidth = '1px';
           checkEmpty.placeholder = 'Введите имя';
+          event.preventDefault();
         }
         
         else {
@@ -268,6 +273,7 @@ function userid_validation_() {
           checkEmptyname.placeholder = 'Введите результат';
           document.getElementById('numbers').style.borderColor = '#E55241';
           document.getElementById('numbers').style.borderWidth = '1px';
+          event.preventDefault();
         }
         
         else {
@@ -279,6 +285,7 @@ function userid_validation_() {
           passEmpty.style.borderColor = '#E55241';
           passEmpty.style.borderWidth = '1px'
           passEmpty.placeholder = 'Введите пароль';
+          event.preventDefault();
         }
         
         else {
@@ -289,6 +296,7 @@ function userid_validation_() {
           emailValid.style.borderColor = '#E55241';
           emailValid.style.borderWidth = '1px';
           emailValid.placeholder = 'Введите e-mail';
+          event.preventDefault();
         }
         
         else {
@@ -297,7 +305,7 @@ function userid_validation_() {
     } 
 
 //валидация формы входа в личный кабинет
-  function enter_validation() {
+  function enter_validation(event) {
     const emailValid = document.getElementById('email_not_valid');
     const passEmpty = document.getElementById('pass_empty');
     const uid_len_pass = passEmpty.value.length;
@@ -307,6 +315,7 @@ function userid_validation_() {
       passEmpty.style.borderColor = '#E55241';
       passEmpty.style.borderWidth = '1px'
       passEmpty.placeholder = 'Введите пароль';
+      event.preventDefault();
     }
     
     else {
@@ -317,6 +326,7 @@ function userid_validation_() {
       emailValid.style.borderColor = '#E55241';
       emailValid.style.borderWidth = '1px';
       emailValid.placeholder = 'Введите e-mail';
+      event.preventDefault();
     }
     
     else {
