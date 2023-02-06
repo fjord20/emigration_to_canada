@@ -1185,6 +1185,11 @@ form {
         display: none;
     }
 
+    .navigation__header_search_field input:first-child {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
     .navigation__header_search_field input:last-child {
         border-radius: 0;
     }
