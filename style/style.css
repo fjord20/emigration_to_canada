@@ -1172,23 +1172,21 @@ form {
     display: none;
 }
 
+.container__help_in_immigration {
+    background: url(/images/Group_white_dotted.png) no-repeat 110% 80%,
+                url(/images/Group_red_dotted.png) no-repeat -2% 100%,
+                url(/images/Vector.png) no-repeat 80% 30%,
+                url(/images/red_rectangle.png) no-repeat 115%; 
+    background-color: var(--clr-background);
+}
 
-    .container__help_in_immigration {
-        background: url(/images/Group_white_dotted.png) no-repeat 110% 80%,
-                    url(/images/Group_red_dotted.png) no-repeat -2% 100%,
-                    url(/images/Vector.png) no-repeat 80% 30%,
-                    url(/images/red_rectangle.png) no-repeat 115%; 
-        background-color: var(--clr-background);
-    }
-
-@media screen and (min-width:600px) and (max-width:900px) {
+@media screen and (max-width:900px) {
     .navigation__header_bottom_button {
         display: none;
     }
 
-    .enter_answer input:last-child {
-        /* border-top-left-radius: 0;
-        border-bottom-left-radius: 0; */
+    .navigation__header_search_field input:last-child {
+        border-radius: 0;
     }
 }
 
@@ -1202,6 +1200,9 @@ form {
         line-height: normal;
     }
 
+    .navigation__header_search_field {
+        width: 65%;
+    }
 
     .container__help_in_immigration {
         background: url(/images/red_rectangle.png) no-repeat 150%; 
@@ -1304,9 +1305,9 @@ form {
         margin-right: 0.9375rem;
     }
     
-    .navigation__header_search_field {
-        /* width: 100%; */
-    }
+    /* .navigation__header_search_field {
+        width: 100%;
+    } */
     
     .navigation__header_bottom {
         gap: 2rem;
