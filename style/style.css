@@ -1179,15 +1179,22 @@ form {
         background-color: var(--clr-background);
     }
 
-    /* .slider > * {
-        width: 25%;
-    } */
-
+@media screen and (min-width:600px) and (max-width:900px) {
+    .navigation__header_bottom_button {
+        display: none;
+    }
+}
 
 @media screen and (min-width:600px) and (max-width:1200px) {
-    html {
+    html, body {
         font-size: var(--fz-secondary);
     }
+
+    .container__help_in_immigration_list h1 {
+        font-size: 2rem;
+        line-height: normal;
+    }
+
 
     .container__help_in_immigration {
         background: url(/images/red_rectangle.png) no-repeat 150%; 
@@ -1257,6 +1264,9 @@ form {
         margin-top: 2.14rem;
     }
    
+    form {
+        width: 100%;}
+
     .menu_row_mobile,
     .drop_menu_mobile {
         display: none;
@@ -1270,8 +1280,7 @@ form {
         padding-right: 2rem;
     }
 
-    .popular_offers_header_arrow img,
-    .navigation__header_bottom_button {
+    .popular_offers_header_arrow img {
         display: none;
     }
     
@@ -1284,11 +1293,12 @@ form {
     }
     
     .navigation__header_button_search {
-        margin-right: 0;
+        /* margin-right: 0; */
+        margin-right: 0.9375rem;
     }
     
     .navigation__header_search_field {
-        width: 100%;
+        /* width: 100%; */
     }
     
     .navigation__header_bottom {
@@ -1297,17 +1307,18 @@ form {
     }
     
     .navigation__header_bottom_menu_row {
-        width: 100%;
-        gap: 0;
+        gap: 1rem;
         justify-content: space-between;
     }
     
     .container__help_in_immigration_list {
-        padding: 5.75rem 0rem 8.4375rem 1rem;
+        /* padding: 5.75rem 0rem 8.4375rem 1rem; */
+        padding-left: 1rem;
     }
     
     .container__help_in_immigration_list ul li {
         text-align: left;
+        font-size: 1.2rem;
     }
     
     .footer_content,
@@ -1369,7 +1380,7 @@ form {
     }
     
     .add_to_community_information {
-        max-width: none;
+        /* max-width: none; */
     }
     
     .form_button_field button {

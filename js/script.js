@@ -181,7 +181,7 @@ function userid_validation(event) {
     const uid_len_last = checkEmptyname.value.length;
     const uid_len_pass = passEmpty.value.length;
     const uid_len_email = emailValid.value.length;
-// const re = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
+    const re = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
   
       if (uid_len == 0)  {
         checkEmpty.style.borderColor = '#E55241';
@@ -244,7 +244,7 @@ function userid_validation(event) {
       // }
   } 
 
-// //валидация формы авторизации fun_2
+//валидация формы авторизации
 function userid_validation_(event) {
   const checkEmpty = document.getElementById('nameUser_1');
   const checkEmptyname = document.getElementById('answer_1');
@@ -271,14 +271,14 @@ function userid_validation_(event) {
           checkEmptyname.style.borderColor = '#E55241';
           checkEmptyname.style.borderWidth = '1px';
           checkEmptyname.placeholder = 'Введите результат';
-          document.getElementById('numbers').style.borderColor = '#E55241';
-          document.getElementById('numbers').style.borderWidth = '1px';
+          document.getElementById('numbers_1').style.borderColor = '#E55241';
+          document.getElementById('numbers_1').style.borderWidth = '1px';
           event.preventDefault();
         }
         
         else {
           checkEmptyname.style.borderColor = 'limegreen';
-          document.getElementById('numbers').style.borderColor = 'limegreen';
+          document.getElementById('numbers_1').style.borderColor = 'limegreen';
         }
     
         if (uid_len_pass == 0) {
@@ -305,11 +305,11 @@ function userid_validation_(event) {
     } 
 
 //валидация формы входа в личный кабинет
-  function enter_validation(event) {
-    const emailValid = document.getElementById('email_not_valid');
-    const passEmpty = document.getElementById('pass_empty');
-    const uid_len_pass = passEmpty.value.length;
-    const uid_len_email = emailValid.value.length;
+function enter_validation(event) {
+  const emailValid = document.getElementById('email_not_valid');
+  const passEmpty = document.getElementById('pass_empty');
+  const uid_len_pass = passEmpty.value.length;
+  const uid_len_email = emailValid.value.length;
     
     if (uid_len_pass == 0) {
       passEmpty.style.borderColor = '#E55241';
@@ -332,7 +332,23 @@ function userid_validation_(event) {
     else {
       emailValid.style.borderColor = 'limegreen';
     }
-  }
+}
+
+//валидация формы входа восстановления пароля
+function restore_pass(event) {
+  const emailValid = document.getElementById('email_not_valid_2');
+  const uid_len_email = emailValid.value.length;
+    if (uid_len_email == 0) {
+      emailValid.style.borderColor = '#E55241';
+      emailValid.style.borderWidth = '1px';
+      emailValid.placeholder = 'Введите e-mail';
+      event.preventDefault();
+    }
+    
+    else {
+      emailValid.style.borderColor = 'limegreen';
+    }
+}
 
   // появление формы для ввода комментариев
     let isTextShow = false;
@@ -356,23 +372,24 @@ function userid_validation_(event) {
 
 //отображение дополнительных комментариев
     let isCommMore = false;
-        let commMore = document.querySelector('.show_more');
-        if (commMore !== null) {
+    let commMore = document.querySelector('.show_more');
+
+      if (commMore !== null) {
           commMore.addEventListener('click', function() {
-            if (isCommMore) {
-                document.querySelector('.hidden').style.display = 'none';
-                commMore.style.backgroundColor = '#E55241';
-                commMore.style.color = '#FFF';
-                commMore.innerText = 'Показать еще';
-                isCommMore = false;
-              } 
-              else {
-                document.querySelector('.hidden').style.display = 'flex';
-                commMore.style.backgroundColor = '#F4F4F4';
-                commMore.style.color = '#A6A6A6';
-                commMore.style.border = 'none';
-                commMore.innerText = 'Скрыть комментарии';
-                isCommMore = true;
+          if (isCommMore) {
+              document.querySelector('.hidden').style.display = 'none';
+              commMore.style.backgroundColor = '#E55241';
+              commMore.style.color = '#FFF';
+              commMore.innerText = 'Показать еще';
+              isCommMore = false;
+            } 
+            else {
+              document.querySelector('.hidden').style.display = 'flex';
+              commMore.style.backgroundColor = '#F4F4F4';
+              commMore.style.color = '#A6A6A6';
+              commMore.style.border = 'none';
+              commMore.innerText = 'Скрыть комментарии';
+              isCommMore = true;
               } 
           });
         }
