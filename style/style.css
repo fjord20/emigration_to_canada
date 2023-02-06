@@ -1291,14 +1291,9 @@ form {
     }
     
     .navigation__header_button_search {
-        /* margin-right: 0; */
         margin-right: 0.9375rem;
     }
-    
-    /* .navigation__header_search_field {
-        width: 100%;
-    } */
-    
+     
     .navigation__header_bottom {
         gap: 2rem;
         padding-inline: 1rem;
@@ -1375,10 +1370,6 @@ form {
     
     .add_to_community_information_header img {
         display: none;
-    }
-    
-    .add_to_community_information {
-        /* max-width: none; */
     }
     
     .form_button_field button {
