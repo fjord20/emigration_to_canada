@@ -113,7 +113,12 @@ input[type='search'] {
     }
 
     .access_denied {
-        /* grid-template-columns: 1fr; */
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .add_to_community_information_header h2 {
+        font-size: 1.5rem;
+
     }
 
     .access_denied_link {
@@ -135,6 +140,10 @@ input[type='search'] {
     .enter_answer input:first-child {
         width: 5rem;
         max-width: fit-content;
+    }
+
+    .form_button_field button {
+        font-size: 1rem;
     }
 }
 
