@@ -972,6 +972,8 @@ form {
     border-left: none;
     border-top-right-radius: 0.3125rem;
     border-bottom-right-radius: 0.3125rem;
+    border-top-left-radius: 0;
+        border-bottom-left-radius: 0; 
 }
 
 .form_submit_field {
@@ -1185,8 +1187,8 @@ form {
     }
 
     .enter_answer input:last-child {
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
+        /* border-top-left-radius: 0;
+        border-bottom-left-radius: 0; */
     }
 }
 
