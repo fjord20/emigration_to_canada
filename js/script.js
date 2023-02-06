@@ -181,7 +181,7 @@ function userid_validation(event) {
     const uid_len_last = checkEmptyname.value.length;
     const uid_len_pass = passEmpty.value.length;
     const uid_len_email = emailValid.value.length;
-    const re = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
+    // const re = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
   
       if (uid_len == 0)  {
         checkEmpty.style.borderColor = '#E55241';

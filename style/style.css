@@ -1183,6 +1183,11 @@ form {
     .navigation__header_bottom_button {
         display: none;
     }
+
+    .enter_answer input:last-child {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
 }
 
 @media screen and (min-width:600px) and (max-width:1200px) {
