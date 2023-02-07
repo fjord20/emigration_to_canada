@@ -133,10 +133,6 @@ input[type='search'] {
         display: none;
     }
 
-    .access_denied .add_to_community_container {
-       
-    }
-
     .enter_answer input:first-child {
         width: 5rem;
         max-width: fit-content;
