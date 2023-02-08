@@ -98,6 +98,8 @@ function dropAccount() {
           document.getElementById('row_2').style.display = 'flex';
           document.getElementById('row_1').style.display = 'none';
           document.getElementById('btn_search').style.background = "url(/images/search_close.svg) no-repeat center";
+          document.getElementById('btn_search').style.borderTopLeftRadius = "0";
+          document.getElementById('btn_search').style.borderBottomLeftRadius = "0";
           document.getElementById('header_search').style.width = '70%';
             isSearchFull = false;
           } 
@@ -105,6 +107,8 @@ function dropAccount() {
             document.getElementById('row_2').style.display = 'none';
             document.getElementById('row_1').style.display = 'flex';
             document.getElementById('btn_search').style.background = "url(/images/search.png) no-repeat center";
+            document.getElementById('btn_search').style.borderTopLeftRadius = "0.25rem";
+          document.getElementById('btn_search').style.borderBottomLeftRadius = "0.25rem";
             document.getElementById('header_search').style.width = 'auto';
             isSearchFull = true;
           } 
@@ -444,7 +448,7 @@ function add_favorite(a) {
 }
 //aккордион
   let acc = document.getElementsByClassName("menu_row_mobile");
-  let i;
+  let i = null;
 
   for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function() {
@@ -458,6 +462,16 @@ function add_favorite(a) {
     });
   }
 
-
-
+  //счетчик лайков
+  document.getElementsByClassName("like").forEach(function(el) {
+    el.onclick = function() {
+      let sps = this.closest('div').querySelector('.sp');
+      sps.innerText = parseInt(sps.innerText, 10)+1;
+    };
+  }
+  );
+ 
   
+
+
+ 

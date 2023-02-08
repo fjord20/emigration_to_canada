@@ -74,7 +74,6 @@ html, body {
     list-style-type: none;
     margin: 0;
     padding: 1.25rem 0;
-    height: 3.75rem;
 }
 
 /* drop city */
@@ -1283,7 +1282,7 @@ form {
     }
     
     .navigation__header_top_right {
-        gap: 0.3rem;
+        gap: 0.5rem;
     }
     
     .navigation__header_bottom > a {
@@ -1415,7 +1414,7 @@ form {
 
 @media screen and (min-width: 320px) and (max-width: 599px) {
     html {
-        font-size: 14px;
+        font-size: var(--fz-secondary);
     }
    
       /* navigation */

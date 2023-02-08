@@ -399,7 +399,10 @@ textarea {
 
 .comments_list_text img {
     margin-inline: 1.875rem 0.4375rem;
+    cursor: pointer;
 }
+
+
 
 .comments_list_text span {
     font-size: 0.875rem;
