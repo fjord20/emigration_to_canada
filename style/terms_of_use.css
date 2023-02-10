@@ -15,7 +15,7 @@ article p {
     color: var(--clr-text-header);
 }
 
-ul > p {
+ul li p {
     font-size: 1rem;
     font-weight: var(--fw-700);
     color: var(--clr-text-header);
