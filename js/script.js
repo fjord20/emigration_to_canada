@@ -392,7 +392,7 @@ function restore_pass(event) {
               commMore.style.backgroundColor = '#F4F4F4';
               commMore.style.color = '#A6A6A6';
               commMore.style.border = 'none';
-              commMore.innerText = 'Скрыть комментарии';
+              commMore.innerText = 'Скрыть';
               isCommMore = true;
               } 
           });
@@ -466,7 +466,8 @@ function add_favorite(a) {
   document.getElementsByClassName("like").forEach(function(el) {
     el.onclick = function() {
       let sps = this.closest('div').querySelector('.sp');
-      sps.innerText = parseInt(sps.innerText, 10)+1;
+      sps.innerText = Number(sps.innerText, 10)+1;
+      
     };
   }
   );

@@ -1,0 +1,31 @@
+@import url(/style/reset.css); 
+@import url(/style/style.css);
+@import url(/style/privacy_policy.css);
+
+ul li,
+article p {
+    font-size: 1rem;
+    color: var(--clr-text-header);
+}
+
+.about_article .main-paragraph {
+    font-size: 1.5rem;
+    font-weight: var(--fw-700);
+    margin: 2rem 0 1rem 0;
+    color: var(--clr-text-header);
+}
+
+ul > p {
+    font-size: 1rem;
+    font-weight: var(--fw-700);
+    color: var(--clr-text-header);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about_article p {
+    margin-bottom: 0.3rem;
+}
