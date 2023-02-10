@@ -471,6 +471,16 @@ function add_favorite(a) {
     };
   }
   );
+
+  //ответ на комментарии
+  let answerComm = document.getElementsByClassName('comments_list_answer');
+  let addComm = document.getElementById('openText');
+  
+  for (let i=0; i<answerComm.length; i++) {
+  answerComm[i].addEventListener('click', function() {
+    addComm.click();
+  });
+}
  
   
 
