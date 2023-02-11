@@ -16,7 +16,9 @@
 }
 
 .access_denied {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: auto 1.875rem 1fr;
     grid-template-columns: auto 1fr;
     gap: 1.875rem;
 }
@@ -26,12 +28,18 @@
 }
 
 .access_denied_link {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column; 
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; 
 }
 
 .access_denied_link:hover {
-    filter: drop-shadow(-5px 0px 10px rgba(190, 190, 190, 0.25)) drop-shadow(5px 5px 10px rgba(190, 190, 190, 0.25));
+    -webkit-filter: drop-shadow(-5px 0px 10px rgba(190, 190, 190, 0.25)) drop-shadow(5px 5px 10px rgba(190, 190, 190, 0.25));
+            filter: drop-shadow(-5px 0px 10px rgba(190, 190, 190, 0.25)) drop-shadow(5px 5px 10px rgba(190, 190, 190, 0.25));
 }
 
 .access_denied_link a {
@@ -54,12 +62,16 @@
 .access_denied_link_main img {
     width: 100%;
     height: 100%;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
     opacity: 0.5;
 }
 
 .access_denied_link_main img:hover {
-   transform: scale(1.3);
+   -webkit-transform: scale(1.3);
+       -ms-transform: scale(1.3);
+           transform: scale(1.3);
 }
 
 .access_denied_link_main span {
@@ -81,11 +93,6 @@
     margin: 0;
 }
 
-/* .navigation__header_button_search {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-} */
-
 input[type='submit'] {
     border-radius: 0;
 }
@@ -96,6 +103,8 @@ input[type='search'] {
 }
 
 .mobile_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -122,6 +131,8 @@ input[type='search'] {
     }
 
     .access_denied_link {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 
@@ -135,6 +146,8 @@ input[type='search'] {
 
     .enter_answer input:first-child {
         width: 5rem;
+        max-width: -webkit-fit-content;
+        max-width: -moz-fit-content;
         max-width: fit-content;
     }
 
@@ -145,6 +158,7 @@ input[type='search'] {
 
 @media screen and (min-width: 320px) and (max-width: 599px) {
     .access_denied {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
 
@@ -158,7 +172,9 @@ input[type='search'] {
     }
 
     .add_to_community_information_header {
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     .add_to_community_information_header h2 {
@@ -170,6 +186,8 @@ input[type='search'] {
     }
 
     .aside_items_content {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 

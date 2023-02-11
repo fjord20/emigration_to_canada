@@ -17,16 +17,23 @@
 }
 
 .about_article_paragraph {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin-top: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: flex-end;
     font-size: 1.5rem;
     font-weight: var(--fw-700);
     color: var(--clr-primary-600);
+    
 }
 
 .about_article_paragraph::before {
     content: url(/images/about/ink-icon.svg);
     margin-right: 0.9375rem;
-    vertical-align: middle;
+    /* vertical-align: middle; */
 }
 
 .about_article > p {
@@ -36,6 +43,12 @@
 }
 
 .about_article_paragraph_spec {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size: 1.5rem;
     font-weight: var(--fw-700);
     color: var(--clr-primary-600);
@@ -48,6 +61,12 @@
 }
 
 .about_article_paragraph_goal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size: 1.5rem;
     font-weight: var(--fw-700);
     color: var(--clr-primary-600);
@@ -84,6 +103,12 @@
 }
 
 .about_article_paragraph_legal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size: 1.5rem;
     font-weight: var(--fw-700);
     color: var(--clr-primary-600);
@@ -96,6 +121,12 @@
 }
 
 .about_article_paragraph_value {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size: 1.5rem;
     font-weight: var(--fw-700);
     color: var(--clr-primary-600);
@@ -119,6 +150,8 @@ p a {
 }
 
 .value_list li {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-bottom: 0.75rem;
 }

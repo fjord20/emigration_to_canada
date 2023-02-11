@@ -25,8 +25,12 @@
 }
 
 .contact_mail {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .contact_mail img {
@@ -40,8 +44,12 @@
 }
 
 .contact_footer_links li {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 0.625rem;
 }
 

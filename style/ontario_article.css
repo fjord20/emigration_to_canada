@@ -6,12 +6,25 @@ iframe {
 }
 
 .limit_container {
+    display: -ms-grid;
     display: grid;
     max-width: 1200px;
     margin: 0 auto;
+    -ms-grid-columns: 2fr 3.75rem 1fr;
     grid-template-columns: 2fr 1fr;
+    -ms-grid-rows: 1fr;
     grid-template-rows: 1fr;
     gap: 3.75rem;
+}
+
+.limit_container > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+}
+
+.limit_container > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
 }
 
 .where_to_begin_items {
@@ -28,6 +41,8 @@ iframe {
 }
 
 .ontario_article_date_rating {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 1.25rem 0 1.5625rem 0;
     font-size: 0.875rem;
@@ -46,8 +61,12 @@ iframe {
 }
 
 .ontario_article_date_rating a {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-right: 1.875rem;
     text-decoration: none;
     font-size: 0.875rem;
@@ -95,6 +114,8 @@ iframe {
 }
 
 .books_offers {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     padding: 3.125rem 1.875rem;
@@ -105,9 +126,14 @@ iframe {
 }
 
 .books_offers_info {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     max-width: 100%;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .books_offers_info h3 {
@@ -119,6 +145,8 @@ iframe {
 }
 
 .books_offers_buy {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -137,6 +165,8 @@ iframe {
 }
 
 .books_offers_btn_block {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     gap: 0.9375rem;
@@ -189,8 +219,11 @@ iframe {
 }
 
 .ontario_article_tags {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     gap: 0.625rem;
     list-style-type: none;
     padding: 0;
@@ -236,8 +269,12 @@ iframe {
 }
 
 .article_footer_links li {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .article_footer_links li::before{
@@ -258,6 +295,8 @@ iframe {
 }
 
 .article_footer_suggestion {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     padding: 1.875rem 1rem;
@@ -266,6 +305,8 @@ iframe {
 }
 
 .suggestion {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 0.9375rem;
     max-width: 50%;
@@ -276,7 +317,8 @@ iframe {
     font-size: 0.875rem;
     color: var(--clr-primary-600);
     overflow: hidden;
-	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	   text-overflow: ellipsis;
 	display: -webkit-box;
 	-webkit-line-clamp: 4;
 	-webkit-box-orient: vertical;
@@ -289,7 +331,10 @@ iframe {
 .comments_area {
     display: none;
     max-width: 100%;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 textarea {
@@ -304,10 +349,16 @@ textarea {
 }
 
 .comments_add {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 2.375rem 0 1.75rem 0;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .comments_add p {
@@ -339,8 +390,13 @@ textarea {
 }
 
 .comments_list li {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 0.9375rem;
     padding: 1.25rem 0;
     border-bottom: 1px solid var(--clr-input-border);
@@ -366,6 +422,8 @@ textarea {
 }
 
 .comments_list_header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 0.9375rem;
 }
@@ -382,8 +440,12 @@ textarea {
 }
 
 .comments_list_text {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
 }
 
 .comments_list_text p {
@@ -392,6 +454,8 @@ textarea {
 }
 
 .comments_list_likes {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 0.4375rem;
 }
@@ -420,10 +484,14 @@ textarea {
 }
 
 .comments_author_redirect {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 40%;
     gap: 0.625rem;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .comments_author_redirect img {
@@ -459,19 +527,30 @@ textarea {
 
 
 .aside_items {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 2.5rem;
     padding-top: 2.5rem;
 }
 
 .aside_items_content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 1.25rem 0.9375rem;
     gap: 0.9375rem;
     border-radius: 0.625rem;
-    box-shadow: -5px 0px 10px rgba(190, 190, 190, 0.25), 5px 5px 10px rgba(190, 190, 190, 0.25);
+    -webkit-box-shadow: -5px 0px 10px rgba(190, 190, 190, 0.25), 5px 5px 10px rgba(190, 190, 190, 0.25);
+            box-shadow: -5px 0px 10px rgba(190, 190, 190, 0.25), 5px 5px 10px rgba(190, 190, 190, 0.25);
 }
 
 .aside_items_content_header a::after {
@@ -486,8 +565,13 @@ textarea {
 }
 
 .aside_items_content_questions {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column; 
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; 
     gap: 1.5rem;  
 }
 
@@ -522,11 +606,15 @@ textarea {
 .aside_items_content_main img {
     width: 100%;
     height: 100%;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
 }
 
 .aside_items_content_main img:hover {
-   transform: scale(1.3);
+   -webkit-transform: scale(1.3);
+       -ms-transform: scale(1.3);
+           transform: scale(1.3);
 }
 
 .aside_items_content_main span {
@@ -554,7 +642,8 @@ textarea {
 .aside_block {
     padding: 0;
     border-radius: 0.625rem;
-    box-shadow: -5px 0px 10px rgba(190, 190, 190, 0.25), 5px 5px 10px rgba(190, 190, 190, 0.25);
+    -webkit-box-shadow: -5px 0px 10px rgba(190, 190, 190, 0.25), 5px 5px 10px rgba(190, 190, 190, 0.25);
+            box-shadow: -5px 0px 10px rgba(190, 190, 190, 0.25), 5px 5px 10px rgba(190, 190, 190, 0.25);
 }
 
 .aside_block .where_to_begin_items_header {
@@ -580,8 +669,13 @@ textarea {
 }
 
 .aside_block_news {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     gap: 0.625rem;
     padding: 0.9375rem;
 }
@@ -617,12 +711,18 @@ textarea {
 }
 
 .aside_items_video {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 1.25rem 0.9375rem;
     gap: 0.9375rem;
     border-radius: 0.625rem;
-    box-shadow: -5px 0px 10px rgba(190, 190, 190, 0.25), 5px 5px 10px rgba(190, 190, 190, 0.25);
+    -webkit-box-shadow: -5px 0px 10px rgba(190, 190, 190, 0.25), 5px 5px 10px rgba(190, 190, 190, 0.25);
+            box-shadow: -5px 0px 10px rgba(190, 190, 190, 0.25), 5px 5px 10px rgba(190, 190, 190, 0.25);
 }
 
 .aside_items_video p {
@@ -630,9 +730,15 @@ textarea {
 }
 
 .aside_items_video_header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .aside_items_video_header a {
@@ -681,12 +787,16 @@ textarea {
 
 @media screen and (min-width: 320px) and (max-width: 599px) {
     .limit_container {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
         padding: 2.85rem 1.28rem 2.5rem 1.28rem;
     }
 
     .books_offers_buy {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
    
     .book_img_visible {
@@ -702,10 +812,19 @@ textarea {
     }
 
     .books_offers_cost {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         margin: 0;
     }
 
@@ -752,8 +871,12 @@ textarea {
     }
 
     .books_offer_money {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     .ontario_article .ontario_article_main_p {
@@ -765,11 +888,16 @@ textarea {
     }
 
     .article_footer_links li {
-        align-items:flex-start;
+        -webkit-box-align:start;
+            -ms-flex-align:start;
+                align-items:flex-start;
     }
 
     .article_footer_suggestion {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     .suggestion {
@@ -817,7 +945,9 @@ textarea {
     }
 
     .ontario_article_date_rating {
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         margin-top: 1.42rem;
     }
 
