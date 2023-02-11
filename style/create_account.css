@@ -65,10 +65,9 @@ form button {
         font-size: var(--fz-secondary);
     }
     
-    /* .back_link {
-        display: inline-block;
-        padding-inline: 1rem;        
-    } */
+    .back_link {
+        display: none;       
+    }
 
 
     .check_answer input:first-child {
