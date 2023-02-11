@@ -150,6 +150,11 @@ form button {
     .back_link {
         padding-inline: 1rem;
     }
+
+    .back_link::before{
+        content: url(/images/autorization/back-arrow.svg);
+        vertical-align: middle;
+    }
 }
 
 @media screen and (min-width: 320px) and (max-width: 599px) {
