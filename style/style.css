@@ -896,6 +896,7 @@ main .no_background {
 .add_to_community_information_header {
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 0.9375rem;
 }
 
