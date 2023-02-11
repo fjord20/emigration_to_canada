@@ -113,7 +113,7 @@ form button {
     border: 1px solid var(--clr-primary-500);
     padding: 1.25rem;
     border-radius: 0.25rem;
-    background: var(----clr-content-slider);
+    background: var(--clr-content-slider);
     font-size: 1.125rem;
     font-weight: var(--fw-700);
     color: var(--clr-primary-500);

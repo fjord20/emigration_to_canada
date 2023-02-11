@@ -1,14 +1,10 @@
 @import url(/style/access_denied.css);
 
-
-
 .access_denied {
     display: grid;
     grid-template-columns: 1fr auto;
     padding: 2.5rem 0 4.375rem 0;
 }
-
-
 .access_denied_flag {
     width: 100%;
 }
@@ -20,7 +16,6 @@
 .access_denied_error_text {
     display: flex;
     flex-direction: column;
-    align-items: left;
     justify-content: center;
 }
 

@@ -120,7 +120,6 @@ p a {
 
 .value_list li {
     display: flex;
-    align-items: top;
     margin-bottom: 0.75rem;
 }
 
