@@ -149,12 +149,15 @@ form button {
 
     .back_link {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         padding-inline: 1rem;
+        font-size: 1.14rem;
     }
 
     .back_link::before {
         margin-right: 0rem;
+        margin-top: 0rem;
+        vertical-align: bottom;
     }
 }
 
