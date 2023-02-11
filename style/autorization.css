@@ -34,7 +34,7 @@
 .back_link::before {
     content: url(/images/autorization/back-arrow.svg);
     vertical-align: top;
-    margin-right: 0.625rem;
+    /* margin-right: 0.625rem; */
     margin-top: 0.625rem;
 }
 
