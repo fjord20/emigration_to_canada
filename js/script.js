@@ -1,3 +1,4 @@
+//настройки слайдера
 const sliders = document.querySelectorAll('.slider');
 
 sliders.forEach(sliderEl => {
@@ -185,8 +186,7 @@ function userid_validation(event) {
     const uid_len_last = checkEmptyname.value.length;
     const uid_len_pass = passEmpty.value.length;
     const uid_len_email = emailValid.value.length;
-    // const re = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
-  
+
       if (uid_len == 0)  {
         checkEmpty.style.borderColor = '#E55241';
         checkEmpty.style.borderWidth = '1px';
@@ -233,19 +233,6 @@ function userid_validation(event) {
       else {
         emailValid.style.borderColor = 'limegreen';
       }
-
-      // if (isEmailValid(emailValid.value)) {
-      //   emailValid.style.borderColor = 'limegreen';
-  
-      // } else {
-      //   emailValid.style.borderColor = '#E55241';
-      //   emailValid.style.borderWidth = '1px';
-      //   alert('введите правильный адрес электронной почты');
-      // }
-  
-      // function isEmailValid(value) {
-      //   return re.test(value);
-      // }
   } 
 
 //валидация формы авторизации
@@ -258,54 +245,53 @@ function userid_validation_(event) {
   const uid_len_last = checkEmptyname.value.length;
   const uid_len_pass = passEmpty.value.length;
   const uid_len_email = emailValid.value.length;
-  // const re = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
-    
-        if (uid_len == 0)  {
-          checkEmpty.style.borderColor = '#E55241';
-          checkEmpty.style.borderWidth = '1px';
-          checkEmpty.placeholder = 'Введите имя';
-          event.preventDefault();
-        }
+
+      if (uid_len == 0)  {
+        checkEmpty.style.borderColor = '#E55241';
+        checkEmpty.style.borderWidth = '1px';
+        checkEmpty.placeholder = 'Введите имя';
+        event.preventDefault();
+      }
         
-        else {
-          checkEmpty.style.borderColor = 'limegreen';
-        }
+      else {
+        checkEmpty.style.borderColor = 'limegreen';
+      }
     
-        if (uid_len_last == 0) {
-          checkEmptyname.style.borderColor = '#E55241';
-          checkEmptyname.style.borderWidth = '1px';
-          checkEmptyname.placeholder = 'Введите результат';
-          document.getElementById('numbers_1').style.borderColor = '#E55241';
-          document.getElementById('numbers_1').style.borderWidth = '1px';
-          event.preventDefault();
-        }
+      if (uid_len_last == 0) {
+        checkEmptyname.style.borderColor = '#E55241';
+        checkEmptyname.style.borderWidth = '1px';
+        checkEmptyname.placeholder = 'Введите результат';
+        document.getElementById('numbers_1').style.borderColor = '#E55241';
+        document.getElementById('numbers_1').style.borderWidth = '1px';
+        event.preventDefault();
+      }
         
-        else {
-          checkEmptyname.style.borderColor = 'limegreen';
-          document.getElementById('numbers_1').style.borderColor = 'limegreen';
-        }
+      else {
+        checkEmptyname.style.borderColor = 'limegreen';
+        document.getElementById('numbers_1').style.borderColor = 'limegreen';
+      }
     
-        if (uid_len_pass == 0) {
-          passEmpty.style.borderColor = '#E55241';
-          passEmpty.style.borderWidth = '1px'
-          passEmpty.placeholder = 'Введите пароль';
-          event.preventDefault();
-        }
+      if (uid_len_pass == 0) {
+        passEmpty.style.borderColor = '#E55241';
+        passEmpty.style.borderWidth = '1px'
+        passEmpty.placeholder = 'Введите пароль';
+        event.preventDefault();
+      }
         
-        else {
-          passEmpty.style.borderColor = 'limegreen';
-        }
+      else {
+        passEmpty.style.borderColor = 'limegreen';
+      }
   
-        if (uid_len_email == 0) {
-          emailValid.style.borderColor = '#E55241';
-          emailValid.style.borderWidth = '1px';
-          emailValid.placeholder = 'Введите e-mail';
-          event.preventDefault();
-        }
+      if (uid_len_email == 0) {
+        emailValid.style.borderColor = '#E55241';
+        emailValid.style.borderWidth = '1px';
+        emailValid.placeholder = 'Введите e-mail';
+        event.preventDefault();
+      }
         
-        else {
-          emailValid.style.borderColor = 'limegreen';
-        }
+      else {
+        emailValid.style.borderColor = 'limegreen';
+      }
     } 
 
 //валидация формы входа в личный кабинет
@@ -418,34 +404,34 @@ function restore_pass(event) {
   }
 
 //добавление в закладки сайта
-function add_favorite(a) {
-  title=document.title;
-  url=document.location;
-  try {
-    // Internet Explorer
-    eval("window.external.AddFa-vorite(url, title)".replace(/-/g,''));
-  }
-  catch (e) {
+  function add_favorite(a) {
+    title=document.title;
+    url=document.location;
     try {
-      // Mozilla
-      window.sidebar.addPanel(title, url, "");
+      // Internet Explorer
+      eval("window.external.AddFa-vorite(url, title)".replace(/-/g,''));
     }
     catch (e) {
-      // Opera
-      if (typeof(opera)=="object") {
-        a.rel="sidebar";
-        a.title=title;
-        a.url=url;
-        return true;
+      try {
+        // Mozilla
+        window.sidebar.addPanel(title, url, "");
       }
-      else {
-        // Остальные браузеры
-        alert('Нажмите Ctrl + D, чтобы добавить страницу в закладки');
+      catch (e) {
+        // Opera
+        if (typeof(opera)=="object") {
+          a.rel="sidebar";
+          a.title=title;
+          a.url=url;
+          return true;
+        }
+        else {
+          // Остальные браузеры
+          alert('Нажмите Ctrl + D, чтобы добавить страницу в закладки');
+        }
       }
     }
+    return false;
   }
-  return false;
-}
 //aккордион
   let acc = document.getElementsByClassName("menu_row_mobile");
   let i = null;
@@ -475,11 +461,11 @@ function add_favorite(a) {
   //ответ на комментарии
   let answerComm = document.getElementsByClassName('comments_list_answer');
   let addComm = document.getElementById('openText');
-  
-  for (let i=0; i<answerComm.length; i++) {
-  answerComm[i].addEventListener('click', function() {
+
+    for (let i=0; i<answerComm.length; i++) {
+    answerComm[i].addEventListener('click', function() {
     addComm.click();
-  });
+    });
 }
  
   
