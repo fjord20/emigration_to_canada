@@ -154,6 +154,7 @@ form button {
     .back_link::before{
         content: url(/images/autorization/back-arrow.svg);
         vertical-align: middle;
+        margin-right: 0rem;
     }
 }
 
