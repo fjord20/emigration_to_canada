@@ -67,6 +67,11 @@ form button {
     
     .back_link {
         padding-inline: 1rem;
+        display: flex;
+        padding: 1.07rem 1.28rem;
+        margin: 0;
+        font-size: 0.85rem;
+        align-items: flex-start;
     }
 
     .check_answer input:first-child {
