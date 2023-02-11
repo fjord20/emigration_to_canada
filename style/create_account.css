@@ -72,6 +72,7 @@ form button {
 
     .back_link::before {
         margin-right: 0rem;  
+        vertical-align: middle;
     }
 
 
