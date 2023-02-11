@@ -66,8 +66,8 @@ form button {
     }
     
     .back_link {
-        
-        padding-inline: 1rem;        
+        padding-inline: 1rem;  
+        margin-right: 0rem;      
     }
 
 
