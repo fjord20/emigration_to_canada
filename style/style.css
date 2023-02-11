@@ -1368,6 +1368,10 @@ form {
         padding-inline: 1rem;
     }
     
+    .add_to_community_information_header {
+        gap: 0;
+    }
+
     .add_to_community_information_header img {
         display: none;
     }
