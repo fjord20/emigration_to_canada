@@ -31,7 +31,7 @@
     margin-bottom: 1rem;
 }
 
-.back_link::before{
+.back_link::before {
     content: url(/images/autorization/back-arrow.svg);
     vertical-align: top;
     margin-right: 0.625rem;
@@ -151,8 +151,8 @@ form button {
         padding-inline: 1rem;
     }
 
-    .back_link::before{
-     
+    .back_link::before {
+        margin-top: 0.625rem;
         margin-right: 0rem;
     }
 }
