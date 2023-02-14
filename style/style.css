@@ -174,7 +174,7 @@ html, body {
     position: absolute;
     top: 2.7rem;
     border-radius: 0.25rem;
-    max-width: 100%;
+    max-width: 130%;
     background-color: var(--clr-content-slider);
     -webkit-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -333,6 +333,14 @@ ul li.active_menu a {
     margin-right: 0.9375rem;;
     background: url(../images/search.png) no-repeat center;
 }
+
+.btn_block_btn_search:hover,
+.btn_block_btn_account:hover,
+.navigation__header_button_search:hover {
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    transition: 0.2s;
+}
+
 
 .navigation__header_bottom_button {
     width: 10.5rem;
@@ -1769,7 +1777,7 @@ form {
         border: none;
         border-radius: 0.285rem;
     }
-
+    
     .btn_block_btn_account {
         width: 2.85rem;
         height: 2.85rem;
