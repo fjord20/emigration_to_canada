@@ -1,6 +1,6 @@
-@import url(/style/reset.css);
-@import url(/style/style.css);
-@import url(/style/autorization.css);
+@import url(../style/reset.css);
+@import url(../style/style.css);
+@import url(../style/autorization.css);
 
 
 .check_answer {

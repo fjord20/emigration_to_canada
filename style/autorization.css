@@ -1,5 +1,5 @@
-@import url(/style/reset.css); 
-@import url(/style/style.css);
+@import url(../style/reset.css); 
+@import url(../style/style.css);
 
 
 
@@ -41,7 +41,7 @@
 }
 
 .back_link::before {
-    content: url(/images/autorization/back-arrow.svg);
+    content: url(../images/autorization/back-arrow.svg);
     vertical-align: top;
     margin-top: 0.625rem;
 }
@@ -196,7 +196,7 @@ form button {
     }
 
     .back_link::before{
-        content: url(/images/mobile/autorization/arrow_left_back.svg);
+        content: url(../images/mobile/autorization/arrow_left_back.svg);
         margin: 0;
     }
 

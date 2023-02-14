@@ -1,4 +1,4 @@
-@import url(/style/access_denied.css);
+@import url(../style/access_denied.css);
 
 .access_denied {
     display: -ms-grid;

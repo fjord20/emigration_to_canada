@@ -1,6 +1,6 @@
-@import url(/style/style.css);
-@import url(/style/reset.css);
-@import url(/style/ontario_article.css);
+@import url(../style/style.css);
+@import url(../style/reset.css);
+@import url(../style/ontario_article.css);
 
 .about_article {
     padding: 2.5rem 0 3.125rem 0;
@@ -31,7 +31,7 @@
 }
 
 .about_article_paragraph::before {
-    content: url(/images/about/ink-icon.svg);
+    content: url(../images/about/ink-icon.svg);
     margin-right: 0.9375rem;
     /* vertical-align: middle; */
 }
@@ -55,7 +55,7 @@
 }
 
 .about_article_paragraph_spec::before {
-    content: url(/images/about/light-icon.svg);
+    content: url(../images/about/light-icon.svg);
     margin-right: 0.9375rem;
     vertical-align: middle;
 }
@@ -73,7 +73,7 @@
 }
 
 .about_article_paragraph_goal::before {
-    content: url(/images/about/hand-icon.svg);
+    content: url(../images/about/hand-icon.svg);
     margin-right: 0.9375rem;
     vertical-align: middle;
 }
@@ -85,7 +85,7 @@
 }
 
 .about_article_paragraph_struct::before {
-    content: url(/images/about/sun-icon.svg);
+    content: url(../images/about/sun-icon.svg);
     margin-right: 0.9375rem;
     vertical-align: middle;
 }
@@ -97,7 +97,7 @@
 }
 
 .about_article_paragraph_contact::before {
-    content: url(/images/about/mouthpiece-icon.svg);
+    content: url(../images/about/mouthpiece-icon.svg);
     margin-right: 0.9375rem;
     vertical-align: middle;
 }
@@ -115,7 +115,7 @@
 }
 
 .about_article_paragraph_legal::before {
-    content: url(/images/about/shield-icon.svg);
+    content: url(../images/about/shield-icon.svg);
     margin-right: 0.9375rem;
     vertical-align: middle;
 }
@@ -133,7 +133,7 @@
 }
 
 .about_article_paragraph_value::before {
-    content: url(/images/about/hand-with-heart-icon.svg);
+    content: url(../images/about/hand-with-heart-icon.svg);
     margin-right: 0.9375rem;
     vertical-align: middle;
 }
@@ -157,7 +157,7 @@ p a {
 }
 
 .value_list li::before {
-    content: url(/images/about/leaf-icon.svg);
+    content: url(../images/about/leaf-icon.svg);
     margin-right: 0.5rem;
 }
 

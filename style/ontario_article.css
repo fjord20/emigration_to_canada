@@ -1,5 +1,5 @@
-@import url(/style/style.css);
-@import url(/style/reset.css);
+@import url(../style/style.css);
+@import url(../style/reset.css);
 
 iframe {
     max-width: 100%;
@@ -74,8 +74,7 @@ iframe {
 }
 
 .ontario_article_date_rating a::before {
-    content: url(/images/bookmark.svg);
-   
+    content: url(../images/bookmark.svg);
 }
 
 .stars {
@@ -279,7 +278,7 @@ iframe {
 
 .article_footer_links li::before{
     display: inline-block;
-    content: url(/images/list-type-red.svg);
+    content: url(../images/list-type-red.svg);
     margin-right: 0.625rem;
 }
 
@@ -632,7 +631,7 @@ textarea {
     display: inline-block;
     content: "";
     vertical-align: middle;
-    background: url(/images/arrow-right_ffffff.png);
+    background: url(../images/arrow-right_ffffff.png);
     background-size: 100%;
     margin-left: 0.625rem;
     height: 1.5rem;

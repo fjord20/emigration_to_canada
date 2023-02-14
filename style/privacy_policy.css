@@ -1,6 +1,6 @@
-@import url(/style/reset.css); 
-@import url(/style/style.css);
-@import url(/style/about.css);
+@import url(../style/reset.css); 
+@import url(../style/style.css);
+@import url(../style/about.css);
 
 body {
     font-size: var(--fz-secondary);

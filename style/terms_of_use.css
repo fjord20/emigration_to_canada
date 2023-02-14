@@ -1,6 +1,6 @@
-@import url(/style/reset.css); 
-@import url(/style/style.css);
-@import url(/style/privacy_policy.css);
+@import url(../style/reset.css); 
+@import url(../style/style.css);
+@import url(../style/privacy_policy.css);
 
 ul li,
 article p {

@@ -1,6 +1,6 @@
-@import url(/style/reset.css);
-@import url(/style/style.css);
-@import url(/style/ontario_article.css);
+@import url(../style/reset.css);
+@import url(../style/style.css);
+@import url(../style/ontario_article.css);
 
 .courses_header {
     max-width: 1200px;
@@ -79,11 +79,21 @@
     height: 80%;
     position: relative;
     border-radius: 0.625rem 0.625rem 0 0;
+    overflow: hidden;
 }
  
 .services_card_images img {
     width: 100%;
     border-radius: 0.625rem 0.625rem 0 0;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+
+.services_card_images img:first-child:hover {
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+        transform: scale(1.3);
 }
 
 .services_card_images img:last-child {
@@ -249,6 +259,7 @@
 
 .books_items .books_card {
     max-width: 100%;
+    padding-top: 1rem;
 }
 
 .books_card .services_card_images {
@@ -256,7 +267,6 @@
     position: relative;
     border-radius: 0.625rem 0.625rem 0 0;
     overflow: hidden;
-    padding-top: 1rem;
 }
 
 .online_tools {

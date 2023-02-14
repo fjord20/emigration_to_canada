@@ -1,7 +1,7 @@
-@import url(/style/style.css);
-@import url(/style/reset.css);
-@import url(/style/ontario_article.css);
-@import url(/style/about.css);
+@import url(../style/style.css);
+@import url(../style/reset.css);
+@import url(../style/ontario_article.css);
+@import url(../style/about.css);
 
 .contacts_article {
     padding: 2.5rem 0 3.125rem 0;
@@ -55,7 +55,7 @@
 
 .contact_footer_links li::before{
     display: inline-block;
-    content: url(/images/list-type-red.svg);
+    content: url(../images/list-type-red.svg);
     margin-right: 0.625rem;
 }
 
