@@ -632,6 +632,10 @@ input[type="search"] {
     border-radius: 50%;
 }
 
+.a11y-slider-autoplay {
+    display: none;
+}
+
 .popular_offers_article h3 {
     margin-bottom: 0.5rem;
     font-size: 1.125rem;

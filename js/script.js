@@ -4,6 +4,8 @@ const sliders = document.querySelectorAll('.slider');
 sliders.forEach(sliderEl => {
   const slider = new A11YSlider(sliderEl, {
     adaptiveHeight: true,
+    autoplay: true,
+    autoplaySpeed: 4000,
     dots: true,
     arrows: false,
     slidesToShow: 4,
