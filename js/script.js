@@ -456,10 +456,12 @@ function restore_pass(event) {
   let addComm = document.getElementById('openText');
 
     for (let i=0; i<answerComm.length; i++) {
-    answerComm[i].addEventListener('click', function() {
-    addComm.click();
-    });
-}
+      answerComm[i].addEventListener('click', function() {
+        document.querySelector('.comments_area').style.display = 'flex';
+        document.querySelector('.comments_add_btn').style.backgroundColor = '#F4F4F4';
+        document.querySelector('.comments_add_btn').style.color = '#A6A6A6';
+      });
+  }
  
   
 
