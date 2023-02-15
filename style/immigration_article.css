@@ -85,7 +85,7 @@
     width: 1.5rem;
     height: 1.5rem;
     border: none;
-    background: url(/images/icons_close_question_section.svg) center no-repeat;
+    background: url(../images/icons_close_question_section.svg) center no-repeat;
 }
 
 .arcicle_section_items {

@@ -66,7 +66,7 @@ iframe {
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center;
+            align-items: flex-start;
     margin-right: 1.875rem;
     text-decoration: none;
     font-size: 0.875rem;
@@ -77,18 +77,22 @@ iframe {
     content: url(../images/bookmark.svg);
 }
 
-.stars {
-    display: inline-block;
+.stars,
+.stars_row {
+    display: flex;
 }
 
-.stars:hover .fa-regular{
-    cursor: pointer;
-    color: var(--clr-rating-stars);
-    border-width: 1px;
+.stars_row > .star_item:before {
+    content:url(../images/star2.png);
 }
 
-.stars .fa-regular:hover ~ .fa-regular:before {
-    color: var(--clr-primary-600);   
+.stars_row:hover > .star_item:before {
+    content: url(../images/star.png);
+    cursor:pointer; 
+}
+
+.stars_row > .star_item:hover ~ .star_item:before {
+    content: url(../images/star2.png);
 }
 
 .ontario_article_image {
@@ -948,6 +952,10 @@ textarea {
             -ms-flex-align: center;
                 align-items: center;
         margin-top: 1.42rem;
+    }
+
+    .ontario_article_date_rating a {
+        align-items: center;
     }
 
     .comments_author_name {
