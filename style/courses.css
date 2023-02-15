@@ -179,7 +179,7 @@
 
 .services_card_btn {
     padding: 0 1.875rem;
-    border: 1px solid #E55241;
+    border: 1px solid var(--clr-primary-500);
     border-radius: 0.25rem;
     background-color: var(--clr-content-slider);
     font-size: 1.125rem;
@@ -308,7 +308,7 @@
 
 .online_card .services_card_btn {
     padding: 0 1rem;
-    border: 1px solid #E55241;
+    border: 1px solid var(--clr-primary-500);
     border-radius: 0.25rem;
     background-color: var(--clr-content-slider);
     font-size: 1.125rem;

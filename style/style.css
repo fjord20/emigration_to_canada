@@ -445,7 +445,7 @@ input[type="search"] {
 .container__help_in_immigration_list_btn_question {
     width: 32.5%;
     padding: 1.25rem;
-    border: 1px solid #E55241;
+    border: 1px solid var(--clr-primary-500);
     border-radius: 0.25rem;
     background-color: var(--clr-background);
     font-size: 1.125rem;
@@ -718,7 +718,7 @@ input[type="search"] {
 }
 
 .popular_offers_article_button {
-    border: 1px solid #E55241;
+    border: 1px solid var(--clr-primary-500);
     border-radius: 0.25rem;
     background: none;
     font-size: 1.125rem;
@@ -738,7 +738,7 @@ input[type="search"] {
 }
 
 main .no_background {
-    background-color: #FFFFFF;
+    background-color: var(--clr-content-slider);
 }
 
 .immigration_limit_container {
