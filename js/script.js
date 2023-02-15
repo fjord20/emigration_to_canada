@@ -441,15 +441,14 @@ function restore_pass(event) {
     });
   }
 
-//счетчик лайков
+//ставим лайки
   document.getElementsByClassName("like").forEach(function(el) {
     el.onclick = function() {
       let sps = this.closest('div').querySelector('.sp');
-      sps.innerText = Number(sps.innerText, 10)+1;
-      
-    };
-  }
-  );
+      sps.innerText = '1';
+      };
+    });
+
 
 //ответ на комментарии
   let answerComm = document.getElementsByClassName('comments_list_answer');
