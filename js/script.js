@@ -245,6 +245,7 @@ function userid_validation_(event) {
   const uid_len_last = checkEmptyname.value.length;
   const uid_len_pass = passEmpty.value.length;
   const uid_len_email = emailValid.value.length;
+  const check = document.getElementById('#sub');
 
       if (uid_len == 0)  {
         checkEmpty.style.borderColor = '#E55241';
@@ -291,6 +292,12 @@ function userid_validation_(event) {
         
       else {
         emailValid.style.borderColor = 'limegreen';
+      }
+
+      if (check.checked) {
+        check.checked = false;
+        alert('чекбокс не нажат');
+        
       }
     } 
 
@@ -442,10 +449,18 @@ function restore_pass(event) {
   }
 
 //ставим лайки
+  let isLikeAdd = true;
   document.getElementsByClassName("like").forEach(function(el) {
     el.onclick = function() {
       let sps = this.closest('div').querySelector('.sp');
-        sps.innerText = '1';
+        if (isLikeAdd) {
+          sps.innerText = '1';
+          isLikeAdd = false;
+        }
+        else {
+          sps.innerText = ' ';
+          isLikeAdd = true;
+        };
       };
     });
 

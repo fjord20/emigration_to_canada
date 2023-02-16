@@ -472,7 +472,8 @@ textarea {
     width: 1rem;
 }
 
-.comments_list_text span {
+.comments_list_text pre {
+    margin-top: 0;
     font-size: 0.875rem;
     font-weight: var(--fw-700);
     color: var(--clr-primary-500);

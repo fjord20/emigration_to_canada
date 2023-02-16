@@ -32,6 +32,7 @@
 html, body {
     font-family: var(--ff-primary);
     font-size: var(--fz-primary);
+    visibility: ;
 }
 
 /* header section */
