@@ -186,6 +186,18 @@ function userid_validation(event) {
     const uid_len_last = checkEmptyname.value.length;
     const uid_len_pass = passEmpty.value.length;
     const uid_len_email = emailValid.value.length;
+    const check_ = document.getElementById('submit');
+    const label_ = document.querySelector('label[for="submit"]');
+    
+    if (check_ !== null) {
+      if (!check_.checked) {
+        label_.style.color = '#E55241';
+        event.preventDefault();
+        }
+          else {
+            label_.style.color = '#1E222E';
+        }
+      } 
 
       if (uid_len == 0)  {
         checkEmpty.style.borderColor = '#E55241';
@@ -241,11 +253,22 @@ function userid_validation_(event) {
   const checkEmptyname = document.getElementById('answer_1');
   const emailValid = document.getElementById('email_not_valid_1');
   const passEmpty = document.getElementById('pass_empty_1');
+  const label = document.querySelector('label[for="sub"]');
+  const check = document.getElementById('sub');
   const uid_len = checkEmpty.value.length;
   const uid_len_last = checkEmptyname.value.length;
   const uid_len_pass = passEmpty.value.length;
   const uid_len_email = emailValid.value.length;
-  const check = document.getElementById('#sub');
+
+      if (check !== null) {
+        if (!check.checked) {
+          label.style.color = '#E55241';
+          event.preventDefault();
+        }
+          else {
+            label.style.color = '#1E222E';
+        }
+      }
 
       if (uid_len == 0)  {
         checkEmpty.style.borderColor = '#E55241';
@@ -292,13 +315,7 @@ function userid_validation_(event) {
         
       else {
         emailValid.style.borderColor = 'limegreen';
-      }
-
-      if (check.checked) {
-        check.checked = false;
-        alert('чекбокс не нажат');
-        
-      }
+      } 
     } 
 
 //валидация формы входа в личный кабинет
