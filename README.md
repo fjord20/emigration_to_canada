@@ -17,7 +17,7 @@ https://ysnitko.github.io/emigration_to_canada/
 
 
 
-figma layout was used as design <a color="liteblue" href="https://www.figma.com/file/zsXaQbOe0Ke11c62k6yS1y/IMIGRANT-AGENSTVA-Figma-Design?t=jXT5M8zzsayboAxf-6"> Immigration ro Canada layout</a>
+figma layout was used as design <a color="pink" href="https://www.figma.com/file/zsXaQbOe0Ke11c62k6yS1y/IMIGRANT-AGENSTVA-Figma-Design?t=jXT5M8zzsayboAxf-6"> Immigration to Canada layout</a>
 
 https://www.figma.com/file/zsXaQbOe0Ke11c62k6yS1y/IMIGRANT-AGENSTVA-Figma-Design?t=jXT5M8zzsayboAxf-6
 
