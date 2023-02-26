@@ -2,7 +2,7 @@
 <h3 align="center"> This is my project, website on the topic "immigration to canada"</h3>
 <h3>This project prepared as a result of passing the basic course at It-academy: Website development using html, css and Javascript</h3>
 
-![Image alt](https://github.com/ysnitko/emigration_to_canada.git/raw/main/images/screen_1.png)
+![Image alt](https://github.com/ysnitko/emigration_to_canada/tree/main/images#:~:text=2%20months%20ago-,screen_1.png,-readme)
 
 
 
