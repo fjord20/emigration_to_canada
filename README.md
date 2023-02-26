@@ -11,9 +11,10 @@
 <p>3. The project is adaptive for desktops, tablets and mobile phones.</p>
 <p>4. The project was prepared taking into account cross-browser compatibility.</p>
 
-You can see the project <a href="https://ysnitko.github.io/emigration_to_canada/" target=_blank>here</a> 
+You can see the project <a href="https://ysnitko.github.io/emigration_to_canada/" target=_blank >here</a> 
 
-Figma layout was used as design <a color="pink" href="https://www.figma.com/file/zsXaQbOe0Ke11c62k6yS1y/IMIGRANT-AGENSTVA-Figma-Design?t=jXT5M8zzsayboAxf-6" target=_blank> Immigration to Canada layout</a>
+Figma layout was used as design <a href="https://www.figma.com/file/zsXaQbOe0Ke11c62k6yS1y/IMIGRANT-AGENSTVA-Figma-Design?t=jXT5M8zzsayboAxf-6" target=_blank> Immigration to Canada layout</a>
 
 
 
+<span> Thank you for your attention </span>
