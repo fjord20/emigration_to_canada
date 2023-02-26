@@ -7,18 +7,18 @@
 
 
 
+https://ysnitko.github.io/emigration_to_canada/
 
 
 
 
+You can see the project at the link:
+https://ysnitko.github.io/emigration_to_canada/
 
-links:
 
 
-project
-https://immigration-today.netlify.app/
+figma layout was used as design <a color="liteblue" href="https://www.figma.com/file/zsXaQbOe0Ke11c62k6yS1y/IMIGRANT-AGENSTVA-Figma-Design?t=jXT5M8zzsayboAxf-6"> Immigration ro Canada layout</a>
 
-figma
 https://www.figma.com/file/zsXaQbOe0Ke11c62k6yS1y/IMIGRANT-AGENSTVA-Figma-Design?t=jXT5M8zzsayboAxf-6
 
 
