@@ -2,7 +2,7 @@
 <h3 align="center"> This is my project, website on the topic "immigration to canada"</h3>
 <h3>This project prepared as a result of passing the basic course at It-academy: Website development using html, css and Javascript</h3>
 
-<img scr="https://github.com/ysnitko/emigration_to_canada/raw/main/images/screen_1.png" alt="canada">
+<img scr="https://github.com/ysnitko/emigration_to_canada/main/images/screen_1.png" alt="canada">
 ![Image alt](https://github.com/ysnitko/emigration_to_canada/tree/main/images/screen_1.png)
 
 
