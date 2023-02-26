@@ -1,5 +1,5 @@
 <h1 align="center">Hi there!</h1> 
-<h3 align="center"> This is my project, website on the topic "immigration to canada"</h3>
+<h3 align="center"> This is my project, website on the topic "immigration to Canada"</h3>
 <h4>This project prepared as a result of passing the basic course at It-academy: Website development using html, css and Javascript</h4>
 
 <img scr="https://github.com/ysnitko/emigration_to_canada/blob/main/images/screen_1.png" alt="canada">
