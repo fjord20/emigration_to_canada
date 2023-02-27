@@ -19,7 +19,6 @@ mobile phone:
 
 ![ScreenShot](https://raw.github.com/ysnitko/emigration_to_canada/main/images/phone1.png)
 
-![ScreenShot](https://raw.github.com/ysnitko/emigration_to_canada/main/images/phone_2.png)
 </p>
 
 <p>4. The project was prepared taking into account cross-browser compatibility.</p>
