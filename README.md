@@ -7,7 +7,7 @@
 <p>2. Links to web pages that were not in the layout are redirected to a 404 page or authorization page.</p>
 <p>3. The project is adaptive for 
 
-desktop:
+<span style="font-size: 18;">desktop:</span>
 
 ![ScreenShot](https://raw.github.com/ysnitko/emigration_to_canada/main/images/screen_1.png)
 
