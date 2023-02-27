@@ -7,7 +7,7 @@
 <p>2. Links to web pages that were not in the layout are redirected to a 404 page or authorization page.</p>
 <p>3. The project is adaptive for 
 
-<span style="font-size: 18;">desktop:</span>
+desktop:
 
 ![ScreenShot](https://raw.github.com/ysnitko/emigration_to_canada/main/images/screen_1.png)
 
@@ -21,12 +21,11 @@ mobile phone:
 
 ![ScreenShot](https://raw.github.com/ysnitko/emigration_to_canada/main/images/phone_2.png)
 </p>
+
 <p>4. The project was prepared taking into account cross-browser compatibility.</p>
 
 You can see the project <a style="color: #ffb6c1; text-decoration:none;" href="https://ysnitko.github.io/emigration_to_canada/" target="_blank">here</a> 
 
 Figma layout was used as design <a style="color: #ffb6c1; text-decoration:none;" href="https://www.figma.com/file/zsXaQbOe0Ke11c62k6yS1y/IMIGRANT-AGENSTVA-Figma-Design?t=jXT5M8zzsayboAxf-6" target="_blank"> Immigration to Canada layout</a>
-
-
 
 <span> Thank you for your attention! </span>
