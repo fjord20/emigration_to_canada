@@ -1,6 +1,6 @@
 <h1 align="center">Hi there!</h1> 
 <h3 align="center"> This is my project, website on the topic "immigration to Canada".</h3>
-<h4>This project prepared as a result of passing the basic course at It-academy: Website development using html, css and Javascript.</h4>
+<h4>This project prepared as a result of passing the basic course at It-academy: Website development using html, css and javascript.</h4>
 
 <h4> About project: </h4>
 <p>1. The project was developed using html, css, native js.</p>
